@@ -1,0 +1,115 @@
+\section{Data and Monte Carlo Samples}\label{sec:samples}
+%\textbf{Responsible: Y. Oh, A. Saha}
+
+
+The 13 TeV collision data collected by the CMS detector in year 2015 is used in this analysis. Table~\ref{table:datasamples} shows the collision datasets used. 
+ The official JSON file is used to select ``good'' run ranges and lumi sections. The total integrated luminosity of the collision data samples is $2.11$ fb$^{-1}$.
+
+The official Spring miniAODv2 2015 MC samples are used for all Standard Model processes. The leading order generators, {\sc Pythia8} and {\sc Madgraph}, were 
+mainly used for Signal and Background MC production. The predicted background yields in simulation were determined using NLO or NNLO cross-sections, while the 
+signal yields and distributions in all plots shown in this AN were normalized using the leading order cross-sections shown in Table~\ref{tab:mc_samples}. 
+Table~\ref{tab:mc_samples} shows the entire list of the MC samples used for this analysis. 
+%In all cases, the NNLO cross sections are used for EWK processes. 
+%The cross sections used are summarized in Table~\ref{table:mcxsections}.
+
+\begin{table}[ht]	
+  \caption{Collision Data Samples} 
+  \centering{
+  \begin{tabular}{| l | c |} 
+  \hline\hline 
+	Physics Sample & Official CMS Datasets \\ [0.5ex] \hline 
+
+        \footnotesize Run 2015C SingleMu 05 Oct ReMiniAOD  & \footnotesize \it /SingleMuon/Run2015C\_25ns-05Oct2015-v1/MINIAOD \\
+        \footnotesize Run 2015D SingleMu 05 Oct ReMiniAOD  & \footnotesize \it /SingleMuon/Run2015D-05Oct2015-v1/MINIAOD \\
+        \footnotesize Run 2012D SingleMu PromptReco v4  & \footnotesize \it /SingleMuon/Run2015D-PromptReco-v4/MINIAOD \\
+
+\hline
+        \footnotesize Run 2015C SingleElectron 05 Oct ReMiniAOD  & \footnotesize \it /SingleMuon/Run2015C\_25ns-05Oct2015-v1/MINIAOD \\
+        \footnotesize Run 2015D SingleElectron 05 Oct ReMiniAOD  & \footnotesize \it /SingleElectron/Run2015D-05Oct2015-v1/MINIAOD \\
+        \footnotesize Run 2012D SingleElectron PromptReco v4  & \footnotesize \it /SingleElectron/Run2015D-PromptReco-v4/MINIAOD \\
+
+\hline 
+        \footnotesize Run 2015C Tau 05 Oct ReMiniAOD  & \footnotesize \it /Tau/Run2015C\_25ns-05Oct2015-v1/MINIAOD \\
+        \footnotesize Run 2015D Tau 05 Oct ReMiniAOD  & \footnotesize \it /Tau/Run2015D-05Oct2015-v1/MINIAOD \\
+        \footnotesize Run 2012D Tau PromptReco v4  & \footnotesize \it /Tau/Run2015D-PromptReco-v4/MINIAOD \\
+%\hline
+  \hline 
+  \hline 
+  \end{tabular}
+  }
+  \label{table:datasamples} % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]	
+  \caption{MC Samples} 
+  \centering{
+  \resizebox{\textwidth}{!}{
+  \begin{tabular}{| l | c | c |} 
+  \hline\hline 
+	Process & cross-section (pb) & Official CMS Datasets (MINIAODSIM) \\ [0.5ex] \hline
+
+    \footnotesize $Z \to ll $   &  6025.2       & \footnotesize \it /DYJetsToLL\_M-50\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    HT binned                   &  147.4*1.23   & \footnotesize \it /DYJetsToLL\_M-50\_HT-100to200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1/\\
+    LO samples                  &  40.99*1.23   & \footnotesize \it /DYJetsToLL\_M-50\_HT-200to400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  5.678*1.23   & \footnotesize \it /DYJetsToLL\_M-50\_HT-400to600\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v2\\
+                                &  2.198*1.23   & \footnotesize \it /DYJetsToLL\_M-50\_HT-600toInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \hline 
+    \footnotesize $Z \to ll $   &  6025.2       & \footnotesize \it /DYJetsToLL\_M-50\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    mass binned                 &  7.67*0.987   & \footnotesize \it /DYJetsToLL\_M-200to400\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    NLO samples                 &  0.423*0.987  & \footnotesize \it /DYJetsToLL\_M-400to500\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  0.24*0.987   & \footnotesize \it /DYJetsToLL\_M-500to700\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v3\\
+                                &  0.035*0.987  & \footnotesize \it /DYJetsToLL\_M-700to800\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  0.03*0.987   & \footnotesize \it /DYJetsToLL\_M-800to1000\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  0.016*0.987  & \footnotesize \it /DYJetsToLL\_M-1000to1500\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-Asympt25ns\_74X\_mcRun2\_asymptotic\_v2-v1\\
+    \hline 
+    \footnotesize $W + jets $   &  61526.7      &\scriptsize \it  /WJetsToLNu\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    HT binned                   &  1345*1.21    &\scriptsize \it  /WJetsToLNu\_HT-100To200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    LO samples                  &  359.7*1.21   &\scriptsize \it  /WJetsToLNu\_HT-200To400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  48.91*1.21   &\scriptsize \it  /WJetsToLNu\_HT-400To600\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  18.77*1.21   &\scriptsize \it  /WJetsToLNu\_HT-600ToInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \hline 
+    \footnotesize $t \overline{t}$  &   831.76      &\scriptsize \it  /TT\_TuneCUETP8M1\_13TeV-powheg-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2\_ext3-v1\\
+    \footnotesize single Top samples    &  35.6             &\scriptsize \it  /ST\_tW\_antitop\_5f\_inclusiveDecays\_13TeV-powheg-pythia8\_TuneCUETP8M1/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  35.6             &\scriptsize \it  /ST\_tW\_top\_5f\_inclusiveDecays\_13TeV-powheg-pythia8\_TuneCUETP8M1/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v2\\
+                                &  136.02*0.108*3   &\scriptsize \it  /ST\_t-channel\_top\_4f\_leptonDecays\_13TeV-powheg-pythia8\_TuneCUETP8M1/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+                                &  80.95*0.108*3   &\scriptsize \it  /ST\_t-channel\_antitop\_4f\_leptonDecays\_13TeV-powheg-pythia8\_TuneCUETP8M1/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \hline 
+    \footnotesize $VV $              &  11.95    &\scriptsize \it   /VVTo2L2Nu\_13TeV\_amcatnloFXFX\_madspin\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $ZZ \to 2l 2q $    &  3.22     &\scriptsize \it   /ZZTo2L2Q\_13TeV\_amcatnloFXFX\_madspin\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $ZZ \to 4l $       &  1.212    &\scriptsize \it   /ZZTo4L\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $WW \to l \nu 2q$  &  49.997   &\scriptsize \it  /WWTo1L1Nu2Q\_13TeV\_amcatnloFXFX\_madspin\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $WZ \to 2l 2q$     &  5.595    &\scriptsize \it  /WZTo2L2Q\_13TeV\_amcatnloFXFX\_madspin\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $WZ + jets$        &  5.26     &\scriptsize \it  /WZJets\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $WZ \to l 3\nu$    &  3.05     &\scriptsize \it  /WZTo1L3Nu\_13TeV\_amcatnloFXFX\_madspin\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \footnotesize $WZ \to l \nu 2q$  &  10.71    &\scriptsize \it  /WZTo1L1Nu2Q\_13TeV\_amcatnloFXFX\_madspin\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1\\
+    \hline 
+    \footnotesize $QCD$ samples &  720648000    &\scriptsize \it /QCD\_Pt20toInf\_MuEnrichedPt15\_TuneCUETP8M1\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+    \hline 
+    \footnotesize $Z' (500)$    &  9.33     &\scriptsize \it /ZprimeToTauTau\_M\_500\_TuneCUETP8M1\_tauola\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+    \footnotesize $Z' (1000)$   &  0.468    &\scriptsize \it /ZprimeToTauTau\_M\_1000\_TuneCUETP8M1\_tauola\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+    \footnotesize $Z' (1500)$   &  0.0723   &\scriptsize \it /ZprimeToTauTau\_M\_1500\_TuneCUETP8M1\_tauola\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+    \footnotesize $Z' (2000)$   &  0.0173   &\scriptsize \it /ZprimeToTauTau\_M\_2000\_TuneCUETP8M1\_tauola\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+    \footnotesize $Z' (2500)$   &  0.00554  &\scriptsize \it /ZprimeToTauTau\_M\_2500\_TuneCUETP8M1\_tauola\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+    \footnotesize $Z' (3000)$   &  0.00129  &\scriptsize \it /ZprimeToTauTau\_M\_3000\_TuneCUETP8M1\_tauola\_13TeV\_pythia8/RunIISpring15MiniAODv2-74X\_mcRun2\_asymptotic\_v2-v1 \\
+
+  \hline 
+  \hline 
+  \end{tabular}
+  }
+  }
+  \label{tab:mc_samples}
+\end{table}
+
+Because the MC simulated samples contain a pileup (PU) distribution that does not match that of data, 
+the MC needs to be properly weighted to fit the PU distribution observed in data. The reweighting 
+of MC events is performed by determining the probabilities to obtain $n$ interactions in data 
+($P_{data}(n)$) and MC ($P_{MC}(n)$) and using the event weights
+
+\begin{equation}
+   w_{PU}(n) = \frac{P_{data}(n)}{P_{MC}(n)}
+\label{eq:PUweight}
+\end{equation}
+
+to reweigh MC events based on the number of interactions. 
+%In section~\ref{ss:puvalidation}, our understanding of PU and the performance of the PU reweighing method is validated.
+The recommended minbias cross-section of 69 $mb$ is used to determine these weights.

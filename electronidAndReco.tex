@@ -1,0 +1,56 @@
+\subsection{Electron Reconstruction and Identification}\label{eID}
+%\textbf{Responsible: E. Laird, Z. Mao}
+
+Electrons are reconstructed using information from the  tracker and Ecal detectors. Electrons
+passing through the  silicon tracker material lose energy due to Bremsstrahlung  radiation. The
+energy of the radiated photons is spread  over several crystals of the Ecal detector along the 
+electron trajectory, mostly in the $\phi$ direction  (the magnetic field is in the z direction).
+Two algorithms  based on energy clustering, ``Hybrid'' for the barrel and  ``Island'' for the
+endcaps, are used to measure the energy  of electrons and photons \cite{eRecoCMS}.
+
+Electron tracks are reconstructed by matching trajectories  in the silicon strip tracker to seed
+hits in the pixel  detector. A pixel seed is composed of two pixel hits  compatible with the beam
+spot. A Gaussian Sum Filter (GSF)  is used for the reconstruction of trajectories in the  silicon
+strips. In order to minimize the many possible  trajectories due to different combinations of hits,
+the  track that best matches an energy supercluster in the Ecal  is chosen to be the reconstructed
+track.
+
+The preselection of primary electron candidates requires  good geometrical matching and good
+agreement between the  momentum of the track and the energy of the ECAL  supercluster. Two
+quantities used to estimate the geometrical matching are $\Delta \eta_{in} = \eta_{sc}
+-\eta^{Track}_{vertex}$ and  $\Delta \phi_{in} = \phi_{sc} -\phi^{Track}_{vertex}$. The $\eta_{sc}$
+and $\phi_{sc}$ coordinates correspond to  the supercluster position and are measured using an
+energy weighted algorithm. The $\eta^{Track}_{vertex}$ and  $\phi^{Track}_{vertex}$ coordinates are
+the position of the track at the interaction vertex extrapolated,  as a perfect helix, to the Ecal
+detector. The good energy-momentum matching is measured by taking the ratio  between the corrected
+energy $E_{corr}$ in the Ecal  supercluster and the momentum of the track $P_{in}$  measured in the
+inner layers of the tracker.
+
+Electron selections have two main components, electron  identification (eID) and electron isolation. 
+In this analysis we use the non-triggering MVA electron identification. 
+The MVA cuts used to define the 80\% and 90\% signal efficiency working points are summarized in Table~\ref{eIDtable}. 
+%Note that detector based isolation, instead of PF based isolation, is used in the single electron trigger paths we are using in this analysis.
+%In addition, electrons which arise from photon conversions are removed  by requiring that the track associated with the electron to have hits in the inner layers 
+%of the pixel detector. 
+In all channels, the identification and isolation used follows the POG recommended criteria. 
+The exact discriminator names and working points for each channel are listed and described in their respective sections.
+%The electron trigger/identification efficiencies and scale factors used in these analyses have been taken from:
+%``https://twiki.cern.ch/twiki/bin/view/Main/EGammaScaleFactors2012\#2012\_8\_TeV\_Jan22\_Re\_recoed\_data"
+
+\begin{table}[ht]
+\begin{center}
+ \caption{Electron ID Selections.\label{eIDtable}}
+ \begin{tabular}{| l | c | c | c |}
+ \hline\hline
+       Category                              & MVA$_{\textrm{min cut}}$ (80\% signal eff)	& MVA$_{\textrm{min cut}}$ (90\% signal eff)  \\[0.5ex] \hline
+       Barrel ($\eta < 0.8$) $p_{T}$ 5--10           	& 0.287435 & -0.083313             	\\
+       Barrel ($\eta > 0.8$) $p_{T}$ 5--10           	& 0.221846 & -0.235222             	\\
+       Endcap $p_{T}$ 5--10           			& -0.303263 & -0.67099             	\\
+       Barrel ($\eta < 0.8$) $p_{T}>10$            	& 0.967083 & 0.913286             	\\
+       Barrel ($\eta > 0.8$) $p_{T}>10$            	& 0.929117 & 0.805013             	\\
+       Endcap $p_{T}>10$          		  	& 0.726311 & 0.358969             	\\
+ \hline
+ \hline
+ \end{tabular}
+\end{center}
+\end{table}
