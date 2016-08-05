@@ -22,17 +22,12 @@
 \advisor{Prof.}				%  #1 {title}
 	{John P. Cumalat}			%  #2 {name}
 
-\reader{Prof.~Rachel Goddard}		%  2nd person to sign thesis
-\readerThree{Ms.~Thora Nea}		%  3rd person to sign thesis
+\reader{Prof.~Kevin Stenson}		%  2nd person to sign thesis
+\readerThree{Prof.~Steven Wagner}		%  3rd person to sign thesis
 
 \abstract{  \OnePageChapter	% because it is very short
 
-	Often the abstract will be long enough to require
-	more than one page, in which case the macro
-	``$\backslash$OnePageChapter'' should {\it not}
-	be used.
-
-	But this one isn't, so it should.
+Two searches for heavy neutral resonances, $Z\prime$s, decaying to back-to-back tau pairs are carried out using the Compact Muon Solenoid experiment at the Large Hadron Collider. The first, carried out during the 2012 data-taking run at $\sqrt{s} = 8$ TeV, focuses on the fully-leptonic channel, in which one tau decays to an electron and the other to a muon. The second, carried out during the 2015 run at $\sqrt{s} = 13$ TeV, focuses on the fully-hadronic channel, in which each tau decays to a hadronic jet. Each search employs a hybrid of background estimation strategies using both Monte Carlo simulation and data-driven methods. In both searches, observed data is found to be in agreement with Standard Model expectation and no excesses are observed. Limits are placed on the $Z\prime$, culminating in a world-record limit of 2.2 TeV at $95\%$ confidence level.
 	}
 
 \dedication[Dedication]{	% NEVER use \OnePageChapter here.
@@ -62,8 +57,26 @@
 \begin{document}
 
 \input macros.tex
-\input chapter1.tex
-\input chapter2.tex
+\input zprimeDefinitions.tex
+\input Introduction.tex
+\input CMS.tex
+\input theory.tex
+\input strategy.tex
+\input triggers.tex
+\input samples.tex
+\input recoObjectAndID.tex
+\input electronidAndReco.tex
+\input muonidAndreco.tex
+\input tauidAndreco.tex
+\input jetreco.tex
+\input metreco.tex
+\input muTau.tex
+\input diTau.tex
+\input diTauHad_ZtautauCR.tex
+\input eTau.tex
+\input eMu.tex
+\input Systematics.tex
+\input Results.tex
 
 %%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
 \bibliographystyle{plain}	% or "siam", or "alpha", etc.
@@ -72,8 +85,8 @@
 
 %%%%%%%%%   then the Appendices, if any   %%%%%%%%%
 \appendix
-\input appendixA.tex
-\input appendixB.tex
+%\input appendixA.tex
+%\input appendixB.tex
 
 
 \end{document}

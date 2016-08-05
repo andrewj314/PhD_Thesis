@@ -1,0 +1,67 @@
+\chapter{The Compact Muon Solenoid (CMS) Experiment}
+\label{mathchapter}
+
+The CMS Experiment is a multipurpose particle detector located on the LHC ring underneath the Franco-Swiss border at CERN in Geneva, Switzerland. The experiment is located 100 meters underground in Cessy, France. CMS is 28.7 meters long, 15.0 meters in diameter, and weighs approximately 14,000 tonnes. It's arranged in a cylindrical, multi-layered structure consisting of a "barrel" and two endcaps, with the LHC beam passing through the vertical axis of the cylinder. CMS consists of several subdetectors, each designed to measure a different class or property of particle. From the beam line outward, the layers of CMS are the tracker, the electromagnetic calorimeter (ECAL), the hadronic calorimeter (HCAL), the superconducting solenoid, and the muon system (interspersed with the iron return yoke). 
+
+The experiment uses a right-handed coordinate system: the origin is set at the $pp$ collision point, with the $x$-axis pointing towards the center of the LHC ring, the $y$-axis pointing straight up, and the $z$-axis pointing along the beam line in the counter-clockwise direction. CMS also uses a pseudo-polar coordinate system, with $\theta$ defined as the polar angle from the beam axis, and $\eta$ as the "pseudorapidity", itself defined as 
+
+\begin{equation}
+$$
+$ \eta = -ln\left[tan\left(\theta/2\right)\right] $
+ $$
+ \end{equation}
+
+
+
+\section{The silicon tracker}
+
+The silicon tracker is the innermost detector element in CMS, and is designed to offer the highest resolution measurement of charged particle trajectories (such trajectories are referred to as "tracks"). The tracker is composed of approximately 200m$^2$ of silicon, and includes arrays of silicon pixels in the inner layer and arrays of silicon strips in the outer layer. The silicon elements are arranged in the densest configuration near to the interaction vertex ($ r\approxeq 10$cm), with pixel size $\approxeq 100$ x $150 \mu$m$^2$. As one moves away from the interaction vertex, the solid angle becomes large enough that the particle flux drops off to a degree that larger silicon elements may be used (silicon strips measuring 10cm x 80$\mu$m at $20$cm$ \lt r \lt 55$cm, silicon strips measuring 25cm x 180$\mu$m for $r \gt 55$cm. The total number of silicon elements is 66 million pixels and 9.6 million strips. The tracker is divided into a barrel segment and two forward endcaps. The endcaps contain two pixel and nine strip layers each, and the barrel segment is separated into an inner and outer barrel. A schematic of the tracker layout can be seen in Figure ~fig(TrackerLayout). Particle tracks are reconstructed from hits in the individual silicon pixels/strips, the track being interpolated between hits.
+
+\subsection{The pixel detector}
+
+The pixel detector, shown in Figure ~fig(PixelLayout), consists of three barrel layers and two endcap layers. The barrel has a length of 53 cm, and the endcap disks range from 6 cm to 15 cm in radius. The pixel modules are arranged in a ladder-like configuration in the barrel, with 768 total modules comprising the barrel. The endcap disks are arranged in a turbine-like fashion, with 24 "blades" per disk, and 7 pixel modules per blade for a total of 672 pixel modules in the endcaps.
+Each pixel consists of a readout chip (ROC), which are bump bonded to the modules. In total, the pixel detector includes about 16,000 ROCs.
+
+\subsection{The strip tracker}
+
+The strip tracker is divided into a barrel segment and two endcap segments. The barrel segment is itself divided into a Tracker Inner Barrel (TIB) section and a Tracker Outer Barrel (TOB) section. The TIB includes four layers of silicon strips each 320$\mu$m thick and ranging in pitch from 80$\mu$m and 120 $\mu$m. In the TOB, the lower rate of particle flux allows for larger strips (each 500$\mu$m thick and ranging in pitch from 120$\mu$m to 180$\mu$m).
+
+The endcaps are each comprised of a Tracker Endcap (TEC) and Tracker Inner Disks (TIDs). The TIDs are designed to fill the region between the TEC and the TIB. The TECs each contain nine disks, and each TID contains three disks. On each disk, the modules (for both TID and TEC) are arranged in rings centered on the beam line. The TID strips (and three innermost ring strips of the TEC) have thickness 320$\mu$m, while the rest of the TEC strips have thickness 500$\mu$m. In total the strip tracker contains about 15,400 strip modules.  
+
+
+
+\section{The electromagnetic calorimeter}
+
+The next layer outward from the silicon tracker is the electromagnetic calorimeter (ECAL), which is designed primarily to measure energies of photons and electrons. The ECAL consists of an array of about 75,000 lead tungstate (PbWO$_4$) crystals, and has a barrel (BE) segment as well as two endcap (EE) segments. The BE segment has 61,200 crystals, while each EE segment contains 7,324 crystals.
+
+PbWO$_4$ was chosen for the ECAL due to its short radiation length ($X_0 = 0.89$ cm), fast response time ($80\%$ of light emitted within 25ns), and radiation hardness (up to 10 Mrad).
+
+The barrel (EB) crystals present an apparent cross-section (when viewed from the interaction vertex) of $\approxeq 22$x$22$ mm$^2$, and are 230 mm (25.8 radiation lengths) thick. The barrel has an inner radius of 129 cm, and covers the pseudorapidity range $0 \lt |\eta| \lt 1.479$.
+
+The endcap (EE) crystals are each arranged in two D-shaped semicircular aluminum plates. From these plates are cantilevered "supercrystal" structures consisting of 5x5 crystal blocks. Each crystal presents an apparent cross-section of $\approxeq 28.6$x$28.6$ mm$^2$, and are 220 mm (24.7 radiation lengths) thick, and the endcap crystals cover the pseudorapidity range $1.479 \lt |\eta| \lt 3.0$.
+
+A diagram of the ECAL layout can be seen in Figure ~fig(ECAL_layout).
+
+
+
+\section{The hadronic calorimeter}
+
+Surrounding the ECAL is the hadronic calorimeter (HCAL). The primary function of the HCAL is to measure the energies of hadrons (particles made of quarks and gluons). Located just inside the solenoid magnet, the HCAL is primarily composed of brass panels made from melted-down artillery shells. Interspersed with the brass panels are plastic scintillation panels, in which are embedded wavelength-shifting (WLS) fibers, which carry the signal to clear fibers outside the scintillators for readout. As hadrons enter the HCAL, they produce secondary particles in the brass which in turn create further particles. These hadron "showers" then interact with the plastic scintillators, where the fibers carry the signal to hybrid photodiodes so the signal can be measured.
+
+HCAL is divided into barrel (HB) and endcap (HE) portions. Due to limited space between the ECAL and solenoid, the HCAL also includes material outside the solenoid: the outer HCAL (HO) lining the solenoid, and the forward calorimeter (HF) outside the muon endcap system. These additions increase the total radiation lengths covered by the HCAL to 10.
+
+While HB and HE use the brass-plastic configuration, HO uses the solenoid itself instead of the brass, although the same plastic scintillators are used. The HF uses steel in place of brass, and quartz fibers in place of plastic scintillators. This is done to preferentially select neutral components of hadron showers, which are shorter and narrower and are thus well suited for the forward environment, which tends to be quite congested with particles.
+
+A diagram of the HCAL layout is shown in Figure ~fig(HCAL_layout).
+
+
+\section{The CMS magnet}
+
+
+
+\section{The muon system}
+
+
+
+\section{Computing at CMS}
+
