@@ -169,5 +169,42 @@ In order to determine whether or not an event passes a given path, the entire ev
 
 
 
-\section{Computing at CMS}
+\section{Particle Reconstruction}
+
+Even after a given event has passed the L1 trigger and HLT requirements, its constituent particles only exist as hit patterns in the various subdetectors of CMS. In order for any kind of meaningful physics analysis to be performed, these hit patterns must be turned into physics objects which are more easily-read by the CMS software framework (CMSSW). Broadly, the six principle objects that are "reconstructed" from raw detector data in this manner are: electrons, muons, taus, photons, jets, and missing energy ($\MET$). The chief set of software tools used to reconstruct physics objects is a group of algorithms collectively referred to as Particle Flow (PF).
+
+\subsection{Particle Flow}
+
+Particle Flow (PF) is the term used to refer to the general set of algorithms used to reconstruct physics objects (particles) out of raw detector data. The fundamental inputs to the PF algorithms are the charged particle tracks (from the silicon tracker), hits in the calorimetry towers (from ECAL and HCAL), and hits in the muon system. These fundamental inputs are then grouped into ``blocks" which the PF algorithm translates into physics objects. Muons are identified by matching a track in the tracker with a hit in the muon system, charged hadrons are identified by matching a track in the tracker with a hit in HCAL, and electrons are identified by matching a track in the tracker with a hit in ECAL. Photons and neutral hadrons leave no tracks, so they are identified as hits in ECAL and HCAL, respectively, with no matching tracks. As tracks are matched with calorimetry towers and muon hits, those hits are removed from consideration and whichever tower hits are leftover are assumed to be from photons or neutral hadrons. Once all the visible particles are reconstructed, conservation of momentum principles are applied to infer the missing energy, or $\MET$.
+
+The following subsections will detail the methods used to reconstruct each class of particle, and a final subsection will detail the means by which the event data produced by Particle Flow is packaged into formats useful for analysis efforts.
+
+\subsubsection{Track reconstruction and vertexing}
+
+The goal of the silicon tracker is to reconstruct tracks indicating the trajectories of charged particles through the magnetic field, and furthermore to use these trajectories to ``trace back" the origin of the particle, known as the vertex. The first vertex in each event, that corresponding to the $pp$ collision, is known as the primary vertex (PV). The presence of multiple proton-proton collisions in each bunch crossing, a phenomenon known as pileup, presents the possibility of misidentifying the correct PV for a given event. Therefore, there is a need for a vertexing and tracking algorithms exhibiting a high degree of granularity.
+
+To ensure this, tracks with the highest number of hits in the pixel and strip subsystems within the silicon tracker are recorded (and reconstructed) first. Tracks with three hits, high $p_{T}$, and close proximity to the beam spot are considered to be high quality. These tracks are reconstructed first, and their hits removed. For the remaining, lesser-quality tracks, looser criteria are applied iteratively until all tracker hits have been accounted for.
+
+In order to determine the location of the PV, the reconstructed tracks are clustered together and the location is extrapolated by requiring that each track cluster share a plane compatible with the beam line. This is done online as well as offline so that the PV information can be relayed to the HLT for use in the triggering process. The reconstruction algorithm   uses only information from the pixel subdetector for the online reconstruction, while the offline reconstruction uses information from the entire tracker.
+
+\subsubsection{Electron reconstruction}
+
+Electrons are reconstructed via the combination of a track in the silicon tracker and hits in the ECAL towers. These tower hits are called ``superclusters" and their size in $\eta$ and $\phi$ is dictated by various clustering algorithms selected according to the relevant HLT path. As the electron interacts with the silicon in the tracker, it radiates photons via Bremsstrahlung. This emission causes the electron to bend further in the magnetic field. To account for this, the supercluster size is tuned to catch these Bremsstrahlung photons as well, thereby capturing the total energy of the electron before bending and leading to a more accurate calculation of the electron's energy and momentum. 
+
+To fully reconstruct an electron track, one starts with a track \emph{seed}, which is a possible electron trajectory found by interpolating between layer hits in the pixel and strip detectors. These track seeds must be cleaned and filtered in order to find the most likely track candidate, and then they must be matched with a supercluster in ECAL. There are two methods to achieve this. The first, ECAL driven seeding, begins by reconstructing superclusters in ECAL and attempts to match them with track seeds in the innermost layer of the pixel detector. The track is then reconstructed from these track seeds. The second, tracker driven seeding, begins with a high-quality track seed and attempts to match it to an appropriate supercluster in ECAL, while also taking into account other clusters arising from Bremsstrahlung photons. This is achieved by drawing straight lines tangent to the track towards the ECAL. If a corresponding cluster is found, it is added to the total energy of the electron.
+
+\subsubsection{Muon reconstruction}
+
+
+\subsubsection{Photon and neutral hadron reconstruction}
+
+Since photons and neutral hadrons are chargeless, and therefore leave no hits in the silicon tracker, the entirety of their reconstruction takes place in ECAL (photons) and HCAL (hadrons). The identification of photons and neutral hadrons takes place via so-called \emph{clustering algorithms} which are designed to separate photons from neutral as well as charged hadrons, and to differentiate photons originating from the primary or secondary decays from those generated by electrons undergoing Bremsstrahlung within ECAL.
+
+Clustering algorithms involve three steps. First, a seed cluster is identified in one of the ECAL towers as a tower with a local energy maximum passing a threshold specified by the algorithm. Next, topological clusters are defined as clusters adjacent to (sharing at least one side in common with) the seed cluster and with cell energies passing another threshold. These thresholds are generally set to be two standard deviations above the base electronics noise level in each of the separate ECAL segments (80MeV in the barrel and 300MeV in the endcaps). Finally, topological clusters then generate as many ``particle flow" clusters as there are seed clusters, and the energy in each particle flow cluster is allocated according to its distance from the seed. 
+
+Furthermore, in particle flow, ECAL/HCAL clusters are required \emph{not} to match any tracks in the tracker in order to qualify as photon or neutral hadron candidates.
+
+
+
+
 
