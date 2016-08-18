@@ -2,18 +2,18 @@
 
 %We are using the triggers in Table~\ref{triggertable} for the analysis with 19.4 fb$^{-1}$ of data. 
 
-For the \tlth final states, we use single lepton triggers instead of
+For the semileptonic final states, we use single lepton triggers instead of
 $l\times\tau_{h}$ cross-triggers to maintain a similar strategy across
 channels and also allow us to use the $\tau_{h}$ isolation sidebands
-as control and validation samples. For the \tetm final state, any
+as control and validation samples. For the \emu final state, any
 trigger with iso-muon requirement, either a e-$\mu$ cross-trigger or
 single-muon trigger, would eliminate the isolation sideband for QCD
 estimation. Hence, we use the same single-electron trigger as for the
-\teth final state. Trigger paths are summarized in
+\etau final state. Trigger paths are summarized in
 Table~\ref{tab:triggernames}. Note this constrains the object ID and
 phase space that we are studying. For example, the use of these
 triggers requires $p_{T}$ cuts of 30 GeV, 35 GeV, and 60 GeV for our
-leading light leptons and $\tau_{h}$'s in the \tmth, \teth, and \thth
+leading light leptons and $\tau_{h}$'s in the \mutau, \etau, and \ditauh
 channels, respectively.
 
 
@@ -26,13 +26,13 @@ channels, respectively.
   \begin{tabular}{| l | c |}
   \hline
        Channel                & Trigger Path                                   \\[0.5ex] \hline
-       \thth (data RunC, sim) & HLT\_DoubleMediumIsoPFTau40\_Trk1\_eta2p1\_Reg \\
-       \thth (data RunD)      & HLT\_DoubleMediumIsoPFTau35\_Trk1\_eta2p1\_Reg \\ \hline
-       \tmth (data RunC)      & HLT\_IsoMu24\_eta2p1                           \\
-       \tmth (data RunD)      & HLT\_IsoMu18                                   \\
-       \tmth (sim)            & HLT\_IsoMu17 (L1~$\mu\ \pt > 18\gev$)          \\ \hline
-       \teth, \tetm (data)    & HLT\_Ele27\_eta2p1\_WPLoose                    \\
-       \teth, \tetm (sim)     & HLT\_Ele27\_eta2p1\_WP75                       \\
+       \ditauh (data RunC, sim) & HLT\_DoubleMediumIsoPFTau40\_Trk1\_eta2p1\_Reg \\
+       \ditauh (data RunD)      & HLT\_DoubleMediumIsoPFTau35\_Trk1\_eta2p1\_Reg \\ \hline
+       \mutau (data RunC)      & HLT\_IsoMu24\_eta2p1                           \\
+       \mutau (data RunD)      & HLT\_IsoMu18                                   \\
+       \mutau (sim)            & HLT\_IsoMu17 (L1~$\mu p_{T} > 18$ GeV)          \\ \hline
+       \etau, \emu (data)    & HLT\_Ele27\_eta2p1\_WPLoose                    \\
+       \etau, \emu (sim)     & HLT\_Ele27\_eta2p1\_WP75                       \\
   \hline
   \end{tabular}
 \end{center}
@@ -46,7 +46,7 @@ requirements:
 
 For electrons:
 \begin{itemize}
-  \item $p_T > 13~\gev$, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
+  \item $p_T > 13$ GeV, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
   \item passing electron ID (we performed different measurements for "MVANonTrigWP80", "HEEP", "MVATrigWP80")
   \item no matched conversions
   \item number of missing hits = 0
@@ -54,13 +54,13 @@ For electrons:
 
 For muons:
 \begin{itemize}
-  \item $p_T > 20~\gev$, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
+  \item $p_T > 20$ GeV, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
   \item passing "Medium" muon ID
 \end{itemize}
 
 For the pair:
 \begin{itemize}
-  \item $\Delta$R(\tetm) $>$ 0.3
+  \item $\Delta$R(\emu) $>$ 0.3
   \item choose the most isolated pair
   \item choose the opposite sign pair
   \item 3rd lepton veto
@@ -70,15 +70,15 @@ For the pair:
 To measure the single-electron trigger efficiency, after the
 preselection mentioned above, we select (tag) events with a
 single-muon trigger (HLT\_IsoMu18 for data and HLT\_IsoMu17\_eta2p1
-for MC with L1 $\mu~p_{T} > 18~\gev$) with the offline muon matching
+for MC with L1 $\mu~p_{T} > 18$ GeV) with the offline muon matching
 the HLT muon that fired the trigger.  Then, the trigger efficiency is
 defined at the fraction of events which also pass (probe) the
 single-electron trigger (HLT\_Ele27\_eta2p1\_WPLoose for data and
 HLT\_Ele27\_eta2p1\_WP75 for MC).
 
 The efficiency curves of the single-electron triggers, measured
-vs. electron \pt, are shown in Figure~\ref{fig:eturnon}. A
-$p_{T}>35$~\gev cut is motivated to avoid the turn-on region. As shown
+vs. electron $p_{T}$, are shown in Figure~\ref{fig:eturnon}. A
+$p_{T}>35$ GeV cut is motivated to avoid the turn-on region. As shown
 in Figure~\ref{fig:eturnon2}, the efficiency curves were further
 binned into two $p_T$ bins containing similar numbers of events.  A
 weight of 0.94 is measured, and used in the analysis, as the ratio
@@ -91,7 +91,7 @@ is in the endcap region.
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy/eleTrigTurnOnCurve_ePt_em_MVANonTrig80_endcap} \\
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy/eleTrigTurnOnCurve_ePt_em_MVATrigWP80_barrel}
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy/eleTrigTurnOnCurve_ePt_em_MVATrigWP80_endcap}
-  \caption{\label{fig:eturnon} The efficiency vs. \pt curves of the
+  \caption{\label{fig:eturnon} The efficiency vs. $p_{T}$ curves of the
     single-electron triggers used.  Left column: barrel.  Right
     column: endcap.  The offline electron ID requirements used are
     HEEP (top row), MVANonTrig80 (middle row), MVATrigWP80 (bottom
@@ -104,12 +104,12 @@ is in the endcap region.
   \includegraphics[width=0.4\textwidth]{figures/et-em/triggerStudy_2bins/eleTrigTurnOnCurve_ePt_em_MVANonTrig80_endcap_2bins} \\
   \includegraphics[width=0.4\textwidth]{figures/et-em/triggerStudy_2bins/eleTrigTurnOnCurve_ePt_em_MVATrigWP80_barrel_2bins}
   \includegraphics[width=0.4\textwidth]{figures/et-em/triggerStudy_2bins/eleTrigTurnOnCurve_ePt_em_MVATrigWP80_endcap_2bins}
-  \caption{\label{fig:eturnon2} The efficiency vs. \pt curves of the
+  \caption{\label{fig:eturnon2} The efficiency vs. $p_{T}$ curves of the
     single-electron triggers used.  Left column: barrel.  Right
     column: endcap.  The offline electron ID requirements used are
     HEEP (top row), MVANonTrig80 (middle row), MVATrigWP80 (bottom
     row).  The two bins each contain half of the events with
-    $\pt>35$~\gev.}
+    $p_{T}>35$ GeV.}
 \end{figure}
 
 \subsection{Single Muon Trigger Efficiency}\label{sec:muTrigger}
@@ -122,7 +122,7 @@ which also pass (probe) the single-muon trigger
 (HLT\_IsoMu18 for data and HLT\_IsoMu17\_eta2p1 for MC with L1 $\mu~p_T > $ 18 GeV).
 
 The efficiency curves of the single-muon triggers, measured vs. muon
-\pt, are shown in Figure~\ref{fig:muturnon}. A $\pt>25$~\gev cut is
+$p_{T}$, are shown in Figure~\ref{fig:muturnon}. A $p_{T} > 25$ GeV cut is
 motivated to avoid the turn-on region. As shown in lower two plots,
 the efficiency curves were further binned into two bins containing
 similar numbers of events.  Weights of 0.991 and 0.986 are measured,
@@ -133,10 +133,10 @@ events in which the selected muon $|\eta| \leq 1.2$ and $|\eta|>1.2$.
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy/muonTrigTurnOnCurve_mPt_em_MVANonTrig80_mu_endcap} \\
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy_2bins/muonTrigTurnOnCurve_mPt_em_MVANonTrig80_mu_barrel_2bins}
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy_2bins/muonTrigTurnOnCurve_mPt_em_MVANonTrig80_mu_endcap_2bins} \\
-  \caption{\label{fig:muturnon} The efficiency vs. \pt curves of the
+  \caption{\label{fig:muturnon} The efficiency vs. $p_{T}$ curves of the
     single-muon triggers used.  Left column: $|\eta|<1.2$.  Right
     column: $|\eta|>1.2$.  Bottom row: the two bins each contain half
-    of the events with $\pt>25$~\gev.}
+    of the events with $p_{T} > 25$ GeV.}
 \end{figure}
 
 \subsection{Di-Tau Trigger Efficiency}\label{sec:tauTrigger}
@@ -168,11 +168,10 @@ are summarized below:
   \item 0 jets tagged as b-jets
   \item 0 tagged electrons
   \item veto events with a second muon forming opposite-sign dimuon pair
-\end{itemize}\\\\
+\end{itemize}
 
 The numerator is defined by additionally requiring those events to 
-pass the \\ 
-HLT{\_}IsoMu17{\_}etap2p1{\_}MediumIsoPFTau40* trigger. 
+pass the HLT{\_}IsoMu17{\_}etap2p1{\_}MediumIsoPFTau40* trigger. 
 The efficiency is measured for each $\tau_{h}$ leg individually and
 parametrized as function of $p_{T}$ (Figure~\ref{fig:trigger}). From the 
 plot it is clear that the emulation of the trigger in simulation does not 
@@ -189,8 +188,8 @@ the plateau is approximately 90\%.
 
 \begin{figure}[tbh!]
   \centering
-    \includegraphics[width=0.4\textwidth]{TriggerEff_Signal.pdf}
-    \includegraphics[width=0.5\textwidth]{CrystalBall.pdf}
+    \includegraphics[width=0.4\textwidth]{figures/TriggerEff_Signal.pdf}
+    \includegraphics[width=0.5\textwidth]{figures/CrystalBall.pdf}
   \caption{The per-leg $\tau_{h}$ trigger efficiency as a function of p$_{T}(\tau_{h})$ for (a) simulated Z$^{\prime}$ signal sample on left (b) for data and all backgrounds obtained by requiring mu-tau region on right.}
   \label{fig:trigger}
 \end{figure}

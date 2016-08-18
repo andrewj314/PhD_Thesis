@@ -1,5 +1,4 @@
 \chapter{The Compact Muon Solenoid (CMS) Experiment}
-\label{mathchapter}
 
 The CMS Experiment is a multipurpose particle detector located on the LHC ring underneath the Franco-Swiss border at CERN in Geneva, Switzerland. An overview of the experiments on the LHC ring can be seen in Figure~\ref{fig:LHCRing}. The experiment is located 100 meters underground in Cessy, France. CMS is 28.7 meters long, 15.0 meters in diameter, and weighs approximately 14,000 tonnes. It's arranged in a cylindrical, multi-layered structure consisting of a "barrel" and two endcaps, with the LHC beam passing through the vertical axis of the cylinder. CMS consists of several subdetectors, each designed to measure a different class or property of particle. From the beam line outward, the layers of CMS are the tracker, the electromagnetic calorimeter (ECAL), the hadronic calorimeter (HCAL), the superconducting solenoid, and the muon system (interspersed with the steel return yoke). A photograph of CMS can be seen in Figure~\ref{fig:CMSphoto}.
 
@@ -32,7 +31,7 @@ A diagram highlighting the layout of CMS can be seen in Figure~\ref{fig:CMSdiagr
 
 \section{The silicon tracker}
 
-The silicon tracker is the innermost detector element in CMS, and is designed to offer the highest resolution measurement of charged particle trajectories (such trajectories are referred to as "tracks"). The tracker is composed of approximately 200m$^2$ of silicon, and includes arrays of silicon pixels in the inner layer and arrays of silicon strips in the outer layer. The silicon elements are arranged in the densest configuration near to the interaction vertex ($ r\approxeq 10$cm), with pixel size $\approxeq 100$ x $150 \mu$m$^2$. As one moves away from the interaction vertex, the solid angle becomes large enough that the particle flux drops off to a degree that larger silicon elements may be used (silicon strips measuring 10cm x 80$\mu$m at $20$cm$ \lt r \lt 55$cm, silicon strips measuring 25cm x 180$\mu$m for $r \gt 55$cm. The total number of silicon elements is 66 million pixels and 9.6 million strips. The tracker is divided into a barrel segment and two forward endcaps. The endcaps contain two pixel and nine strip layers each, and the barrel segment is separated into an inner and outer barrel. A schematic of the tracker layout can be seen in Figure~\ref{fig:TrackerLayout}. Particle tracks are reconstructed from hits in the individual silicon pixels/strips, the track being interpolated between hits.
+The silicon tracker is the innermost detector element in CMS, and is designed to offer the highest resolution measurement of charged particle trajectories (such trajectories are referred to as ``tracks"). The tracker is composed of approximately 200m$^{2}$ of silicon, and includes arrays of silicon pixels in the inner layer and arrays of silicon strips in the outer layer. The silicon elements are arranged in the densest configuration near to the interaction vertex ($ r\approx 10$cm), with pixel size $\approx 100$ x $150 \mu$m$^{2}$. As one moves away from the interaction vertex, the solid angle becomes large enough that the particle flux drops off to a degree that larger silicon elements may be used (silicon strips measuring 10cm x 80$\mu$m at $20$cm$ < r < 55$cm, silicon strips measuring 25cm x 180$\mu$m for $r > 55$cm. The total number of silicon elements is 66 million pixels and 9.6 million strips. The tracker is divided into a barrel segment and two forward endcaps. The endcaps contain two pixel and nine strip layers each, and the barrel segment is separated into an inner and outer barrel. A schematic of the tracker layout can be seen in Figure~\ref{fig:TrackerLayout}. Particle tracks are reconstructed from hits in the individual silicon pixels/strips, the track being interpolated between hits.
 
 \begin{figure}\centering
   \includegraphics[width=0.4\textwidth]{figures/TrackerLayout.png}
@@ -64,9 +63,9 @@ The next layer outward from the silicon tracker is the electromagnetic calorimet
 
 PbWO$_4$ was chosen for the ECAL due to its short radiation length ($X_0 = 0.89$ cm), fast response time ($80\%$ of light emitted within 25ns), and radiation hardness (up to 10 Mrad).
 
-The barrel (EB) crystals present an apparent cross-section (when viewed from the interaction vertex) of $\approxeq 22$x$22$ mm$^2$, and are 230 mm (25.8 radiation lengths) thick. The barrel has an inner radius of 129 cm, and covers the pseudorapidity range $0 \lt |\eta| \lt 1.479$.
+The barrel (EB) crystals present an apparent cross-section (when viewed from the interaction vertex) of $\approx 22$x$22$ mm$^2$, and are 230 mm (25.8 radiation lengths) thick. The barrel has an inner radius of 129 cm, and covers the pseudorapidity range $0 < |\eta| < 1.479$.
 
-The endcap (EE) crystals are each arranged in two D-shaped semicircular aluminum plates. From these plates are cantilevered "supercrystal" structures consisting of 5x5 crystal blocks. Each crystal presents an apparent cross-section of $\approxeq 28.6$x$28.6$ mm$^2$, and are 220 mm (24.7 radiation lengths) thick, and the endcap crystals cover the pseudorapidity range $1.479 \lt |\eta| \lt 3.0$.
+The endcap (EE) crystals are each arranged in two D-shaped semicircular aluminum plates. From these plates are cantilevered "supercrystal" structures consisting of 5x5 crystal blocks. Each crystal presents an apparent cross-section of $\approx 28.6$x$28.6$ mm$^2$, and are 220 mm (24.7 radiation lengths) thick, and the endcap crystals cover the pseudorapidity range $1.479 < |\eta| < 3.0$.
 
 A diagram of the ECAL layout can be seen in Figure~\ref{fig:ECAL_layout}.
 
@@ -84,7 +83,7 @@ HCAL is divided into barrel (HB) and endcap (HE) portions. Due to limited space 
 
 While HB and HE use the brass-plastic configuration, HO uses the solenoid itself instead of the brass, although the same plastic scintillators are used. The HF uses steel in place of brass, and quartz fibers in place of plastic scintillators. This is done to preferentially select neutral components of hadron showers, which are shorter and narrower and are thus well suited for the forward environment, which tends to be quite congested with particles.
 
-A diagram of the HCAL layout is shown in Figure ~fig(HCAL_layout).
+A diagram of the HCAL layout is shown in Figure~\ref{fig:HCAL_layout}.
 
 \begin{figure}\centering
   \includegraphics[width=0.4\textwidth]{figures/HCAL_layout.png}
@@ -93,7 +92,7 @@ A diagram of the HCAL layout is shown in Figure ~fig(HCAL_layout).
 
 \section{The CMS magnet}
 
-The need to measure high $p_{T}$ muons has driven the requirements on the CMS magnetic field strength. With the goal to accurately determine both momentum and sign of 1TeV muons at $\Deltap/p \approxeq $10\%, a superconducting solenoid with an interior magnetic field strength of 3.8T was chosen as the central design feature of CMS.
+The need to measure high $p_{T}$ muons has driven the requirements on the CMS magnetic field strength. With the goal to accurately determine both momentum and sign of 1TeV muons at $\Delta$p/p $\approx $10\%, a superconducting solenoid with an interior magnetic field strength of 3.8T was chosen as the central design feature of CMS.
 
 The solenoid is located outside the silicon tracker, ECAL, and HCAL systems but inside the muon system. Interspersed with the muon system is the steel return yoke, which contains the field outside the solenoid and provides a 2T field to allow the muon system to measure charged particle momentum. 
 
@@ -101,11 +100,11 @@ To generate the magnetic field, 18,160 amperes are passed through four layers of
 
 The magnetic field generated by the solenoid bends charged particles according to the equation
 
-\begin{equation}
 
-R = \frac{p_{T}}{0.3eB}
 
-\end{equation}
+$$R = \frac{p_{T}}{0.3eB}$$
+
+
 
 where R is the radius of curvature (in meters), $p_{T}$ is the transverse momentum (in GeV), $e$ is the electron charge (in Coulombs), and $B$ is the field strength (in Tesla). Thus, the transverse momentum ($p_{T}$) of the charged particle can be measured from the known field strength and the observed radius of curvature of the tracks measured in the tracker and muon systems.
 
@@ -131,13 +130,13 @@ An overview of the layout of the muon system can be seen in Figure~\ref{fig:muon
 
 The barrel of the muon system contains 250 layers of DTs arranged in four layers (labeled MB1, MB2, MB3, and MB4 in Figure ~fig(muonSystemLayout)). In the MB1, MB2, and MB3 layers, DTs are arranged in 8 $r-\phi$-measuring planes, and 4 $z$-measuring planes. The MB4 layer only contains $r-\phi$-measuring planes.
 
-Each DT is filled with a gaseous mixture of Argon (~85\%) and carbon dioxide (~15\%). Charged particles passing through the DT will ionize the gaseous mixture and produce a current along a central filament to be read out. The maximum drift length per DT is 2.0cm and the single point resolution is $\approxeq$ 200 $\mu$m.
+Each DT is filled with a gaseous mixture of Argon (~85\%) and carbon dioxide (~15\%). Charged particles passing through the DT will ionize the gaseous mixture and produce a current along a central filament to be read out. The maximum drift length per DT is 2.0cm and the single point resolution is $\approx$ 200 $\mu$m.
 
 \subsection{Cathode strip chambers (CSCs)}
 
 The muon endcap (ME) system is comprised of 234 CSCs in each endcap. The CSCs are trapezoidal in shape and are arranged in four layers  (labeled ME1, ME2, ME3, and ME4 in Figure ~fig(muonSystemLayout)). The innermost layer (ME1), is made of 108 CSCs arranged in three rings of 36 CSCs each. The other layers each have two rings (18 CSCs on the inner ring, 36 on the outer ring, for a total of 54 CSCs per layer).
 
-Each CSC is comprised of six gas gaps, with each gap containing a radial array of cathode strips and a plane of anode wires running perpendicular to the cathodes. The CSCs are overlapped in $\phi$ to avoid gaps in the particle acceptance. When a charged particle ionizes the gas, it leaves a charge on the anode wire and an image charge on a group of cathode strips. The spatial resolution provided from each CSC is $\approxeq$ 200$\mu$m.
+Each CSC is comprised of six gas gaps, with each gap containing a radial array of cathode strips and a plane of anode wires running perpendicular to the cathodes. The CSCs are overlapped in $\phi$ to avoid gaps in the particle acceptance. When a charged particle ionizes the gas, it leaves a charge on the anode wire and an image charge on a group of cathode strips. The spatial resolution provided from each CSC is $\approx$ 200$\mu$m.
 
 The forward (endcap) region of the muon system can expect a higher muon flux, so CSCs were chosen due to their fast response time and fine resolution.
 
@@ -151,7 +150,7 @@ Each RPC is comprised of parallel plates of bakelite enclosing two millimeter-th
 
 \section{The trigger system}
 
-When running at full luminosity, the LHC generates $pp$ collisions at a rate of 40MHz. With each event requiring $\approxeq$ 10MB of digital storage space, this equates to a data-generation rate of 400TB per second. Since this is obviously unsustainable with current computer storage technology, CMS employs a trigger system to reduce the rate of stored events. Two levels of triggering are used: the hardware-based Level-1 (L1) trigger, which reduces the rate from 40MHz to approximately 100kHz, and the hardware-and-software-based High Level Trigger (HLT), which reduces the rate from $\approx$100kHz to 300Hz.
+When running at full luminosity, the LHC generates $pp$ collisions at a rate of 40MHz. With each event requiring $\approx$ 10MB of digital storage space, this equates to a data-generation rate of 400TB per second. Since this is obviously unsustainable with current computer storage technology, CMS employs a trigger system to reduce the rate of stored events. Two levels of triggering are used: the hardware-based Level-1 (L1) trigger, which reduces the rate from 40MHz to approximately 100kHz, and the hardware-and-software-based High Level Trigger (HLT), which reduces the rate from $\approx$100kHz to 300Hz.
 
 \subsection{The Level-1 (L1) trigger)}
 
@@ -195,8 +194,16 @@ To fully reconstruct an electron track, one starts with a track \emph{seed}, whi
 
 \subsubsection{Muon reconstruction}
 
+Muons can be measured both in the silicon tracker and the muon system. In order to reconstruct a muon, hits in the muon system (\emph{stand-alone muons}) are matched to hits in the tracker in order to reconstruct a complete muon object, known as a \emph{global muon}. These muons are reconstructed using two different methods, \emph{global muon reconstruction (outside-in)} and \emph{tracker muon reconstruction (inside-out)}.
 
-\subsubsection{Photon and neutral hadron reconstruction}
+Global muon reconstruction begins in the muon system. Hits in the DTs and CSCs are allocated into segments, which are short stubs containing just enough hits to assign each a momentum and direction vector. These segments are grouped together to form tracks in the muon system. These tracks, known as stand-alone muon tracks, are matched, one by one, with tracks from the tracker by comparing parameters of the two tracks propagated onto a common surface.
+
+Tracker muon reconstruction begins in the silicon tracker. All tracks with $p_{T} > 0.5$ GeV/c and $p > 2.5$ GeV/c are considered possible muon candidates and are propagated outward toward the muon system, taking into account the magnetic field, expected energy loss, and the possibility for multiple Coulomb scattering in the detector material. If a hit in the muon system is found within 3 cm in local $x, y$ coordinates, the candidate qualifies as a tracker muon.
+
+Tracker muon reconstruction is more efficient than global muon reconstruction at low energies ($p < 5$ GeV/c), since it only requires one muon segment in the muon system. Global muon reconstruction is more appropriate for muons with higher energies penetrating through more than one station in the muon system.
+
+
+\subsubsection{Photon and Neutral Hadron Reconstruction}
 
 Since photons and neutral hadrons are chargeless, and therefore leave no hits in the silicon tracker, the entirety of their reconstruction takes place in ECAL (photons) and HCAL (hadrons). The identification of photons and neutral hadrons takes place via so-called \emph{clustering algorithms} which are designed to separate photons from neutral as well as charged hadrons, and to differentiate photons originating from the primary or secondary decays from those generated by electrons undergoing Bremsstrahlung within ECAL.
 
@@ -204,6 +211,12 @@ Clustering algorithms involve three steps. First, a seed cluster is identified i
 
 Furthermore, in particle flow, ECAL/HCAL clusters are required \emph{not} to match any tracks in the tracker in order to qualify as photon or neutral hadron candidates.
 
+
+\subsubsection{Jet Reconstruction}
+
+Jets are primarily reconstructed in ECAL and HCAL, although their charged constituents usually leave tracks in the silicon tracker as well. The majority of reconstructed jet energy comes from charged particles such as pions and kaons, and a smaller but still sizable portion comes from photons from $\pi^0$ decays in ECAL. Though numerous jet reconstruction algorithms exist, most jet candidates are reconstructed using the Particle Flow (PF) algorithm. The PF algorithm looks at the constituent particles in the jet: charged hadrons, neutral hadrons, and photons individually and then clusters them into jet candidates according to various clustering algorithms, the most common of which is the \emph{anti-}$k_{T}$ algorithm with a cone radius of $R = 0.5$. The energy of photons is determined from ECAL measurements, that of charged hadrons is measured with a combination of tracker, ECAL, and HCAL measurements, and the energy of neutral hadrons is measured according to the description in the previous section.
+
+Approximately 90\% of the reconstructed jet energy comes from charged hadrons and photons, while the remaining 10\% comes from neutral hadrons. Since tracking information from the charged hadrons is available, improved jet vertexing can be done and the impact of pileup can be mitigated.
 
 
 
