@@ -20,6 +20,123 @@ This thesis presents an effort to use one of the primary experiments on the LHC,
 
 \chapter{The Standard Model}
 
+
+As mentioned, the Standard Model (SM) of particle physics is the set of theories describing subatomic particles and their interactions according to the electromagnetic, weak, and strong forces. Describing these interactions individually are the theory of quantum electrodynamics (QED, electromagnetic), electroweak theory (EW, weak and elecromagnetic), and the theory of quantum chromodynamics (QCD, strong). These individual theories combine to form the symmetry group describing the SM:
+
+$$SU(3)_{C} \times SU(2)_{L} \times U(1)_{Y}$$
+
+where $SU(3)_{C}$ is the symmetry group describing QCD, while $SU(2)_{L} \times U(1)_{Y}$ together are the symmetry groups describing electroweak theory, the unification of the electromagnetic and weak interactions.
+
+ This chapter will begin with an overview of the fundamental particles in the SM, and then will provide a brief discussion of each of the constituent theories listed above. It will conclude with additional sections on specific elements of the SM which are especially relevant to searches for new physics at hadron colliders.
+
+\section{Particles of the Standard Model}
+
+Shown in Figure~\ref{fig:StandardModel}, the particles included the SM are believed to be fundamental (that is, they cannot be broken down into smaller constituent particles). Broadly, these particles can be divided into spin-1/2 particles, known as fermions, and integer-spin particles, known as bosons. 
+
+\begin{figure}
+\centering
+  \includegraphics[width=0.4\textwidth]{figures/StandardModel.png}
+  \caption{\label{fig:StandardModel} Table showing the quarks, leptons, and gauge bosons (force carriers) in the SM as well as the Higgs boson}
+\end{figure}
+
+
+Fermions make up the matter of our universe. They are further divided into quarks and leptons. Quarks combine with other quarks to form \textit{hadrons}: baryons such as protons and neutrons forming atomic nuclei, and with other antiquarks to form mesons such as pions and kaons. Quarks have electric charge and interact via the electromagnetic and weak forces, and they also have color charge, meaning they interact via the strong force as well. This strong force is what keeps baryons and mesons held together and will be discussed further in the section on QCD. Quarks are divided into pairs of positive and negative charge across three ``generations" of increasing mass. In each pair, the positively-charged quark has electric charge +2/3 and the negatively-charged quark has electric charge -1/3. The first generation consists of the positively-charged \textit{up (u)} quark and the negatively-charged \textit{down (d)} quark. These are the quarks most commonly found in matter as they make up protons and neutrons in matter as well as the majority of pions. The second generation consists of the positively-charged \textit{charm (c)} quark and the negatively-charged \textit{strange (s)} quark. These quarks form more exotic hadrons such as kaons and lambdas. The third generation consists of the positively-charged \textit{top (t)} quark and the negatively-charged \textit{bottom (b)} quark. These are quite heavy, quite short-lived quarks which are rarely found in bound states.
+
+While the quarks interact via both the strong and electroweak forces, the leptons only experience the electroweak interaction. The nature of this interaction will be discussed further in the sections on QED and EW theory. Like the quarks, the leptons are divided into three generations. Each generation consists of a negatively-charged particle with charge -1, and a companion neutrino which is electrically-neutral. The first generation consists of the electron (\textit{e}), the most commonly-found lepton forming shells around nuclei to create atoms and being responsible for electric current, and its corresponding neutrino, the electron neutrino (\textit{$\nu_{e}$}). The second generation consists of the muon (\textit{$\mu$}) and its corresponding neutrino, the muon neutrino (\textit{$\nu_{\mu}$}). Muons are heavier than electrons and decay primarily into an electron, a muon neutrino, and an electron antineutrino. The mean lifetime of a muon is about 2 $\mu$s (in the reference frame of the muon). The third generation consists of the tau (\textit{$\tau$}) and its corresponding neutrino, the tau neutrino (\textit{$\nu_{\tau}$}). Taus are heavier still and can decay either leptonically (into a tau neutrino, an electron (muon), and an electron (muon) antineutrino), or hadronically (into a tau neutrino and a quark-antiquark pair). The mean lifetime of a tau is about $3 \times 10^{-13}$s (in the reference frame of the tau).
+
+The bosons act as the force carriers of the SM. The photon (\textit{$\gamma$}) mediates the electromagnetic interaction, the gluon (\textit{g}) mediates the strong interaction, and the W and Z bosons mediate the weak interaction. The W can have electric charge +1 (\textit{$W^{+}$}) or -1 (\textit{$W^{-}$}), while the Z, photon, and gluon are all electrically neutral. The W and Z are also massive, while the photon and gluon are each massless. These bosons, known as guage bosons or vector bosons, each have spin 1. The final boson, the scalar (spin 0) Higgs boson, is the final boson in the Standard Model and is responsible for mediating the Higgs field (discussed further in the section on the Higgs mechanism).
+
+\section{Quantum Electrodynamics}
+
+Quantum electrodynamics (QED) describes the interactions between particles having electric charge and the photons which mediate the electromagnetic force. A massive, unconstrained, fermionic field $\psi(x)$ with mass m (such as an electron) may be described according to the Dirac Langrangian:
+\begin{equation}
+\mathcal{L}_{\text{Dirac}} = i\bar{\psi}\gamma^{\mu}\left(\partial_{\mu} + ieA_{\mu}\right) - m\bar{\psi}\psi
+\end{equation}
+where the $\gamma^{\mu}$ are Dirac matrices representing Lorentz transformations on the Dirac spinors $\psi$, and the $A_{\mu}$ correspond to the photon field. This Lagrangian corresponds to observable fields, so it must be invariant under gauge transformations. $\psi(x)$ is invariant under Lorentz transformations, and we define it to be invariant under the transformation
+\begin{equation}
+\psi(x) \to e^{ie\alpha(x)}\psi(x)
+\end{equation}
+where $e$ is the electron charge ($\approx 1.6 \times 10^{-19}$ Coulombs) and $\alpha(x)$ is some position-dependent angle.
+
+To transform $\psi(x)$ in position to $\psi(y)$, we define the scalar operator $U(x, y)$ such that
+\begin{equation}
+\psi(y) = U(x, y)\psi(x)
+\end{equation}
+
+If we take the transformation to be infinitesimally small, we have
+\begin{equation}
+y = x + \epsilon\ n^{\mu}
+\end{equation}
+
+If we expand this, we get
+\begin{equation}
+U(x, x + \epsilon\ n^{\mu}) = 1 - \epsilon\ en^{\mu}A_{\mu} + O(\epsilon^{2}).
+\end{equation}
+
+In order for the Lagrangian to remain invariant, we must have
+\begin{equation}
+A_{\mu}(x) \to A_{\mu}(x) - \frac{1}{\epsilon}\partial_{\mu}\alpha(x).
+\end{equation}
+
+Now, if we define
+\begin{equation}
+D_{\mu} \equiv \partial_{\mu} + ieA_{\mu}
+\end{equation}
+
+we can construct the commutator
+
+\begin{equation}
+\left[D_{\mu}, D_{\nu}\right]\psi(x) = \left(D_{\mu}D_{\nu} - D_{\nu}D_{\mu}\right)\psi(x)
+= ie\left(\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}\right)\psi(x) \equiv ieF_{\mu\nu}\psi(x)
+\end{equation}
+
+which allows our Lagrangian to be fully gauge invariant. Note that there is no mass term $A_{\mu}A_{\mu}$, ensuring that the photon is massless. Putting everything together, we arrive at the final Lagrangian for QED:
+
+\begin{equation}
+\mathcal{L}_{\text{QED}} = \bar{psi}\left(i\gamma^{\mu}D_{\mu} - m\right)\psi - \frac{1}{4}F_{\mu}{\nu}F^{\mu}{\nu}.
+\end{equation} 
+
+A typical QED interaction, an electron-positron pair annihilating into a photon which then decays into another electron-positron pair, is shown in Figure~\ref{fig:FeynmanQED}.
+
+\begin{figure}
+\centering
+  \includegraphics[width=0.4\textwidth]{figures/FeynmanQED.jpg}
+  \caption{\label{fig:FeynmanQED} Typical QED interaction}
+\end{figure}
+
+
+\section{Electroweak Theory}
+
+The weak force is responsible for radioactive decay and is mediated by the W and Z bosons. It is perhaps best understood in terms of its unification with electromagnetism known as Electroweak theory. Both quarks and leptons can interact via the weak force, with W and Z bosons decaying to both. 
+
+The symmetry group of EW theory is $SU(2)_{L} \times U(1)_{Y}$, where $SU(2)_{L}$ is non-Abelian with generators $I_{i} = \sigma_{i}$ where $\sigma_{i}$ are the standard Pauli matrices, and where $U(1)_{Y}$ is Abelian with generator $Y/2 = Q - I_{3}$ where $Q$ is the electric charge. The corresponding gauge bosons are the $W_{1}$, $W_{2}$, and $W_{3}$ from $SU(2)_{L}$, and the $B$ from $U(1)_{Y}$ and are all massless. Through spontaneous symmetry breaking via the Higgs mechanism, these four massless bosons become the massive $W^{\pm}$ and $Z$ and the massless photon of the SM.
+
+Before electroweak symmetry breaking, the EW Lagrangian is defined to be
+
+\begin{equation}
+\mathcal{L}_{\text{EW}} = -\frac{1}{4}W^{i}_{\mu\nu}W^{\mu\nu}_{i} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} + \bar{f_{L}}\gamma^{\mu}left(i\partial_{\mu} - \frac{g}{2}\sigma_{i}W^{i} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{L} + 
+\bar{f_{R}}\gamma^{\mu}left(i\partial_{\mu} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{R}
+\end{equation}
+
+where we define:
+
+\begin{equation}
+W^{i}_{\mu\nu} \equiv \partial_{\mu}W^{i}_{\mu} - \partial_{\nu}W^{i}_{\mu} - g\epsilon_{ijk}W^{j}_{\mu}W^{k}_{\nu}
+\end{equation}
+
+and
+
+\begin{equation}
+B_{\mu\nu} \equiv \partial_{\mu}B_{\nu} - \partial_{\nu}B_{\mu}.
+\end{equation}
+
+Here, $g$ and $g^{\prime}$ are the respective coupling constants for $SU(2)_{L}$ and $U(1)_{Y}$, and $f_{R}$ and $f_{L}$ represent right- and left-handed fermionic fields, respectively. ``Handedness", or helicity, is simply the dot product of the momentum and spin unit vectors of the particle. Right-handed particles have helicity +1, and left-handed particles have helicity -1.
+
+After spontaneous symmetry breaking, the $W_{1}$ and $W_{2}$ combine
+
+\chapter{Beyond the Standard Model}
+
+
 At the forefront of the interconnection between particle physics and cosmology are the following questions: (1) What is the origin of the matter-antimatter 
 asymmetry?; (2) What is the origin of neutrino mass?; (3) Are there new fundamental forces in nature?; (4) What is the origin of dark energy; and (5) Is the Higgs 
 boson solely responsible for electroweak symmetry breaking and the origin of mass? Much like the Higgs mechanism is introduced to account for the SU(2)xU(1) 

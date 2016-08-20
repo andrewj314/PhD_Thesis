@@ -2,27 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The Large Hadron Collider located underneath the Franco-Swiss border at CERN near Geneva, Switzerland. The CMS Experiment is located on the French side in Cessy, France}}{7}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The CMS Experiment (open for maintenance)}}{8}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic of the CMS Experiment showing the silicon trackers, electromagnetic calorimeter (ECAL), hadronic calorimeter (HCAL), superconducting solenoid, steel return yoke, and muon system.}}{9}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Overview of the silicon tracker layout.}}{10}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram indicating the layout of the barrel pixel (BPIX) sensors (in green) and endcap pixel (FPIX) sensors (in pink)}}{10}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Layout of the electromagnetic calorimeter (ECAL) indicating the configuration of the barrel (EB) and endcap (EE) crystals.}}{12}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Layout of the hadronic calorimeter (HCAL) indicating the configuration of the barrel (HB) and endcap (HE) components as well as the outer HCAL (HO) lining the solenoid.}}{13}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The superconducting solenoid.}}{14}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Layout of the muon system highlighting the layered structure of the drift tubes (DTs, green), cathode strip chambers (CSCs, blue), and resistive plate chambers (RPCs, red).}}{15}{figure.4.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Table showing the quarks, leptons, and gauge bosons (force carriers) in the SM as well as the Higgs boson}}{6}{figure.3.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The efficiency vs. $p_{T}$ curves of the single-electron triggers used. Left column: barrel. Right column: endcap. The offline electron ID requirements used are HEEP (top row), MVANonTrig80 (middle row), MVATrigWP80 (bottom row).}}{29}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The efficiency vs. $p_{T}$ curves of the single-electron triggers used. Left column: barrel. Right column: endcap. The offline electron ID requirements used are HEEP (top row), MVANonTrig80 (middle row), MVATrigWP80 (bottom row). The two bins each contain half of the events with $p_{T}>35$ GeV.}}{30}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The efficiency vs. $p_{T}$ curves of the single-muon triggers used. Left column: $|\eta |<1.2$. Right column: $|\eta |>1.2$. Bottom row: the two bins each contain half of the events with $p_{T} > 25$ GeV.}}{31}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The per-leg $\tau _{h}$ trigger efficiency as a function of p$_{T}(\tau _{h})$ for (a) simulated Z$^{\prime }$ signal sample on left (b) for data and all backgrounds obtained by requiring mu-tau region on right.}}{33}{figure.6.4}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Decay Mode Finding efficiency as function of $p_{T}$, $\eta $, and number of vertices of generator-level taus }}{44}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Efficiency of anti-muon discriminator (Loose3) as function of $p_{T}$, $\eta $, and number of vertices of generator-level taus }}{45}{figure.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Efficiency of anti-electron discriminator (Loose/Medium MVA5) as function of $p_{T}$, $\eta $, and number of vertices of generator-level taus }}{45}{figure.8.3}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Efficiency of isolation discriminator (''CombinedIsoDB3Hits'') as function of $p_{T}$, $\eta $, and number of vertices of generator-level taus }}{45}{figure.8.4}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Energy response of reconstructed taus, raw and vs. generated tau $p_{T}$}}{46}{figure.8.5}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Distributions of the number of reconstructed primary vertices. Top: \ensuremath {e\mu }channel. Bottom: \ensuremath {e\tau _{\textrm {h}}}channel. Left: before reweighting. Right: after reweighting (``official'' 69\nobreakspace {}mb). The ratios after reweighting become flatest at an ``unofficial'' value of 71\nobreakspace {}mb. The apparent substantial differences in the QCD ``integrals'' are artifacts of the plotting procedure, in which bins with negative contributions are zero-ed.}}{48}{figure.8.6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The Large Hadron Collider located underneath the Franco-Swiss border at CERN near Geneva, Switzerland. The CMS Experiment is located on the French side in Cessy, France}}{11}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The CMS Experiment (open for maintenance)}}{12}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Schematic of the CMS Experiment showing the silicon trackers, electromagnetic calorimeter (ECAL), hadronic calorimeter (HCAL), superconducting solenoid, steel return yoke, and muon system.}}{13}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Overview of the silicon tracker layout.}}{14}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagram indicating the layout of the barrel pixel (BPIX) sensors (in green) and endcap pixel (FPIX) sensors (in pink)}}{14}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Layout of the electromagnetic calorimeter (ECAL) indicating the configuration of the barrel (EB) and endcap (EE) crystals.}}{16}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Layout of the hadronic calorimeter (HCAL) indicating the configuration of the barrel (HB) and endcap (HE) components as well as the outer HCAL (HO) lining the solenoid.}}{17}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The superconducting solenoid.}}{18}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Layout of the muon system highlighting the layered structure of the drift tubes (DTs, green), cathode strip chambers (CSCs, blue), and resistive plate chambers (RPCs, red).}}{19}{figure.5.9}
