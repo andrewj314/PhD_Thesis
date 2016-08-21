@@ -114,8 +114,8 @@ The symmetry group of EW theory is $SU(2)_{L} \times U(1)_{Y}$, where $SU(2)_{L}
 Before electroweak symmetry breaking, the EW Lagrangian is defined to be
 
 \begin{equation}
-\mathcal{L}_{\text{EW}} = -\frac{1}{4}W^{i}_{\mu\nu}W^{\mu\nu}_{i} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} + \bar{f_{L}}\gamma^{\mu}left(i\partial_{\mu} - \frac{g}{2}\sigma_{i}W^{i} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{L} + 
-\bar{f_{R}}\gamma^{\mu}left(i\partial_{\mu} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{R}
+\mathcal{L}_{\text{EW}} = -\frac{1}{4}W^{i}_{\mu\nu}W^{\mu\nu}_{i} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} + \bar{f_{L}}\gamma^{\mu}\left(i\partial_{\mu} - \frac{g}{2}\sigma_{i}W^{i} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{L} + 
+\bar{f_{R}}\gamma^{\mu}\left(i\partial_{\mu} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{R}
 \end{equation}
 
 where we define:
@@ -132,7 +132,74 @@ B_{\mu\nu} \equiv \partial_{\mu}B_{\nu} - \partial_{\nu}B_{\mu}.
 
 Here, $g$ and $g^{\prime}$ are the respective coupling constants for $SU(2)_{L}$ and $U(1)_{Y}$, and $f_{R}$ and $f_{L}$ represent right- and left-handed fermionic fields, respectively. ``Handedness", or helicity, is simply the dot product of the momentum and spin unit vectors of the particle. Right-handed particles have helicity +1, and left-handed particles have helicity -1.
 
-After spontaneous symmetry breaking, the $W_{1}$ and $W_{2}$ combine
+After spontaneous symmetry breaking, the massless $W_{1}$ and $W_{2}$ combine to form the massive $W^{\pm}$ via the relation
+
+\begin{equation}
+W^{\pm} = \frac{1}{\sqrt{2}}\left(W_{1} \mp iW_{2}\right)
+\end{equation}
+
+and the massless $B$ and $W_{3}$ combine to form the massive $Z$ and massless photon via the relation
+\begin{equation}
+\begin{pmatrix}\gamma \\Z\end{pmatrix}=\begin{pmatrix}\cos \theta _{W}&\sin \theta _{W}\\-\sin \theta _{W}&\cos \theta _{W}\end{pmatrix}\begin{pmatrix}B\\W_{3}\end{pmatrix}
+\end{equation}
+
+where $\theta_{W}$ is the weak mixing angle, which defines the rotation by which spontaneous symmetry breaking transforms the $W_{1,2,3}$ and $B$ into the $W^{\pm}$, $Z$, and photon of the SM. In terms of the coupling constants of $SU(2)_{L}$ and $U(1)_{Y}$, the weak mixing angle may be defined as:
+
+\begin{equation}
+\cos \theta_{W} = \frac{g}{\sqrt{g^{2} + g^{\prime2}}}
+\end{equation}
+
+and empirically as 
+
+\begin{equation}
+\cos \theta_{W} = \frac{m_{W}}{m_{Z}}.
+\end{equation}
+
+\section{Quantum Chromodynamics}
+
+Quantum chromodynamics (QCD) is the theory that describes the strong force. QCD introduces a new property, called ``color," that is only felt by particles which strongly interact. These particles are quarks ($q$, the constituents of baryons and mesons) and gluons ($g$, the mediator of the strong force). Particles can have color charge ``red", ``green", or ``blue" according to rotations in the group $SU(3)_{C}$, the portion of the SM relevant to QCD.
+
+The generators of $SU(3)$ are eightfold, and can be used to represent the gauge transformation $U(\alpha)$:
+
+\begin{equation}
+U(\alpha) = e^{i\alpha_{j}}T^{j} \approx I + i\alpha_{j}T^{j} + O(\alpha^{2})
+\end{equation}
+
+They satisfy the commutation relation:
+
+\begin{equation}
+\left[T^{a}, T^{b}\right] = if^{abc}T^{c}
+\end{equation}
+
+where 
+
+\begin{equation}
+f^{abc} \equiv -2i\text{Tr}\left(T^{a}T^{b}T^{c} - T^{b}T^{a}T^{c}\right).
+\end{equation}
+
+We can write the Lagrangian of QCD as:
+
+\begin{equation}
+\mathcal{L}_{\text{QCD}} = -\frac{1}{4}F^{\mu\nu}_{\alpha}F^{\alpha}_{\mu\nu} + \bar{q}\left(i\gamma^{\mu}D_{\mu} - m\right)q - \frac{1}{2\xi}\partial_{\mu}A^{\alpha\mu}\partial_{\nu}A^{\alpha\nu} + \partial_{\mu}\bar{c}^{a}\left(\partial^{\mu}\delta^{ab} + g_{s}f_{abc}A^{c\mu}\right)c_{b}.
+\end{equation}
+
+Here, we define
+
+\begin{equation}
+D_{\mu} \equiv \partial_{\mu} + ig_{s}A^{\mu}_{a}T^{a}
+\end{equation}
+
+and
+
+\begin{equation}
+F^{\alpha}_{\mu\nu} \equiv \partial_{\mu}A^{\alpha}_{\nu} - \partial_{\nu}A^{\alpha}_{\mu} - g_{s}f^{abc}A^{b}_{\mu}A^{c}_{\nu}
+\end{equation}
+
+where $g_{s}$ is the coupling constant of the strong force and $A^{\mu}$ represents the gluon field. The first term in the Lagrangian represents the gluon propagator, but note that it also includes a gluon self-interaction. This is in contrast to the QED Lagrangian, which allows no photon self-interaction. Due to this, QCD in fact allows for a bound state made entirely of gluons known as a ``glueball," although none have been experimentally observed. The second term represents the quark-gluon interactions as well as the free quark propagator. The final two terms are required to keep the Lagrangian gauge-invariant.
+
+No stable particle may have non-neutral overall color charge. Since quarks and gluons on their own have net color charge, they immediately pull quarks and gluons out of the vacuum in order to form color-neutral bound states. These bound states may either achieve color neutrality in the form of a quark-antiquark pair (e.g. red + antired = color-neutral), or as a three-quark baryon (red + green + blue = color-neutral). This process of pulling strongly-interacting particles out of the vacuum is called \textit{hadronization}. Hadronization occurs because the strong force is extremely short-ranged (on the order of a proton radius). As two color-charged particles are pulled apart, the energy required to keep them in a bound state satisfying color-neutrality increases rapidly. Very quickly, it becomes energetically favorable to pull a quark-antiquark pair out of the vacuum to form new color-neutral states. This requirement of color-neutrality is called \textit{color confinement}, and the property of the strong coupling strength increasing rapidly with distance is known as \textit{asymptotic freedom}.
+
+
 
 \chapter{Beyond the Standard Model}
 
