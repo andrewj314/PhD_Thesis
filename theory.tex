@@ -106,6 +106,7 @@ A typical QED interaction, an electron-positron pair annihilating into a photon 
 
 
 \section{Electroweak Theory}
+\label{sec:EW}
 
 The weak force is responsible for radioactive decay and is mediated by the W and Z bosons. It is perhaps best understood in terms of its unification with electromagnetism known as Electroweak theory. Both quarks and leptons can interact via the weak force, with W and Z bosons decaying to both. 
 
@@ -200,28 +201,69 @@ where $g_{s}$ is the coupling constant of the strong force and $A^{\mu}$ represe
 No stable particle may have non-neutral overall color charge. Since quarks and gluons on their own have net color charge, they immediately pull quarks and gluons out of the vacuum in order to form color-neutral bound states. These bound states may either achieve color neutrality in the form of a quark-antiquark pair (e.g. red + antired = color-neutral), or as a three-quark baryon (red + green + blue = color-neutral). This process of pulling strongly-interacting particles out of the vacuum is called \textit{hadronization}. Hadronization occurs because the strong force is extremely short-ranged (on the order of a proton radius). As two color-charged particles are pulled apart, the energy required to keep them in a bound state satisfying color-neutrality increases rapidly. Very quickly, it becomes energetically favorable to pull a quark-antiquark pair out of the vacuum to form new color-neutral states. This requirement of color-neutrality is called \textit{color confinement}, and the property of the strong coupling strength increasing rapidly with distance is known as \textit{asymptotic freedom}.
 
 
+\section{Spontaneous Symmetry Breaking and the Higgs Mechanism}
+
+Recall from ~\ref{sec:EW} that, although the gauge bosons of the electroweak interaction, the $W_{1,2,3}$ and the $B$, are required by gauge invariance to be massless, some of their SM counterparts, the $W^{\pm}$ and $Z$, are observed to be massive (80.4 GeV and 91.2 GeV, respectively). In order for these bosons to retain their mass without violating the gauge symmetry, the Higgs mechanism was introduced to explain this spontaneous symmetry breaking.
+
+Developed by Peter Higgs in 1964, the Higgs mechanism introduces an extra potential term $V(\Phi)$ into the EW Lagrangian, where 
+
+\begin{equation}
+\Phi \equiv \begin{pmatrix}\phi^{+} \\ \phi^{0}\end{pmatrix}_{L}
+\end{equation}
+
+and
+
+\begin{equation}
+V(\Phi) \equiv \mu^{2}\Phi^{\dagger}\Phi + \lambda\left(\Phi^{\dagger}\Phi\right)^{2}.
+\end{equation}
+
+The total addition to the EW Lagrangian is of the form
+
+\begin{equation}
+\mathcal{L}_{Add} = D_{\mu}\Phi\ D^{\mu}\Phi - V(\Phi)
+\end{equation}
+
+Minimizing the potential $V(\Phi)$ in $\Phi$ gives the vacuum expectation value (VEV) of $\Phi$. If we choose $\mu^{2} < 0$, we arrive at multiple critical points in our minimization and a degenerate state is possible. The VEV takes the form
+
+\begin{equation}
+\braket{0|\Phi|0} = \begin{pmatrix}0 \\ \frac{\mu^{2}}{\sqrt{2}\lambda}\end{pmatrix}.
+\end{equation}
+
+This VEV has inifinite degenerate minima all with the same magnitude but different phase. Choosing one phase leads to spontaneous symmetry breaking, and the $W$ and $Z$ bosons acquire mass via
+
+\begin{equation}
+m_{W} = \frac{g}{2}\frac{|\mu^{2}|}{\lambda}
+\end{equation}
+\begin{equation}
+m_{Z} = \frac{m_{W}}{\cos{\theta_W}}.
+\end{equation}
+
+The final piece of the SM, the Higgs boson, has a mass which is dependent entirely on the VEV:
+
+\begin{equation}
+m_H = sqrt{2|\mu^2|}.
+\end{equation}
+
+In July 2012, the Higgs boson was discovered concurrently by the ATLAS and CMS collaborations, and was measured to have a mass of 125.4 GeV.
 
 \chapter{Beyond the Standard Model}
 
 
-At the forefront of the interconnection between particle physics and cosmology are the following questions: (1) What is the origin of the matter-antimatter 
-asymmetry?; (2) What is the origin of neutrino mass?; (3) Are there new fundamental forces in nature?; (4) What is the origin of dark energy; and (5) Is the Higgs 
-boson solely responsible for electroweak symmetry breaking and the origin of mass? Much like the Higgs mechanism is introduced to account for the SU(2)xU(1) 
-symmetry breaking, there are a plethora of theoretical models which incorporate additional gauge fields and interactions to address these questions. For example, 
-string theory is considered a promising candidate for describing gravitational systems at strong coupling and thus plays a prominent role in the description of 
-black holes and evolution of the universe through the understanding of the origin of dark energy. Similarly, models with additional neutrino fields at the TeV 
-scale provide a possible explanation for the mass of light neutrinos. Such models often manifest themselves as new heavy particles that could be observed at the 
-LHC. Surprisingly, some of these new particles predicted on the basis of pure particle physics arguments can even provide the correct dark matter relic density. 
-There are several ways new heavy gauge bosons appear. The most natural possibility is one in which these heavy gauge bosons are the gauge field of a new 
-local broken symmetry. Examples include models with a new U(1) gauge symmetry, little Higgs models, and E6 Grand Unified Theories (GUT). 
-In models with a new U(1) gauge symmetry, the $Z^\prime$ is the gauge boson of the broken symmetry. In
-little Higgs models, breaking of the global symmetry by gauge and Yukawa interactions generates Higgs mass and couplings at the TeV scale that cancel off the SM
-quadratic divergence of the Higgs mass from top, gauge, and Higgs loops. This results in one or more $Z^\prime$ bosons. In Kaluza-Klein models, the $Z^\prime$
-bosons are excited states of a neutral, bulk gauge symmetry.
-From the breadth, scope, and implications of these models, it is apparent that probing these questions and puzzles potentially lies in the physics of new
-particles at the TeV scale. 
+As mentioned in the introduction, some of the most pressing questions in particle physics are the following: (1) What is the origin of the matter-antimatter asymmetry?; (2) What is the origin of neutrino mass?; (3) Are there new fundamental forces in nature?; (4) What is the origin of dark energy; and (5) Is the Higgs boson solely responsible for electroweak symmetry breaking and the origin of mass? Much like the Higgs mechanism is introduced to account for the SU(2)xU(1) 
+symmetry breaking, there are a plethora of theoretical models which incorporate additional gauge fields and interactions to address these questions. 
 
-Of particular interest for this analysis are models that include an extra neutral gauge boson that decays to pairs of high-$p_{T}$ $\tau$ leptons. Although 
-many models with extra gauge bosons obey the universality of the couplings, some models include generational dependent couplings resulting in extra neutral gauge 
-bosons that preferentially decay to $\tau$ leptons, making this analysis an important mode for discovery. However, even if a new gauge boson decaying to $\mu\mu$ 
-is discovered first, it will be critical to establish the $\tau\tau$ decay channel to establish the coupling relative to $\mu\mu$ channel.
+For example, string theory is considered a promising candidate for describing gravitational systems at strong coupling and thus plays a prominent role in the description of black holes and evolution of the universe through the understanding of the origin of dark energy. Similarly, models with additional neutrino fields at the TeV scale provide a possible explanation for the mass of light neutrinos. Such models often manifest themselves as new heavy particles that could be observed at the LHC. Surprisingly, some of these new particles predicted on the basis of pure particle physics arguments can even provide the correct dark matter relic density. 
+
+There are several ways new heavy gauge bosons appear. The most natural possibility is one in which these heavy gauge bosons are the gauge field of a new local broken symmetry. Examples include models with a new U(1) gauge symmetry, little Higgs models, and E6 Grand Unified Theories (GUT). In models with a new U(1) gauge symmetry, the $Z^\prime$ is the gauge boson of the broken symmetry. In little Higgs models, breaking of the global symmetry by gauge and Yukawa interactions generates Higgs mass and couplings at the TeV scale that cancel off the SM quadratic divergence of the Higgs mass from top, gauge, and Higgs loops. This results in one or more $Z^\prime$ bosons. In Kaluza-Klein models, the $Z^\prime$ bosons are excited states of a neutral, bulk gauge symmetry. From the breadth, scope, and implications of these models, it is apparent that probing these questions and puzzles potentially lies in the physics of new
+particles at the TeV scale. As such, it is highly worthwhile to engage in searches for $Z^\prime$ candidates.
+
+Of particular interest such searches are models that include an extra $Z^\prime$-like neutral gauge boson that decays to pairs of high-$p_{T}$ $\tau$ leptons. Although many models with extra gauge bosons obey the universality of the couplings, some models include generational dependent couplings resulting in extra neutral gauge bosons that preferentially decay to $\tau$ leptons, making this analysis an important mode for discovery. However, even if a new gauge boson decaying to $\mu\mu$ is discovered first, it will be critical to establish the $\tau\tau$ decay channel to establish the coupling relative to $\mu\mu$ channel. The primary model studied in this thesis is the Sequential Standard Model $Z^\prime$, denoted $Z^{\prime}_{SSM}$. This model assumes universality of the couplings (just like the SM $Z$) which makes it a useful benchmark, both for testing other models and for fine-tuning the search methodology.
+
+In $pp$ collisions at the LHC, the $Z^\prime_{SSM}$ is expected to be generated in much the same way as the SM $Z$, through Drell-Yan production via quark-quark interactions from the colliding protons. A diagram of this process is shown in Figure~\ref{fig:ZprimeToTauTau}.
+
+\begin{figure}
+\centering
+  \includegraphics[width=0.4\textwidth]{figures/ZprimeToTauTau.png}
+  \caption{\label{fig:ZprimeToTauTau} $Z^\prime \to \tau\tau$ event at the LHC, wherein two quarks from colliding protons form a $Z^\prime$ which then decays to an oppositely-charged, back-to-back pair of $\tau$ leptons.}
+\end{figure}
+
