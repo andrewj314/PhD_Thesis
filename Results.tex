@@ -1,25 +1,24 @@
-\chapter{Results and Conclusions}\label{sec:results}
+\chapter{Results}\label{sec:results}
+
+\section{13 TeV Results}
 
 Figure\,\ref{fig:SignalRegionPlot_a} shows the background predictions as well as the observed $m(\tau_{1},\tau_{2},\MET)$ spectrum, in log scale, for the four 
 channels considered in this analysis note: \mutau (top left), \ditauhad (top right), \etau (bottom left), \emu (bottom right). 
-Table ~\ref{table:EvtSR} (top) lists the number of estimated background events compared with the total number of observed events in data for each final state
-considering the whole mass spectrum, while Table ~\ref{table:EvtSR} (bottom) those considering $M(\tau_1,\tau_2,\not\!\!E_T) >$ 300 \GeV.
+Table ~\ref{table:EvtSR_allMass} lists the number of estimated background events compared with the total number of observed events in data for each final state
+considering the whole mass spectrum, while Table ~\ref{table:EvtSR_hiMass} lists those considering $M(\tau_1,\tau_2,\MET) >$ 300 GeV.
 %Figure\,\ref{fig:SignalRegionPlot_b} shows the same unblinded result, except in normal scale in order to emphasize the low mass region. 
 %(\textbf{placeholder text:} we are still blinded). 
 The observed $m(\tau_{1},\tau_{2},\MET)$ spectrum in the signal region does not reveal any evidence for $Z^{\prime}\to\tau\tau$ production 
-(\textbf{this sentence and what follows is just placeholder text since we have not unblinded}). 
+%(\textbf{this sentence and what follows is just placeholder text since we have not unblinded}). 
 %The total predicted background rate is $19.8 \pm 4.2$, with QCD multijet,
 %$t\bar{t}$, and $Z\to\tau\tau$ composing $\sim$ 76.3\%, 6.6\%, and 12.6\% of the rate respectively (see Table~\ref{table:expectations}).
 %The distribution from the $m(W_{R})=2700$ GeV signal hypothesis is plotted with the background prediction in Figure\,\ref{fig:SignalRegionPlot} to illustrate how
 %a hypothetical signal would appear above the SM background prediction. 
-\begin{table}[hc]
-\topcaption{Number of observed events in data and estimated background events, for the whole mass range (top) and
-in the region $M(\tau_{1},\tau_{2},\not\!\!E_T) >$ 300 GeV (bottom).
-The uncertainties quoted on the number of background events represent the combined statistical and systematic uncertainty.
-}
+\begin{table}[ht]
+
 \begin{center}
-\subtable{
-\begin{tabular}{cccccc}
+%\begin{subtable}
+\begin{tabular}{| c | c | c | c | c | c |}
 \hline
 Process    & $\tau_h \tau_h$ & \mutau & \etau & \emu & \\
 \hline
@@ -34,9 +33,22 @@ Total      & 58   $\pm$ 13   & 1976   $\pm$ 180   & 1082   $\pm$ 162   & 703   $
 Observed   & 55              & 1807               & 1113               & 728               & \\
 \hline
 \end{tabular}
+
+\caption{Number of observed events in data and estimated background events for the whole mass range.
+The uncertainties quoted on the number of background events represent the combined statistical and systematic uncertainty.
 }
-\subtable{
-\begin{tabular}{cccccc}
+%\end{subtable}
+\end{center}
+\label{table:EvtSR_allMass}
+
+\end{table}
+%\begin{subtable}
+
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
 \hline
 Process    & $\tau_h \tau_h$ & \mutau & \etau & \emu & \\
 \hline
@@ -51,9 +63,13 @@ Total      & 23    $\pm$ 6      & 51 $\pm$ 11 & 39 $\pm$ 8 & 94 $\pm$ 14 & \\
 Observed   & 20                & 42              & 40             & 96              & \\
 \hline
 \end{tabular}
+%\end{subtable}
+\caption{Number of observed events in data and estimated background events
+in the region $M(\tau_{1},\tau_{2},\MET) >$ 300 GeV.
+The uncertainties quoted on the number of background events represent the combined statistical and systematic uncertainty.
 }
 \end{center}
-\label{table:EvtSR}
+\label{table:EvtSR_hiMass}
 \end{table}
 
 An upper bound at 95\% confidence level (CL) is set on $\sigma \cdot BR$, 
@@ -105,7 +121,7 @@ distribution in the signal region, in log scale.}
   \caption{Event summary table after signal region selection\label{tab:summaryTable}}
   \begin{tabular}{| l | c | c | c | c |}
   \hline
-       Process          & \thth             & \tmth                 & \teth                 & \tetm            \\ \hline
+       Process          & \ditauh             & \mutau                 & \etau                 & \emu            \\ \hline
        Z' (500)         & 307.4 $\pm$ 35.3  & 502.3 $\pm$ 57.7      & 197.6 $\pm$ 22.7      & 218.6 $\pm$ 27.3  \\   
        Z' (1000)        & 34.6 $\pm$ 2.6    & 40.8 $\pm$ 3.1        & 14.7 $\pm$ 1.1        & 19.0 $\pm$ 1.5        \\   
        Z' (1500)        & 6.6 $\pm$ 0.3     & 7.2 $\pm$ 0.3         & 2.3 $\pm$ 0.1         & 3.6 $\pm$ 0.2      \\   
@@ -152,4 +168,45 @@ distribution in the signal region, in log scale.}
   \includegraphics[width=0.6\textwidth]{figures/limits/CombinedLimit}  \caption{Combined expected limit for the $\tau_{\mu}\tau_{h}$, $\tau_{h}\tau_{h}$, $\tau_{e}\tau_{h}$, $\tau_{e}\tau_{\mu}$ channels.}
   \caption{Combined expected limit for the $\tau_{\mu}\tau_{h}$, $\tau_{h}\tau_{h}$, $\tau_{e}\tau_{h}$, $\tau_{e}\tau_{\mu}$ channels. A k factor of 1.3 has been used to scale the leading order (LO) signal cross-section.}
   \label{fig:CombinedLimits}
+\end{figure}
+
+
+
+\section{8 TeV Results}
+
+The search for $Z^{\prime}\to\tau\tau$ events was also carried out during the 2012 run of the LHC, when the center-of-mass collision energy was lower at $\sqrt{s} = 8$ TeV. 19.7 fb$^{-1}$ of collision data were collected during this run. Due to poor performance of the Tau POG recommended hadronic tau identification and reconstruction algorithms, the only channel which was studied to completion was the \emu channel. As the analysis strategy, trigger studies, and background estimation techniques were nearly identical to those presented for the \emu channel at $\sqrt{s} = 13$ TeV, only the results of the 8 TeV \emu analysis are shown here.
+
+Figure \ref{fig:8TeV_SR} and Figure \ref{fig:8TeV_BGRates} show the unblinded signal region and background rates after all backgrounds are estimated. Data agrees with SM expectation, so limits are set on the $Z^{\prime}_{SSM}$ visible mass.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/8TeV_SR.png}
+\caption{$m(e,\tau_{h},\MET)$ distribution for SR in 8TeV search. A 1.5TeV $Z^{\prime}_{SSM}$ sample is also included.}
+\label{fig:8TeV_SR}
+\end{figure}
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/8TeV_BGRates.png}
+\caption{Expected background rates compared to observed rates in bins of $m(e,\tau_{h},\MET)$. Uncertainties are statistical in each bin.}
+\label{fig:8TeV_BGRates}
+\end{figure}
+
+Figure \ref{fig:8TeV_SignalRates} shows the predicted rates in the SR of several signal mass points considered in this analysis.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/8TeV_SignalRates.png}
+\caption{Expected signal rates and associated significances in bins of $m(e,\tau_{h},\MET)$. }
+\label{fig:8TeV_SignalRates}
+\end{figure}
+
+Finally, the limit on a $Z^{\prime}_{SSM}$ decaying to two taus are given in Figure \ref{fig:8TeV_Limit}. Upper limits are placed on $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ as a function of mass. The limit is set as the point at which the experimental value of $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ exceeds the theoretical value. Below this point, we exclude the existence of $Z^{\prime}$-like particles decaying to tau pairs. Figure \ref{fig:8TeV_Limit} shows that we exclude the $Z^{\prime}$ below a mass of 1080 GeV/c$^2$.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/8TeV_Limit.png}
+\caption{95\% CL upper limit on $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ 
+as a function of $Z^{\prime}$ mass. The color bands on the expected limits represent one standard deviation (green) and two standard deviations (yellow).}
+\label{fig:8TeV_Limit}
 \end{figure}
