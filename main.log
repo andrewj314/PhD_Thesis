@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 SEP 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 SEP 2016 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,16 +456,16 @@ Making Short ToC...
 ]
 centered
 Short Chapter (page numbered)
-(./main.toc [6
-
-])
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 Making LoT Page
 Making Short LoT...
-[7]
+[6
+
+] [7]
 centered
 Short Chapter (page numbered)
 (./main.lot)
@@ -480,17 +480,7 @@ Making Short LoF...
 ]
 centered
 Short Chapter (page numbered)
-(./main.lof [9
-
-]
-Overfull \hbox (0.24113pt too wide) in paragraph at lines 20--20
- \OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]; [][
-]\OT1/cmr/m/n/10.95 )$ dis-tri-bu-tion in the sig-nal re-gion, in log scale. Bo
-t-tom Left: $\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 e; ^^
-\[]; [][]\OT1/cmr/m/n/10.95 )$ 
- []
-
-)
+(./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -500,7 +490,9 @@ t-tom Left: $\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 e; ^^
 -------------------Beginning Body----------------------
 
 
-[10] (./macros.tex
+[9
+
+] (./macros.tex
 \c@th@theorem=\count131
 ) (./zprimeDefinitions.tex) (./Introduction.tex
  \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 1.
@@ -515,15 +507,10 @@ centered
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [3
 
-]
-
-Class thesis Warning: ``thepart'' not available in this class. on input line 19
-.
-
-[4]
+] [4]
  \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 3.
 centered
-<figures/StandardModel.png, id=314, 763.8939pt x 516.0078pt>
+<figures/StandardModel.png, id=165, 763.8939pt x 516.0078pt>
 File: figures/StandardModel.png Graphic file (type png)
 
 <use figures/StandardModel.png>
@@ -532,7 +519,7 @@ Package pdftex.def Info: figures/StandardModel.png used on input line 38.
  [5
 
 ] [6 <./figures/StandardModel.png (PNG copy)>] [7] [8] <figures/FeynmanQED.jpg,
- id=341, 377.15906pt x 274.02374pt>
+ id=194, 377.15906pt x 274.02374pt>
 File: figures/FeynmanQED.jpg Graphic file (type jpg)
 
 <use figures/FeynmanQED.jpg>
@@ -544,255 +531,38 @@ Package pdftex.def Info: figures/FeynmanQED.jpg used on input line 103.
 centered
 [15
 
-] <figures/ZprimeToTauTau.png, id=398, 361.35pt x 172.645pt>
+] <figures/ZprimeToTauTau.png, id=250, 361.35pt x 172.645pt>
 File: figures/ZprimeToTauTau.png Graphic file (type png)
 
 <use figures/ZprimeToTauTau.png>
 Package pdftex.def Info: figures/ZprimeToTauTau.png used on input line 266.
 (pdftex.def)             Requested size: 187.89912pt x 89.77327pt.
-) (./CMS.tex [16 <./figures/ZprimeToTauTau.png (PNG copy)>]
- \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 5.
-centered
-<figures/LHCRing.jpg, id=405, 610.28pt x 443.6575pt>
-File: figures/LHCRing.jpg Graphic file (type jpg)
- <use figures/LHCRing.jpg>
-Package pdftex.def Info: figures/LHCRing.jpg used on input line 6.
-(pdftex.def)             Requested size: 187.89912pt x 136.59818pt.
+ [16 <./figures/ZprimeToTauTau.png (PNG copy)>]
+Overfull \hbox (17.3802pt too wide) in paragraph at lines 282--283
+[]\OT1/cmr/m/n/10.95 Models that try to merge the strong and elec-troweak in-te
+r-ac-tions into one larger, all-encompassing
+ []
 
-<figures/CMSphoto.jpg, id=406, 501.875pt x 333.245pt>
-File: figures/CMSphoto.jpg Graphic file (type jpg)
-
-<use figures/CMSphoto.jpg>
-Package pdftex.def Info: figures/CMSphoto.jpg used on input line 11.
-(pdftex.def)             Requested size: 187.89912pt x 124.76825pt.
- [17
-
- <./figures/LHCRing.jpg>]
-<figures/CMSdiagram.png, id=412, 3189.9175pt x 2253.41875pt>
-File: figures/CMSdiagram.png Graphic file (type png)
-
-<use figures/CMSdiagram.png>
-Package pdftex.def Info: figures/CMSdiagram.png used on input line 28.
-(pdftex.def)             Requested size: 187.89912pt x 132.72362pt.
- [18 <./figures/CMSphoto.jpg>]
-<figures/TrackerLayout.png, id=420, 558.085pt x 228.855pt>
-File: figures/TrackerLayout.png Graphic file (type png)
-
-<use figures/TrackerLayout.png>
-Package pdftex.def Info: figures/TrackerLayout.png used on input line 37.
-(pdftex.def)             Requested size: 187.89912pt x 77.0519pt.
-
-<figures/PixelLayout.png, id=421, 504.88625pt x 306.14375pt>
-File: figures/PixelLayout.png Graphic file (type png)
-
-<use figures/PixelLayout.png>
-Package pdftex.def Info: figures/PixelLayout.png used on input line 48.
-(pdftex.def)             Requested size: 187.89912pt x 113.93474pt.
- [19 <./figures/CMSdiagram.png>] [20 <./figures/TrackerLayout.png> <./figures/P
-ixelLayout.png>] [21]
-<figures/ECAL_layout.png, id=440, 685.56125pt x 360.34625pt>
-File: figures/ECAL_layout.png Graphic file (type png)
-
-<use figures/ECAL_layout.png>
-Package pdftex.def Info: figures/ECAL_layout.png used on input line 73.
-(pdftex.def)             Requested size: 187.89912pt x 98.76286pt.
- [22 <./figures/ECAL_layout.png>]
-<figures/HCAL_layout.png, id=447, 709.65125pt x 494.84875pt>
-File: figures/HCAL_layout.png Graphic file (type png)
-
-<use figures/HCAL_layout.png>
-Package pdftex.def Info: figures/HCAL_layout.png used on input line 89.
-(pdftex.def)             Requested size: 187.89912pt x 131.02103pt.
- [23 <./figures/HCAL_layout.png>]
-<figures/Solenoid.png, id=454, 723.70375pt x 539.01375pt>
-File: figures/Solenoid.png Graphic file (type png)
-
-<use figures/Solenoid.png>
-Package pdftex.def Info: figures/Solenoid.png used on input line 114.
-(pdftex.def)             Requested size: 187.89912pt x 139.94287pt.
-
-<figures/muonSystemLayout.png, id=456, 526.96875pt x 402.50375pt>
-File: figures/muonSystemLayout.png Graphic file (type png)
-
-<use figures/muonSystemLayout.png>
-Package pdftex.def Info: figures/muonSystemLayout.png used on input line 125.
-(pdftex.def)             Requested size: 187.89912pt x 143.51935pt.
- [24 <./figures/Solenoid.png>] [25 <./figures/muonSystemLayout.png>] [26] [27] 
-[28] [29] [30] [31]) (./Results.tex [32]
-[33]
- \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 6.
-centered
-
-Package caption Warning: \label without proper \caption on input line 42.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:EvtSR_allMass' on page 34 undefined on input li
-ne 7.
-
-
-Package caption Warning: \label without proper \caption on input line 72.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:EvtSR_hiMass' on page 34 undefined on input lin
-e 8.
-
-[34
-
-] [35]
-<figures/SR_muTau_Unblinded_LogScale_NewBinScheme_withoutPoissonErrorOnBGRatein
-Band_TightTo5WJetsIsoSideband_1or3Prong_ZaixingColors.pdf, id=519, 569.12625pt 
-x 546.04pt>
-File: figures/SR_muTau_Unblinded_LogScale_NewBinScheme_withoutPoissonErrorOnBGR
-ateinBand_TightTo5WJetsIsoSideband_1or3Prong_ZaixingColors.pdf Graphic file (ty
-pe pdf)
-
-<use figures/SR_muTau_Unblinded_LogScale_NewBinScheme_withoutPoissonErrorOnBGRa
-teinBand_TightTo5WJetsIsoSideband_1or3Prong_ZaixingColors.pdf>
-Package pdftex.def Info: figures/SR_muTau_Unblinded_LogScale_NewBinScheme_witho
-utPoissonErrorOnBGRateinBand_TightTo5WJetsIsoSideband_1or3Prong_ZaixingColors.p
-df used on input line 107.
-(pdftex.def)             Requested size: 187.89912pt x 180.27707pt.
-
-<figures/SR_diTauHad_Unblinded_LogScale_withoutPoissonErrorOnBGRateInBand_1or3p
-rong_ZaixingColors.pdf, id=520, 569.12625pt x 546.04pt>
-File: figures/SR_diTauHad_Unblinded_LogScale_withoutPoissonErrorOnBGRateInBand_
-1or3prong_ZaixingColors.pdf Graphic file (type pdf)
-
-<use figures/SR_diTauHad_Unblinded_LogScale_withoutPoissonErrorOnBGRateInBand_1
-or3prong_ZaixingColors.pdf>
-Package pdftex.def Info: figures/SR_diTauHad_Unblinded_LogScale_withoutPoissonE
-rrorOnBGRateInBand_1or3prong_ZaixingColors.pdf used on input line 110.
-(pdftex.def)             Requested size: 187.89912pt x 180.27707pt.
-
-<figures/bkgTemplate_ZPrime1500_et.pdf, id=521, 569.12625pt x 546.04pt>
-File: figures/bkgTemplate_ZPrime1500_et.pdf Graphic file (type pdf)
-
-<use figures/bkgTemplate_ZPrime1500_et.pdf>
-Package pdftex.def Info: figures/bkgTemplate_ZPrime1500_et.pdf used on input li
-ne 111.
-(pdftex.def)             Requested size: 187.89912pt x 180.27707pt.
-
-<figures/bkgTemplate_ZPrime1500_em.pdf, id=522, 569.12625pt x 546.04pt>
-File: figures/bkgTemplate_ZPrime1500_em.pdf Graphic file (type pdf)
-
-<use figures/bkgTemplate_ZPrime1500_em.pdf>
-Package pdftex.def Info: figures/bkgTemplate_ZPrime1500_em.pdf used on input li
-ne 112.
-(pdftex.def)             Requested size: 187.89912pt x 180.27707pt.
-
-<figures/limits/Limit_muTau.pdf, id=523, 569.12625pt x 662.475pt>
-File: figures/limits/Limit_muTau.pdf Graphic file (type pdf)
-
-<use figures/limits/Limit_muTau.pdf>
-Package pdftex.def Info: figures/limits/Limit_muTau.pdf used on input line 157.
-
-(pdftex.def)             Requested size: 187.89912pt x 218.7185pt.
-
-<figures/limits/Limit_TauTau.pdf, id=524, 569.12625pt x 662.475pt>
-File: figures/limits/Limit_TauTau.pdf Graphic file (type pdf)
-
-<use figures/limits/Limit_TauTau.pdf>
-Package pdftex.def Info: figures/limits/Limit_TauTau.pdf used on input line 158
-.
-(pdftex.def)             Requested size: 187.89912pt x 218.7185pt.
-
-<figures/limits/Limit_eTau.pdf, id=525, 569.12625pt x 662.475pt>
-File: figures/limits/Limit_eTau.pdf Graphic file (type pdf)
-
-<use figures/limits/Limit_eTau.pdf>
-Package pdftex.def Info: figures/limits/Limit_eTau.pdf used on input line 159.
-(pdftex.def)             Requested size: 187.89912pt x 218.7185pt.
-
-<figures/limits/Limit_eMu.pdf, id=526, 569.12625pt x 662.475pt>
-File: figures/limits/Limit_eMu.pdf Graphic file (type pdf)
-
-<use figures/limits/Limit_eMu.pdf>
-Package pdftex.def Info: figures/limits/Limit_eMu.pdf used on input line 160.
-(pdftex.def)             Requested size: 187.89912pt x 218.7185pt.
-
-! Extra }, or forgotten \endgroup.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.164 \end{figure}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-<figures/limits/CombinedLimit.pdf, id=527, 569.12625pt x 662.475pt>
-File: figures/limits/CombinedLimit.pdf Graphic file (type pdf)
-
-<use figures/limits/CombinedLimit.pdf>
-Package pdftex.def Info: figures/limits/CombinedLimit.pdf used on input line 16
-8.
-(pdftex.def)             Requested size: 281.85585pt x 328.10304pt.
- [36]
-<figures/8TeV_SR.png, id=534, 741.77126pt x 478.78876pt>
-File: figures/8TeV_SR.png Graphic file (type png)
-
-<use figures/8TeV_SR.png>
-Package pdftex.def Info: figures/8TeV_SR.png used on input line 183.
-(pdftex.def)             Requested size: 281.85585pt x 181.927pt.
-
-<figures/8TeV_BGRates.png, id=535, 1034.86626pt x 204.765pt>
-File: figures/8TeV_BGRates.png Graphic file (type png)
-
-<use figures/8TeV_BGRates.png>
-Package pdftex.def Info: figures/8TeV_BGRates.png used on input line 190.
-(pdftex.def)             Requested size: 281.85585pt x 55.76845pt.
-
-<figures/8TeV_SignalRates.png, id=537, 1153.30875pt x 440.64626pt>
-File: figures/8TeV_SignalRates.png Graphic file (type png)
-
-<use figures/8TeV_SignalRates.png>
-Package pdftex.def Info: figures/8TeV_SignalRates.png used on input line 199.
-(pdftex.def)             Requested size: 281.85585pt x 107.68697pt.
- [37 <./figures/SR_muTau_Unblinded_LogScale_NewBinScheme_withoutPoissonErrorOnB
-GRateinBand_TightTo5WJetsIsoSideband_1or3Prong_ZaixingColors.pdf, page is rotat
-ed 90 degrees> <./figures/SR_diTauHad_Unblinded_LogScale_withoutPoissonErrorOnB
-GRateInBand_1or3prong_ZaixingColors.pdf, page is rotated 90 degrees> <./figures
-/bkgTemplate_ZPrime1500_et.pdf, page is rotated 90 degrees> <./figures/bkgTempl
-ate_ZPrime1500_em.pdf, page is rotated 90 degrees>] <figures/8TeV_Limit.png, id
-=717, 804.00375pt x 399.4925pt>
-File: figures/8TeV_Limit.png Graphic file (type png)
-
-<use figures/8TeV_Limit.png>
-Package pdftex.def Info: figures/8TeV_Limit.png used on input line 208.
-(pdftex.def)             Requested size: 281.85585pt x 140.04391pt.
 )
 No file main.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-[38 <./figures/limits/Limit_muTau.pdf> <./figures/limits/Limit_TauTau.pdf> <./f
-igures/limits/Limit_eTau.pdf> <./figures/limits/Limit_eMu.pdf>] [39 <./figures/
-limits/CombinedLimit.pdf> <./figures/8TeV_SR.png>] [40 <./figures/8TeV_BGRates.
-png> <./figures/8TeV_SignalRates.png> <./figures/8TeV_Limit.png>]
+[17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 315BA188A4C9FD71A988F642641A39EA;2236.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: B4BA97A49F93F7CE121122B2880D6F2B;1166.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 8671 strings out of 493089
- 129678 string characters out of 6134842
- 224700 words of memory out of 5000000
- 11851 multiletter control sequences out of 15000+600000
+ 8454 strings out of 493089
+ 124262 string characters out of 6134842
+ 214700 words of memory out of 5000000
+ 11725 multiletter control sequences out of 15000+600000
  11823 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,40p,1534b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,1690b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -800,16 +570,16 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (50 pages, 8550277 bytes).
+Output written on main.pdf (26 pages, 785333 bytes).
 PDF statistics:
- 1029 PDF objects out of 1200 (max. 8388607)
- 696 compressed objects within 7 object streams
- 146 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
