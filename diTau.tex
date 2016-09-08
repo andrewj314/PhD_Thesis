@@ -7,10 +7,10 @@ A search for new heavy gauge bosons is presented using events with two hadronica
 Similarly to other channels, the selections---designed to discriminate between the signal and background---are divided into: kinematic and geometric acceptance for selecting $\tau_{h}\tau_{h}$ pairs, $\tau_{h}$ identification, and topological selections. The main difference with the analyses of the $e\mu$, $\mu \tau_h$ and $e \tau_h$ channels are the substantially tighter $p_{T}(\tau_{h})$ requirements in order to stay efficient with respect to the trigger and targeting at the suppression of QCD multijet backgrounds (the exact selections are described below). Note that surviving pairs of $\tau_{h}$ candidates are preserved at each intermediate stage in the selections. In events in which more than one pair of unique $\tau_{h}$ candidates passes all the selections, only that pair with the highest $m(\tau_{h},\tau_{h},\MET)$ is selected. This requirement has a very high efficiency for both signal and backgrounds (the fraction of events with more than one pair is $\ll 1$\%).
 
 Events fired by the $HLT\_DoubleMediumIsoPFTau35\_Trk1*$ trigger are considered as the interesting events for offline analysis. Events are required to have at 
-least 2 HPS taus with $p_{T}$ greater than 60\gev . These taus are required to have pseudorapadity coverage of $|\eta| < 2.1$. A $\tau_{h}$ candidate is also 
+least 2 HPS taus with $p_{T}$ greater than 60 GeV . These taus are required to have pseudorapadity coverage of $|\eta| < 2.1$. A $\tau_{h}$ candidate is also 
 required to satisfy the the reconstruction and identification criteria described in section~\ref{sec:recoID}. The $\tau_{h}$ candidates are required to pass the 
 following discriminators : ''DecayModeFindingNewDMs'' , ''TightCombinedIsoDB3Hits'' , ''againstMuonTight3''  and ''againstElectronLooseMVA5''.  The efficiency of 
-these dicriminators is shown in section~\ref{sec:tauIDeff}. These discriminators ensure the proper identification of a $\tau_{h}$ against QCD jets, muons and electrons. The candidate $\tau_{h}\tau_{h}$ pairs are required to be separated in $\eta-\phi$ space by $\Delta R(\tau_{h},\tau_{h}) > 0.3 $. Further, to reduce top pair contamination the event is required not to have any jet identified as a b-quark jet by the b–tagging algorithms using the “combined secondary vertex loose” (CSVL) working point. Further, each event must have at least 30 \gev of missing transverse energy to account for the neutrinos present in signal and further discriminate against the QCD multijet background. For consistency with the other channels, only 1- and 3-prong taus are considered. 
+these dicriminators is shown in section~\ref{sec:tauIDeff}. These discriminators ensure the proper identification of a $\tau_{h}$ against QCD jets, muons and electrons. The candidate $\tau_{h}\tau_{h}$ pairs are required to be separated in $\eta-\phi$ space by $\Delta R(\tau_{h},\tau_{h}) > 0.3 $. Further, to reduce top pair contamination the event is required not to have any jet identified as a b-quark jet by the b–tagging algorithms using the “combined secondary vertex loose” (CSVL) working point. Further, each event must have at least 30 GeV of missing transverse energy to account for the neutrinos present in signal and further discriminate against the QCD multijet background. For consistency with the other channels, only 1- and 3-prong taus are considered. 
 
 The $\tau_{h}\tau_{h}$ pair is expected to be back-to-back with $\cos(\delta\phi(\tau_{h},\tau_{h})) < -0.95$ . In addition, a ``$\zeta$" cut is used 
 $(p_{\zeta}- 3.1\cdot p_{\zeta}^{vis} > -50)$ which is explained and optimized in section 6. These are topological cuts which reduce the contamination of backgrounds mainly from  $t\bar{t}$ and W+jets processes to negligible levels.  
@@ -39,7 +39,7 @@ The QCD estimation and validation strategy used in this analysis is shown in Fig
  \begin{figure}[tbh!]
      \centering
      \begin{tabular}{cc}
-       \includegraphics[width=0.75\textwidth]{QCD_Strategy.jpg}
+       \includegraphics[width=0.75\textwidth]{figures/QCD_Strategy.jpg}
      \end{tabular}
      \caption{QCD estimation and validation strategy for the $\tau_{h}\tau_{h}$ channel.}
     \label{fig:qcd}
@@ -48,16 +48,15 @@ The QCD estimation and validation strategy used in this analysis is shown in Fig
 
 The shape of the $m(\tau_{h},\tau_{h},\MET)$ distribution is obtained from control region C (same-sign $\tau_{h}\tau_{h}$ with nominal $\MET$). To extract the OS/LS ratio from data , two control regions 1B and 1D are obtained by keeping the same selections as signal selections but inverting the $\MET$ cut $(\MET < 30$ GeV) and requiring OS and LS $\tau_{h}\tau_{h}$ pairs respectively. The contribution of non-QCD MC backgrounds are subtracted from data in these control regions and then the $R_{OS/LS}$ is measured:
 
-\begin{eqnarray}
 \begin{center}
+\begin{eqnarray}
  N^{\textrm{QCD}}_{\textrm{OS}} = N^{\textrm{Data}}_{\textrm{OS}} - N^{\textrm{non-QCD MC}}_{\textrm{OS}} \nonumber\\
  N^{\textrm{QCD}}_{\textrm{LS}} = N^{\textrm{Data}}_{\textrm{LS}} - N^{\textrm{non-QCD MC}}_{\textrm{LS}} \\  
 % R_{\textrm{OS/LS}} = QCD_{\textrm{OS}}/QCD_{\textrm{LS}} \nonumber\\ 
 R_{\textrm{OS/LS}} = N^{\textrm{QCD}}_{\textrm{OS}}/N^{\textrm{QCD}}_{\textrm{LS}} \nonumber\\ 
-\end{center}
 \label{eqn:OSLSratio}
 \end{eqnarray}
-
+\end{center}
 
 Table~\ref{table:OLSStable} shows the data and MC yields in controls regions 1B and 1D. The purity of QCD multijet, defined by Data - $\sum\limits_{i} BG_{i}$, is 
 approximately $96-99$\% depending on the sample. The measured OS/LS ratio is $1.64\pm0.21$. The above equation shows the mathematical procedure used to obtain 
@@ -76,7 +75,7 @@ systematic uncertainties are applied due to this particular closure test on the 
    \centering{
      \begin{tabular}{ | l | c | c | }
         \hline \hline
-        Process & OS $\tau_{h}\tau_{h}$ isolated + MET $\lt$ 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET $\lt$ 30 GeV \\ \hline
+        Process & OS $\tau_{h}\tau_{h}$ isolated + MET < 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET < 30 GeV \\ \hline
         Data & 207 & 113 \\ \hline
         W + jets & 0.897455 $\pm$ 1.57954 & 1.20229 $\pm$ 1.26803 \\ \hline
         Z + jets & 21.8385 $\pm$ 4.67317 & 0.132112 $\pm$ 0.363472 \\ \hline
@@ -98,8 +97,8 @@ systematic uncertainties are applied due to this particular closure test on the 
 \begin{figure}[tbhp!]
       \centering
       \begin{tabular}{cc}
-        \includegraphics[width=0.45\textwidth]{OSLowMetCR_NormalScale_1or3prong.png}
-        \includegraphics[width=0.45\textwidth]{OSLowMetCR_LogScale_1or3prong.png}
+        \includegraphics[width=0.45\textwidth]{figures/OSLowMetCR_NormalScale_1or3prong.png}
+        \includegraphics[width=0.45\textwidth]{figures/OSLowMetCR_LogScale_1or3prong.png}
       \end{tabular}
      \caption{$\tau_{h} - \tau_{h}$ mass distribution in isolated OS, low-$\MET$ sideband (Left: normal scale.  Right: log scale).}
     \label{fig:MG304}
@@ -108,8 +107,8 @@ systematic uncertainties are applied due to this particular closure test on the 
 \begin{figure}[tbhp!]
       \centering
       \begin{tabular}{cc}
-        \includegraphics[width=0.45\textwidth]{QCDBGEst_Closure_LowMET_CR_1_20_16.pdf}
-        \includegraphics[width=0.45\textwidth]{QCDBGEst_Closure_LowMET_CR__Log_1_20_16.pdf}
+        \includegraphics[width=0.45\textwidth]{figures/QCDBGEst_Closure_LowMET_CR_1_20_16.pdf}
+        \includegraphics[width=0.45\textwidth]{figures/QCDBGEst_Closure_LowMET_CR__Log_1_20_16.pdf}
       \end{tabular}
      \caption{$m(\tau_{h},\tau_{h},\MET)$ mass distribution in anti-isolated OS, low-$\MET$ sideband (Left: normal scale.  Right: log scale).}
     \label{fig:MG305}
@@ -156,8 +155,8 @@ Next we perform the full-blown closure test for the ABCD method by comparing the
  \begin{figure}[tbhp!]
       \centering
       \begin{tabular}{cc}
-        \includegraphics[width=0.45\textwidth]{QCDBGEst_Closure_SR_1_20_16.pdf}
-        \includegraphics[width=0.45\textwidth]{QCD_Closure_SR_FixedTitles_Log_1_26_16.pdf}
+        \includegraphics[width=0.45\textwidth]{figures/QCDBGEst_Closure_SR_1_20_16.pdf}
+        \includegraphics[width=0.45\textwidth]{figures/QCD_Closure_SR_FixedTitles_Log_1_26_16.pdf}
       \end{tabular}
      \caption{$m(\tau_{h},\tau_{h},\MET)$ mass distribution in anti-isolated OS region with nominal $\MET$ (Left: normal scale.  Right: log scale).}
     \label{fig:MG306}
@@ -181,7 +180,7 @@ the AN.
 
 \begin{tabular}{ | l | c | c | }
 \hline \hline
-Process & OS $\tau_{h}\tau_{h}$ isolated + MET $\gt$ 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET $\gt$ 30 GeV \\ \hline
+Process & OS $\tau_{h}\tau_{h}$ isolated + MET > 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET > 30 GeV \\ \hline
 Data & 55 & 30 \\ \hline
 W + jets & 0.0935669 $\pm$ 0.352639 & 0.281734 $\pm$ 0.612064 \\ \hline
 Z + jets & 8.117 $\pm$ 2.84904 & 0.101807 $\pm$ 0.319072 \\ \hline
@@ -208,7 +207,7 @@ Data - $\sum\limits_{i} BG_{i}$ & 46.302 $\pm$ 7.98953 & 29.6165 $\pm$ 5.52055 \
 
 \begin{tabular}{ | l | c | c | c | c | }
 \hline \hline
-Region & OS $\tau_{h}\tau_{h}$ + MET $\lt$ 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET $\lt$ 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET $\gt$ 30 GeV  & OS $\tau_{h}\tau_{h}$ + MET $\gt$ 30 GeV \\ \hline
+Region & OS $\tau_{h}\tau_{h}$ + MET < 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET < 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET > 30 GeV  & OS $\tau_{h}\tau_{h}$ + MET > 30 GeV \\ \hline
 isolated & 183.679 $\pm$ 15.4261 & 111.666 $\pm$ 10.7129 & 29.6165 $\pm$ 5.52111 & 48.7161 $\pm$ 11.0027 \\ \hline \hline
 \end{tabular}
 
