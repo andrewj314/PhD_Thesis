@@ -11,7 +11,7 @@ One of the most significant challenges faced in searches for heavy resonances de
 \label{fig:massVisSigVsMC}
 \end{figure}
 
-One proposal to improve the discriminating power of these searches is to add additional selection criteria taking advantage of the lifetime of the tau. At $2.9\times 10^{-13}$s, the tau lifetime is quite short, but it is still long enough to distinguish decay products originating from the primary vertex from those originating from the tau decay vertex. Essentially, ``prompt" particles coming directly from the interaction point (PV) leave tracks that may be traced back to the PV, while tracks from particles coming from tau decays will ``miss" the PV due to the distance the tau traveled from the PV before decaying. This concept is illustrated in Figure \ref{fig:PromptVsTauDecay}. These additional selection critera, referred to as ``lifetime cuts," are based on tracking information collected from the tau decay products.
+One proposal to improve the discriminating power of these searches is to add additional selection criteria taking advantage of the lifetime of the tau. At $2.9\times 10^{-13}$s, the tau lifetime is quite short, but it is still long enough to distinguish decay products originating from the primary vertex (PV) from those originating from the tau decay vertex. Essentially, ``prompt" particles coming directly from the PV leave tracks that may be traced back to the PV, while tracks from particles coming from tau decays will ``miss" the PV due to the distance the tau traveled from the PV before decaying. This concept is illustrated in Figure \ref{fig:PromptVsTauDecay}. These additional selection critera, referred to as ``lifetime cuts," are based on tracking information collected from the tau decay products.
 
 \begin{figure}[tbh!]
 \centering
@@ -23,32 +23,72 @@ One proposal to improve the discriminating power of these searches is to add add
 
 \section{Methods}
 
-Efforts to study the efficacy of the tau lifetime cuts began in the $\emu$ channel with a simple cut on the individual impact parameters of the electron and muon in each ditau event. In this channel, the principal prompt backgrounds are $t\bar{t}$, where the $b$ quarks from $t$ decays decay leptonically into an electron and muon, and $W^+W_-$, where the $W$s decay leptonically into an electron and muon. Drell-Yan events where virtual $Z$ bosons decay into tau pairs are in principle an irreducible background, but the rate falls off significantly in the high-mass (signal) region being considered.
+Efforts to study the efficacy of the tau lifetime cuts began in the $\emu$ channel with a simple cut on the individual impact parameters (IPs) of the electron and muon in each ditau event. In this case, IP is defined as the closest distance between the track and a point with the x- and y-coordinates of the beam spot (BS) and the z-coordinate of the PV. The beam spot is a fixed quantity indicating the coordinates of the beam, and the PV is a quantity that is reconstructed from tracks in each event. In this channel, the principal prompt backgrounds are $t\bar{t}$, where the $b$ quarks from $t$ decays decay leptonically into an electron and muon, and $W^+W_-$, where the $W$s decay leptonically into an electron and muon. Drell-Yan events where virtual $Z$ bosons decay into tau pairs are in principle an irreducible background, but the rate falls off significantly in the high-mass (signal) region being considered.
 
-The cut was first defined as the sum of the absolute values of the impact parameters (IPs) of each lepton:
+The cut was first defined as the sum of the absolute values of the IPs of each lepton:
 
 \begin{equation}
 \centering
-\nomath{Lifetime}_\tau = |\nomath{IP}_e| + |\nomath{IP}_\mu|
-
+\textrm{Lifetime}_\tau = |\textrm{IP}_e| + |\textrm{IP}_\mu|
 \end{equation}
 
 \noindent To account for the large variance in track resolution, and thus prefentially-select ``clean" tau decays, the lifetime definition was modified to include the track measurement error:
 
 \begin{equation}
 \centering
-\nomath{Lifetime}_\tau = \sqrt{\frac{\left(|\nomath{IP}_e| + |\nomath{IP}_\mu|\right)^2}{\sigma_{\nomath{IP}_e}^2 + \sigma_{\nomath{IP}_\mu}^2}}
-
+\textrm{Lifetime}_\tau = \sqrt{\frac{\left(|\textrm{IP}_e| + |\textrm{IP}_\mu|\right)^2}{\sigma_{\textrm{IP}_e}^2 + \sigma_{\textrm{IP}_\mu}^2}}
 \label{eq:IP}
-
 \end{equation}
 
-The cut is placed at the very end of the selection sequence, immediately following the b-jet veto. The quantity in Equation \ref{eq:IP} is required to exceed a value chosen based on optimization studies. These studies, based in signal and background MC, compare the acceptance of signal events with the rejection of background events across several values of this threshold. The threshold value is chosen based on its associated value of $\frac{s}{\sqrt{s+b}$, where $s$ is the signal rate and $b$ is the aggregated background rate. Figure \ref{fig:IPstudy} shows the performance of the impact-parameter-based lifetime cut in MC. A cut threshold of 2 was chosen on the basis of maximizing both $\frac{s}{\sqrt{s+b}$ and signal MC acceptance.
+\noindent where the error on a track is defined according to the recommendations laid down by the Tracker POG\cite{TrackerPOG}:
+
+\begin{equation}
+\centering
+\sigma_e = \textrm{abs(theGSFElec.gsfTrack()->dxy(theBeamSpot))}
+\sigma_\mu = \textrm{abs(thePatMuon.track()->dxy(theBeamSpot))}
+\end{equation}
+
+The cut is placed at the very end of the selection sequence, immediately following the b-jet veto. The quantity in Equation \ref{eq:IP} is required to exceed a value chosen based on optimization studies. These studies, based in signal and background MC, compare the acceptance of signal events with the rejection of background events across several values of this threshold. The threshold value is chosen based on its associated value of $\frac{s}{\sqrt{s+b}}$, where $s$ is the signal rate and $b$ is the aggregated background rate. Figure \ref{fig:IPstudy} shows the performance of the IP-based lifetime cut in MC. A cut threshold of 2 is chosen on the basis of maximizing both $\frac{s}{\sqrt{s+b}}$ and signal MC acceptance.
 
 
 \begin{figure}[tbh!]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/IPstudy.png}
-\caption{Plot showing the performance of the impact-parameter definition of the lifetime cut. The colored lines indicate MC efficiencies and correspond to the left axis. The black triangles indicate $\frac{s}{\sqrt{s+b}$ and correspond to the right axis. A threshold value of 2 was chosen for the cut since it is the first value on the plateau of $\frac{s}{\sqrt{s+b}$ maxima, thereby keeping signal MC acceptance as high as possible.}
+\caption{Plot showing the performance of the IP definition of the lifetime cut. The colored lines indicate MC efficiencies and correspond to the left axis. The black triangles indicate $\frac{s}{\sqrt{s+b}}$ and correspond to the right axis. A threshold value of 2 was chosen for the cut since it is the first value on the plateau of $\frac{s}{\sqrt{s+b}}$ maxima, thereby keeping signal MC acceptance as high as possible.}
 \label{fig:IPstudy}
 \end{figure}
+
+
+Another cut exploiting tau lifetime is one based on the distance-of-closest approach (DCA) between the two lepton tracks. DCA is defined to be the transverse distance between the two tracks at their point of closest approach. DCA is also divided by its error, where error on DCA is again defined according to the Tracker POG recommendation\cite{TrackerPOG}:
+
+\begin{equation}
+\centering
+\sigma_{DCA} = \sqrt{\frac{\vec{DCA^T}\times M_\sigma\times\vec{DCA}}{|\vec{DCA}|^2}}
+\end{equation}
+
+\noindent where $M_\sigma$ is a 3x3 covariance matrix containing the x, y, and z-errors summed over the electron and muon points of closest approach. Figure \ref{fig:DCAstudy} shows the performance of the DCA/$\sigma$ cut.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/DCAstudy.png}
+\caption{Plot showing the performance of the DCA definition of the lifetime cut. The colored lines indicate MC efficiencies and correspond to the left axis. The black triangles indicate $\frac{s}{\sqrt{s+b}}$ and correspond to the right axis. A threshold value of 2.5 was chosen for the cut since it is the first value on the plateau of $\frac{s}{\sqrt{s+b}}$ maxima, thereby keeping signal MC acceptance as high as possible.}
+\label{fig:DCAstudy}
+\end{figure}
+
+The DCA cut has the potential to veto valid signal events in cases where the two lepton tracks are far from the BS/PV but close to one another (illustrated in Figure \ref{fig:DCAfail}). In such cases, the IP-based cut would still retain the signal event. Therefore, the final definition of the lifetime cut is the requirement that events pass the IP-based cut \emph{OR} the DCA cut. The performance of this ``OR" cut is shown in Figure \ref{fig:DCAorIPstudy}.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/DCAfail.png}
+\caption{Example of where the DCA cut could reject a valid signal event - the two lepton tracks have a low DCA despite a high IP}
+\label{fig:DCAfail}
+\end{figure}
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/DCAorIPstudy.png}
+\caption{Plot showing the performance of the DCA \emph{OR} IP-based definition of the lifetime cut. The colored lines indicate MC efficiencies and correspond to the left axis. The black triangles indicate $\frac{s}{\sqrt{s+b}}$ and correspond to the right axis. A threshold value of 2.5 was chosen for the cut since it is the first value on the plateau of $\frac{s}{\sqrt{s+b}}$ maxima, thereby keeping signal MC acceptance as high as possible. Note that the performance in this cut, in terms of signal acceptance and background rejection, is higher than either the IP-based or DCA cuts individually.}
+\label{fig:DCAorIPstudy}
+\end{figure}
+
+\section{Impact on Limit}
