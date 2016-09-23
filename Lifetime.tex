@@ -87,8 +87,52 @@ The DCA cut has the potential to veto valid signal events in cases where the two
 \begin{figure}[tbh!]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/DCAorIPstudy.png}
-\caption{Plot showing the performance of the DCA \emph{OR} IP-based definition of the lifetime cut. The colored lines indicate MC efficiencies and correspond to the left axis. The black triangles indicate $\frac{s}{\sqrt{s+b}}$ and correspond to the right axis. A threshold value of 2.5 was chosen for the cut since it is the first value on the plateau of $\frac{s}{\sqrt{s+b}}$ maxima, thereby keeping signal MC acceptance as high as possible. Note that the performance in this cut, in terms of signal acceptance and background rejection, is higher than either the IP-based or DCA cuts individually.}
+\caption{Plot showing the performance of the DCA \emph{OR} IP-based definition of the lifetime cut. The colored lines indicate MC efficiencies and correspond to the left axis. The black triangles indicate $\frac{s}{\sqrt{s+b}}$ and correspond to the right axis. A threshold value of 2 was chosen for the cut since it is the first value on the plateau of $\frac{s}{\sqrt{s+b}}$ maxima, thereby keeping signal MC acceptance as high as possible. Note that the performance in this cut, in terms of signal acceptance and background rejection, is higher than either the IP-based or DCA cuts individually.}
 \label{fig:DCAorIPstudy}
 \end{figure}
 
 \section{Impact on Limit}
+
+\subsection{8 TeV Results in the $\emu$ Channel}
+
+Figure \ref{fig:8TeVLifetimeLimits} shows the impact of the addition of the lifetime cut (``OR" definition) on the overall limit. Note that the limit without the lifetime cut shown in Figure \ref{fig:8TeVLifetimeLimits} is different from the final limit published in EXO-12-046 and shown in Section \ref{sec:results}. This is due to the fact that the lifetime study was performed early in the 8 TeV analysis when a different technique was being used for limit-setting. Namely, the limits shown here were produced with the Asymptotic $\textrm{CL}_{\textrm{s}}$ method\cite{HiggsCombine} using one datacard per background as input, while the final limits shown in EXO-12-046 used the full $\textrm{CL}_{\textrm{s}}$ method\cite{HiggsCombine} using one datacard per bin for each background. Despite the difference, it is still apparent that the addition of the addition of the lifetime cut improves the limit by $\sim70$ GeV.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/Limit_noLifetime_oneBG_6_5_14.png}
+\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_2_oneBG_6_11_14.png}
+\caption{Limit calculated with standard 8 TeV selection sequence (top) compared with limit calculated with the standard selection sequence and a lifetime threshold of 2 applied (bottom). The addition of the lifetime cut improves the exclusion limit by about 70 GeV.}
+\label{fig:8TeVLifetimeLimits}
+\end{figure}
+
+\subsection{13 TeV Results in the $\thth$ Channel}
+
+For the 13 TeV analysis, the focus of the lifetime study is shifted to the fully-hadronic $\thth$ channel, where the leading charged pion tracks from the hadronic tau decays are used in place of the electron and muon tracks. QCD is the overwhemingly dominant background in this channel (see Section \ref{sec:dihad}). Since QCD MC is not available, a full optimization study to determine the appropriate lifetime cut value is more difficult. Instead of a plot like Figure \ref{fig:DCAorIPstudy}, the distributions of combined IP/$\sigma$ are compared for a 2.5 TeV $Z^\prime\to\tau_h\tau_h$ sample in the signal region and for data in the same-sign QCD control region. In this case, data in the SS QCD CR is used as an approximation for QCD, given the relative dominance of QCD in this channel. Figure \ref{fig:13TeVComparison} shows this comparison, and a lifetime cut threshold of 3 is selected for this analysis.
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/Zprime_2500GeV_CombinedDxyOverError.pdf}
+\includegraphics[width=0.5\textwidth]{figures/Data_CombinedDxyOverError.pdf}
+\caption{Distribution of combined IP/$\sigma$ for a 2.5 TeV $Z^\prime\to\tau_h\tau_h$ sample in the SR (top) and data (used as a proxy for QCD) in the SS QCD CR (bottom). A threshold value of 3 is selected for the limit comparison.}
+\label{fig:13TeVComparison}
+\end{figure}
+
+Figure \ref{fig:13TeVLifetimeLimits} shows the impact of the addition of the lifetime cut (``OR" definition) on the overall limit. In this channel and at this collision center-of-mass energy, the addition of the lifetime cut appears to decrease both the expected and observed limits by $\sim$100 GeV. It's likely that the extremely low event rates in the high mass region (i.e. the search region with the highest sensitivity) is what drives this behavior. Since the background rate in the high mass region is already quite low, the fact that the lifetime cut rejects $\sim$50\% of the signal is likely to have a larger impact on the limit than boosting the signal-to-background ratio. In an effort to increase signal events in this region, the $p_\zeta$ cut was removed. However, this alone permitted a significant increase in QCD background, so the $\MET$ cut was tightened to $\MET > 50$. The results are shown in Figure \ref{fig:13TeVImprovedLimits}. These modifications appear to increase the baseline limit. However, even with increased statistics, the addition of the lifetime cut appears to decrease the limit relative to the limit without the lifetime cut. The conclusion is that, in the high-mass region, the loss of signal events due to the lifetime cut affects the limit sensitivity more than the concurrent suppression of background.
+
+\begin{figure}[tbh!]
+\centering
+%\includegraphics[width=0.5\textwidth]{figures/limits/Limit_TauTau}
+\includegraphics[width=0.5\textwidth]{figures/Limit_noLifetime.pdf}
+%\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_2_NoPZeta_123prong.pdf}
+\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_3.pdf}
+\caption{Limit calculated with standard 13 TeV selection sequence (top) compared with limit calculated with the standard selection sequence and a lifetime threshold of 3 applied (bottom).}
+\label{fig:13TeVLifetimeLimits}
+\end{figure}
+
+\begin{figure}[tbh!]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/Limit_NoLifetime_NoPZeta_MET_gt_50.pdf}
+\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_2_NoPZeta_123prong.pdf}
+\caption{Limit comparison with the $p_\zeta$ requirement removed and the $\MET$ minimum threshold increased to 50. The top plot has no lifetime threshold applied, while the bottom plot has a lifetime threshold of 2 applied. While the removal of $p_\zeta$ and the tightening of the $\MET$ threshold increases the baseline limit, the limit with the lifetime cut added is still lower (worse) than that without it applied.}
+\label{fig:13TeVImprovedLimits}
+\end{figure}
