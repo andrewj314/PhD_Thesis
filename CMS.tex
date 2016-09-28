@@ -14,12 +14,9 @@ The CMS Experiment is a multipurpose particle detector located on the LHC ring u
 
 
 The experiment uses a right-handed coordinate system: the origin is set at the $pp$ collision point, with the $x$-axis pointing towards the center of the LHC ring, the $y$-axis pointing straight up, and the $z$-axis pointing along the beam line in the counter-clockwise direction. CMS also uses a pseudo-polar coordinate system, with $\theta$ defined as the polar angle from the beam axis, and $\eta$ as the ``pseudorapidity", itself defined as 
-
-
 \begin{equation}
  \eta = -ln\left[tan\left(\theta/2\right)\right]
  \end{equation}
-
 A diagram highlighting the layout of CMS can be seen in Figure~\ref{fig:CMSdiagram}.
 
 \begin{figure}\centering
@@ -29,7 +26,7 @@ A diagram highlighting the layout of CMS can be seen in Figure~\ref{fig:CMSdiagr
 
 \section{The silicon tracker}
 
-The silicon tracker is the innermost detector element in CMS, and is designed to offer the highest resolution measurement of charged particle trajectories (such trajectories are referred to as ``tracks"). The tracker is composed of approximately 200m$^{2}$ of silicon, and includes arrays of silicon pixels in the inner layer and arrays of silicon strips in the outer layer. The silicon elements are arranged in the densest configuration near to the interaction vertex ($ r\approx 10$cm), with pixel size $\approx 100$ x $150 \mu$m$^{2}$. As one moves away from the interaction vertex, the solid angle becomes large enough that the particle flux drops off to a degree that larger silicon elements may be used (silicon strips measuring 10cm x 80$\mu$m at $20$cm$ < r < 55$cm, silicon strips measuring 25cm x 180$\mu$m for $r > 55$cm. The total number of silicon elements is 66 million pixels and 9.6 million strips. The tracker is divided into a barrel segment and two forward endcaps. The endcaps contain two pixel and nine strip layers each, and the barrel segment is separated into an inner and outer barrel. A schematic of the tracker layout can be seen in Figure~\ref{fig:TrackerLayout}. Particle tracks are reconstructed from hits in the individual silicon pixels/strips, the track being interpolated between hits.
+The silicon tracker is the innermost detector element in CMS, and is designed to offer the highest resolution measurement of charged particle trajectories (such trajectories are referred to as ``tracks"). The tracker is composed of approximately 200m$^{2}$ of silicon, and includes arrays of silicon pixels in the inner layer and arrays of silicon strips in the outer layer. The silicon elements are arranged in the densest configuration near to the interaction vertex ($ r\approx 10$cm), with pixel size $\approx 100$ x $150 \mu$m$^{2}$. As one moves away from the interaction vertex, the solid angle becomes large enough that the particle flux drops off to a degree that larger silicon elements may be used (silicon strips measuring 10cm x 80$\mu$m at $20$cm$ < r < 55$cm, silicon strips measuring 25cm x 180$\mu$m for $r > 55$cm. The total number of silicon elements is 66 million pixels and 9.6 million strips.\cite{TDR} The tracker is divided into a barrel segment and two forward endcaps. The endcaps contain two pixel and nine strip layers each, and the barrel segment is separated into an inner and outer barrel. A schematic of the tracker layout can be seen in Figure~\ref{fig:TrackerLayout}. Particle tracks are reconstructed from hits in the individual silicon pixels/strips, the track being interpolated between hits.
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/TrackerLayout.png}
@@ -40,7 +37,7 @@ The silicon tracker is the innermost detector element in CMS, and is designed to
 \subsection{The pixel detector}
 
 The pixel detector, shown in Figure ~\ref{fig:PixelLayout}, consists of three barrel layers and two endcap layers. The barrel has a length of 53 cm, and the endcap disks range from 6 cm to 15 cm in radius. The pixel modules are arranged in a ladder-like configuration in the barrel, with 768 total modules comprising the barrel. The endcap disks are arranged in a turbine-like fashion, with 24 ``blades" per disk, and 7 pixel modules per blade for a total of 672 pixel modules in the endcaps.
-Each pixel module consists of a readout chip (ROC), which is bump bonded to the module. In total, the pixel detector includes about 16,000 ROCs.
+Each pixel module consists of a readout chip (ROC), which is bump bonded to the module. In total, the pixel detector includes about 16,000 ROCs.\cite{TDR}
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/PixelLayout.png}
@@ -49,7 +46,7 @@ Each pixel module consists of a readout chip (ROC), which is bump bonded to the 
 
 \subsubsection{Pixel detector performance}
 
-Pixel detector performance is measured in hit efficiency (Figure~\ref{fig:PixelEfficiency}) and pixel resolution (Figure~\ref{fig:PixelResolution}). Hit efficiency is defined as the probability of finding any hit clusters within a 500 $\mu$m$^2$ area around an expected hit, where an expected hit is provided by a ``good quality track" with an associated primary vertex, small impact parameter, and $p_{T} > 1.0$ GeV. Resolution is measured by comparing the hit position on a given layer with an interpolated track and taking the residual difference. %\ref{https://twiki.cern.ch/twiki/bin/view/CMSPublic/PixelOfflineLHCC2015}
+Pixel detector performance is measured in hit efficiency (Figure~\ref{fig:PixelEfficiency}) and pixel resolution (Figure~\ref{fig:PixelResolution}). Hit efficiency is defined as the probability of finding any hit clusters within a 500 $\mu$m$^2$ area around an expected hit, where an expected hit is provided by a ``good quality track" with an associated primary vertex, small impact parameter, and $p_{T} > 1.0$ GeV. Resolution is measured by comparing the hit position on a given layer with an interpolated track and taking the residual difference.\cite{PixelPerformance}
 
 \begin{figure}\centering
   \includegraphics[width=0.5\textwidth]{figures/PixelEfficiency.png}
@@ -65,7 +62,7 @@ Pixel detector performance is measured in hit efficiency (Figure~\ref{fig:PixelE
 
 The strip tracker is divided into a barrel segment and two endcap segments. The barrel segment is itself divided into a Tracker Inner Barrel (TIB) section and a Tracker Outer Barrel (TOB) section. The TIB includes four layers of silicon strips each 320$\mu$m thick and ranging in pitch from 80$\mu$m and 120 $\mu$m. In the TOB, the lower rate of particle flux allows for larger strips (each 500$\mu$m thick and ranging in pitch from 120$\mu$m to 180$\mu$m).
 
-The endcaps are each comprised of a Tracker Endcap (TEC) and Tracker Inner Disks (TIDs). The TIDs are designed to fill the region between the TEC and the TIB. The TECs each contain nine disks, and each TID contains three disks. On each disk, the modules (for both TID and TEC) are arranged in rings centered on the beam line. The TID strips (and three innermost ring strips of the TEC) have thickness 320$\mu$m, while the rest of the TEC strips have thickness 500$\mu$m. In total the strip tracker contains about 15,400 strip modules.  
+The endcaps are each comprised of a Tracker Endcap (TEC) and Tracker Inner Disks (TIDs). The TIDs are designed to fill the region between the TEC and the TIB. The TECs each contain nine disks, and each TID contains three disks. On each disk, the modules (for both TID and TEC) are arranged in rings centered on the beam line. The TID strips (and three innermost ring strips of the TEC) have thickness 320$\mu$m, while the rest of the TEC strips have thickness 500$\mu$m. In total the strip tracker contains about 15,400 strip modules.\cite{TDR}
 
 
 
@@ -75,9 +72,9 @@ The next layer outward from the silicon tracker is the electromagnetic calorimet
 
 PbWO$_4$ was chosen for the ECAL due to its short radiation length ($X_0 = 0.89$ cm), fast response time ($80\%$ of light emitted within 25ns), and radiation hardness (up to 10 Mrad).
 
-The barrel (EB) crystals present an apparent cross-section (when viewed from the interaction vertex) of $\approx 22$x$22$ mm$^2$, and are 230 mm (25.8 radiation lengths) thick. The barrel has an inner radius of 129 cm, and covers the pseudorapidity range $0 < |\eta| < 1.479$.
+The barrel (EB) crystals present an apparent cross-section (when viewed from the interaction vertex) of $\approx 22$x$22$ mm$^2$, and are 230 mm (25.8 radiation lengths) thick. The barrel has an inner radius of 129 cm, and covers the pseudorapidity range $0 < |\eta| < 1.479$.\cite{TDR}
 
-The endcap (EE) crystals are each arranged in two D-shaped semicircular aluminum plates. From these plates are cantilevered ``supercrystal" structures consisting of 5x5 crystal blocks. Each crystal presents an apparent cross-section of $\approx 28.6$x$28.6$ mm$^2$, and are 220 mm (24.7 radiation lengths) thick, and the endcap crystals cover the pseudorapidity range $1.479 < |\eta| < 3.0$.
+The endcap (EE) crystals are each arranged in two D-shaped semicircular aluminum plates. From these plates are cantilevered ``supercrystal" structures consisting of 5x5 crystal blocks. Each crystal presents an apparent cross-section of $\approx 28.6$x$28.6$ mm$^2$, and are 220 mm (24.7 radiation lengths) thick, and the endcap crystals cover the pseudorapidity range $1.479 < |\eta| < 3.0$.\cite{ECAL}
 
 A diagram of the ECAL layout can be seen in Figure~\ref{fig:ECAL_layout}.
 
@@ -88,7 +85,7 @@ A diagram of the ECAL layout can be seen in Figure~\ref{fig:ECAL_layout}.
 
 \subsubsection{ECAL performance}
 
-The primary indicator of ECAL performance is energy resolution. Energy resolution can be measured from $Z\to ee$ events where the electron energies are reconstructed in the ECAL barrel and endcaps. This is done for both MC and data, and the energy resolution as a function of pseudorapidity is shown in Figure~\ref{fig:ECAL_Resolution}. %~\ref{http://iopscience.iop.org/article/10.1088/1742-6596/455/1/012028/pdf}
+The primary indicator of ECAL performance is energy resolution. Energy resolution can be measured from $Z\to ee$ events where the electron energies are reconstructed in the ECAL barrel and endcaps. This is done for both MC and data, and the energy resolution as a function of pseudorapidity is shown in Figure~\ref{fig:ECAL_Resolution}. \cite{ECAL}
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/ECAL_Resolution.png}
@@ -103,7 +100,7 @@ The primary indicator of ECAL performance is energy resolution. Energy resolutio
 
 Surrounding the ECAL is the hadronic calorimeter (HCAL). The primary function of the HCAL is to measure the energies of hadrons (particles made of quarks and gluons). Located just inside the solenoid magnet, the HCAL is primarily composed of brass panels made from melted-down artillery shells. Interspersed with the brass panels are plastic scintillation panels, in which are embedded wavelength-shifting (WLS) fibers, which carry the signal to clear fibers outside the scintillators for readout. As hadrons enter the HCAL, they produce secondary particles in the brass which in turn create further particles. These hadron ``showers" then interact with the plastic scintillators, where the fibers carry the signal to hybrid photodiodes so the signal can be measured.
 
-HCAL is divided into barrel (HB) and endcap (HE) portions. Due to limited space between the ECAL and solenoid, the HCAL also includes material outside the solenoid: the outer HCAL (HO) lining the solenoid, and the forward calorimeter (HF) outside the muon endcap system. These additions increase the total radiation lengths covered by the HCAL to 10.
+HCAL is divided into barrel (HB) and endcap (HE) portions. Due to limited space between the ECAL and solenoid, the HCAL also includes material outside the solenoid: the outer HCAL (HO) lining the solenoid, and the forward calorimeter (HF) outside the muon endcap system. These additions increase the total radiation lengths covered by the HCAL to 10.\cite{TDR}
 
 While HB and HE use the brass-plastic configuration, HO uses the solenoid itself instead of the brass, although the same plastic scintillators are used. The HF uses steel in place of brass, and quartz fibers in place of plastic scintillators. This is done to preferentially select neutral components of hadron showers, which are shorter and narrower and are thus well suited for the forward environment, which tends to be quite congested with particles.
 
@@ -128,7 +125,7 @@ The magnetic field generated by the solenoid bends charged particles according t
 R = \frac{p_{T}}{0.3eB}
 \end{equation}
 
-\noindent where R is the radius of curvature (in meters), $p_{T}$ is the transverse momentum (in GeV), $e$ is the electron charge (in Coulombs), and $B$ is the field strength (in Tesla). Thus, the transverse momentum ($p_{T}$) of the charged particle can be measured from the known field strength and the observed radius of curvature of the tracks measured in the tracker and muon systems.
+\noindent where R is the radius of curvature (in meters), $p_{T}$ is the transverse momentum (in GeV), $e$ is the electron charge (in Coulombs), and $B$ is the field strength (in Tesla). Thus, the transverse momentum ($p_{T}$) of the charged particle can be measured from the known field strength and the observed radius of curvature of the tracks measured in the tracker and muon systems.\cite{TDR}
 
 An artist's rendition of the superconducting solenoid can be seen in Figure~\ref{fig:Solenoid}.
 
@@ -152,7 +149,7 @@ An overview of the layout of the muon system can be seen in Figure~\ref{fig:muon
 
 The barrel of the muon system contains 250 layers of DTs arranged in four layers (labeled MB1, MB2, MB3, and MB4 in Figure ~fig(muonSystemLayout)). In the MB1, MB2, and MB3 layers, DTs are arranged in 8 $r-\phi$-measuring planes, and 4 $z$-measuring planes. The MB4 layer only contains $r-\phi$-measuring planes.
 
-Each DT is filled with a gaseous mixture of Argon (~85\%) and carbon dioxide (~15\%). Charged particles passing through the DT will ionize the gaseous mixture and produce a current along a central filament to be read out. The maximum drift length per DT is 2.0cm and the single point resolution is $\approx$ 200 $\mu$m. A plot of DT reconstruction efficiency is given in Figure~\ref{fig:DTEfficiency}. %~\ref{http://arxiv.org/pdf/1306.6905.pdf;}
+Each DT is filled with a gaseous mixture of Argon (~85\%) and carbon dioxide (~15\%). Charged particles passing through the DT will ionize the gaseous mixture and produce a current along a central filament to be read out. The maximum drift length per DT is 2.0cm and the single point resolution is $\approx$ 200 $\mu$m. A plot of DT reconstruction efficiency is given in Figure~\ref{fig:DTEfficiency}.\cite{TDR}
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/DTEfficiency.png}
@@ -162,11 +159,11 @@ $\eta$, and $\phi$. Results for the 4 stations are superimposed.}
 
 \subsection{Cathode strip chambers (CSCs)}
 
-The muon endcap (ME) system is composed of 234 CSCs in each endcap. The CSCs are trapezoidal in shape and are arranged in four layers  (labeled ME1, ME2, ME3, and ME4 in Figure~\ref{fig:muonSystemLayout}). The innermost layer (ME1), is made of 108 CSCs arranged in three rings of 36 CSCs each. The other layers each have two rings (18 CSCs on the inner ring, 36 on the outer ring, for a total of 54 CSCs per layer).
+The muon endcap (ME) system is composed of 234 CSCs in each endcap. The CSCs are trapezoidal in shape and are arranged in four layers  (labeled ME1, ME2, ME3, and ME4 in Figure~\ref{fig:muonSystemLayout}). The innermost layer (ME1), is made of 108 CSCs arranged in three rings of 36 CSCs each. The other layers each have two rings (18 CSCs on the inner ring, 36 on the outer ring, for a total of 54 CSCs per layer).\cite{Muon}
 
 Each CSC is composed of six gas gaps, with each gap containing a radial array of cathode strips and a plane of anode wires running perpendicular to the cathodes. The CSCs are overlapped in $\phi$ to avoid gaps in the particle acceptance. When a charged particle ionizes the gas, it leaves a charge on the anode wire and an image charge on a group of cathode strips. The spatial resolution provided from each CSC is $\approx$ 200$\mu$m.
 
-The forward (endcap) region of the muon system can expect a higher muon flux, so CSCs were chosen due to their fast response time and fine resolution. Figure~\ref{fig:CSCEfficiency} shows the CSC efficiency, measured using the standard CMS ``tag-and-probe" method, wherein dimuon pairs from $Z$ and $J/\psi$ decays are collected with a single-muon trigger. One muon (the tag) is required to pass standard CMS global muon identification requirements across both the tracker and muon system, while the other muon (the probe) is only required to pass the tracker requirements. The efficiency is measured as the number of ``probe" muons passing the muon system identification requirements divided by the number of ``tag" muons. %~\ref{http://arxiv.org/pdf/1306.6905.pdf;}
+The forward (endcap) region of the muon system can expect a higher muon flux, so CSCs were chosen due to their fast response time and fine resolution. Figure~\ref{fig:CSCEfficiency} shows the CSC efficiency, measured using the standard CMS ``tag-and-probe" method, wherein dimuon pairs from $Z$ and $J/\psi$ decays are collected with a single-muon trigger. One muon (the tag) is required to pass standard CMS global muon identification requirements across both the tracker and muon system, while the other muon (the probe) is only required to pass the tracker requirements. The efficiency is measured as the number of ``probe" muons passing the muon system identification requirements divided by the number of ``tag" muons.\cite{Muon}
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/CSCEfficiency.png}
@@ -181,7 +178,7 @@ There are two layers of RPCs ``sandwiching" each of the first two DT layers (MB1
 
 Each RPC is comprised of parallel plates of bakelite enclosing two millimeter-thick gas gaps. Each gas gap contains a mixture of 96.2\% R134a (C$_2$H$_2$F$_4$), 3.5\% isobutane (C$_4$H$_10$), and 0.3\% sulfur hexaflouride (SF$_6$).
 
-Figure~\ref{fig:RPCResolution} shows an example plot indicating RPC resolution. Similar to pixel resolution, RPC resolution is measured as the residual difference between a ``good" muon track in the muon system and the RPC hits. %~\ref{http://arxiv.org/pdf/1306.6905.pdf;}
+Figure~\ref{fig:RPCResolution} shows an example plot indicating RPC resolution. Similar to pixel resolution, RPC resolution is measured as the residual difference between a ``good" muon track in the muon system and the RPC hits.\cite{Muon}
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/RPCResolution.png}
@@ -191,7 +188,7 @@ Figure~\ref{fig:RPCResolution} shows an example plot indicating RPC resolution. 
 
 \section{The trigger system}
 
-When running at full luminosity, the LHC generates $pp$ collisions at a rate of 40MHz. With each event requiring $\approx$ 10MB of digital storage space, this equates to a data-generation rate of 400TB per second. Since this is obviously unsustainable with current computer storage technology, CMS employs a trigger system to reduce the rate of stored events. Two levels of triggering are used: the hardware-based Level-1 (L1) trigger, which reduces the rate from 40MHz to approximately 100kHz, and the hardware-and-software-based High Level Trigger (HLT), which reduces the rate from $\approx$100kHz to 300Hz.
+When running at full luminosity, the LHC generates $pp$ collisions at a rate of 40MHz. With each event requiring $\approx$ 10MB of digital storage space, this equates to a data-generation rate of 400TB per second. Since this is obviously unsustainable with current computer storage technology, CMS employs a trigger system to reduce the rate of stored events. Two levels of triggering are used: the hardware-based Level-1 (L1) trigger, which reduces the rate from 40MHz to approximately 100kHz, and the hardware-and-software-based High Level Trigger (HLT), which reduces the rate from $\approx$100kHz to 300Hz.\cite{TDR}
 
 \subsection{The Level-1 (L1) trigger)}
 
@@ -205,7 +202,7 @@ The HLT is software-based and uses software-defined ``HLT paths" in order to det
 
 The HLT first reconstructs the entirety of the event from the stored data passed to it by the L1 trigger, and determines whether the event passes a given trigger path. There are four broad categories of HLT path: electrons/photons and muons, jets, missing transverse energy ($\MET$), and taus. Hundreds of specific paths offering high levels of discrimination between required selection criteria are available and grouped into these four categories. As the paths are software-based and not hardware-based, new paths can be customized to the needs of any analysis effort.
 
-In order to determine whether or not an event passes a given path, the entire event is reconstructed and run through three broad triggering steps: Stage 2 (calorimetry), Stage 2.5 (calorimetry+pixel hits), and Stage 3 (full reconstruction). In Stage 2, a threshold on calorimeter energy is applied. An object must have a combined ECAL+HCAL calorimetry energy greater than the threshold specified by the path in order to move on to Stage 2.5. In Stage 2.5, information from the pixel subdetector in the silicon tracker is used in order to verify that the hits recorded in the calorimetry towers have corresponding tracks in the pixel system (assuming the particle in question is charged). Finally, in Stage 3, information from the entire detector is used to reconstruct the entirety of objects in the event and ensure that they pass momentum, energy, and quality criteria specified by the path. 
+In order to determine whether or not an event passes a given path, the entire event is reconstructed and run through three broad triggering steps: Stage 2 (calorimetry), Stage 2.5 (calorimetry+pixel hits), and Stage 3 (full reconstruction). In Stage 2, a threshold on calorimeter energy is applied. An object must have a combined ECAL+HCAL calorimetry energy greater than the threshold specified by the path in order to move on to Stage 2.5. In Stage 2.5, information from the pixel subdetector in the silicon tracker is used in order to verify that the hits recorded in the calorimetry towers have corresponding tracks in the pixel system (assuming the particle in question is charged). Finally, in Stage 3, information from the entire detector is used to reconstruct the entirety of objects in the event and ensure that they pass momentum, energy, and quality criteria specified by the path.\cite{TDR}
 
 
 
