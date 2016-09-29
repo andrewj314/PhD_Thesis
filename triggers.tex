@@ -6,9 +6,9 @@ For the semileptonic final states, we use single lepton triggers instead of
 $l\times\tau_{h}$ cross-triggers to maintain a similar strategy across
 channels and also allow us to use the $\tau_{h}$ isolation sidebands
 as control and validation samples. For the \emu final state, any
-trigger with iso-muon requirement, either a e-$\mu$ cross-trigger or
+trigger with an isolation requirement on the muon, either an e-$\mu$ cross-trigger or
 single-muon trigger, would eliminate the isolation sideband for QCD
-estimation. Hence, we use the same single-electron trigger as for the
+estimation. Hence, we use the same single-electron trigger in \emu as for the
 \etau final state. Trigger paths are summarized in
 Table~\ref{tab:triggernames}. Note this constrains the object ID and
 phase space that we are studying. For example, the use of these
@@ -47,7 +47,7 @@ requirements:
 For electrons:
 \begin{itemize}
   \item $p_T > 13$ GeV, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
-  \item passing electron ID (we performed different measurements for "MVANonTrigWP80", "HEEP", "MVATrigWP80")
+  \item passing electron ID (we performed different measurements for ``MVANonTrigWP80", ``HEEP", ``MVATrigWP80")
   \item no matched conversions
   \item number of missing hits = 0
 \end{itemize}
@@ -55,15 +55,15 @@ For electrons:
 For muons:
 \begin{itemize}
   \item $p_T > 20$ GeV, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
-  \item passing "Medium" muon ID
+  \item passing ``Medium" muon ID
 \end{itemize}
 
 For the pair:
 \begin{itemize}
   \item $\Delta$R(\emu) $>$ 0.3
-  \item choose the most isolated pair
+  \item choose the most isolated pair in the event
   \item choose the opposite sign pair
-  \item 3rd lepton veto
+  \item 3rd lepton veto (events must have fewer than three leptons)
 \end{itemize}
 
 \subsection{Single Electron Trigger Efficiency}\label{sec:eleTrigger}
@@ -117,7 +117,7 @@ To measure the single-muon trigger efficiency, after the preselection
 mentioned above, we select (tag) events with a single-electron trigger
  (HLT\_Ele27\_eta2p1\_WPLoose for data and HLT\_Ele27 \_eta2p1\_WP75 for MC) 
 with the offline electron match the HLT electron that fired the trigger.
-Then, the trigger efficiency is defined at the fraction of events
+Then, the trigger efficiency is defined as the fraction of events
 which also pass (probe) the single-muon trigger 
 (HLT\_IsoMu18 for data and HLT\_IsoMu17\_eta2p1 for MC with L1 $\mu~p_T > $ 18 GeV).
 

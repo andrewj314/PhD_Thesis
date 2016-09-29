@@ -1,9 +1,9 @@
-\section{Jet Reconstruction}
+\subsection{Jet Reconstruction}
 
 Particle-flow (PF) technique~\cite{CMS-PAS-PFT-09-001,CMS-PAS-PFT-10-002} is used to improve the jet $p_T$ and angular resolution in this analysis.
 The PF technique combines information from different subdetectors to produce a mutually exclusive collection of particles (namely muons, electrons, photons, 
 charged hadrons and neutral hadrons) that are used as input for the jet clustering algorithms.
-Jets are clustered using the anti-$k_{T}$ algorithm~\cite{anti-kT}, with a distance parameter of $R$ = 0.4 in $\eta$-$\phi$ plane (defined as $\Delta R = 
+Jets are clustered using the anti-$k_{T}$ algorithm~\cite{anti-kT}, with a distance parameter of $\Delta R$ = 0.4 in $\eta$-$\phi$ plane (defined as $\Delta R = 
 \sqrt{\Delta \eta^2 + \Delta \phi^2}$) by summing the four-momenta of individual PF particles.
 
 The jets require energy corrections obtained using simulated events that are generated with \texttt{PYTHIA}, processed through a detector simulation based on 
@@ -47,7 +47,7 @@ The CSVv2 algorithm~\cite{Chatrchyan:2012jua} is used to identify jet as origina
 reconstructed secondary vertex and track-based lifetime information to build a likelihood-based discriminator to distinguish between jets from b-quarks and those 
 from charm or light quarks and gluons.
 
-The minimum thresholds on these discriminators define loose, medium, and tight operating points with a misidentification probability of about 10\%, 1\%, and 
+The minimum thresholds on these discriminators define loose, medium, and tight operating points with a b-jet misidentification probability of about 10\%, 1\%, and 
 0.1\%, respectively, with an average jet $p_T$ of about 80 GeV. The loose operating point for an efficiency about 85\% is used in this analysis.
 A large sample of pair-produced top quark events is used to measure b-tagging efficiency using several methods~\cite{CMS-PAS-BTV-13-001}. A scale factor is 
 applied to correct for differences in b-tagging efficiency between data and simulation~\cite{bTagging}.
