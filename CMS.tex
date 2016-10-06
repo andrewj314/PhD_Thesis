@@ -1,18 +1,33 @@
-\chapter{The Compact Muon Solenoid (CMS) Experiment}
+\chapter{The Large Hadron Collider (LHC)}
 
-The CMS Experiment is a multipurpose particle detector located on the LHC ring underneath the France-Switzerland border at CERN near Geneva, Switzerland. An overview of the experiments on the LHC ring can be seen in Figure~\ref{fig:LHCRing}. The CMS experiment is located 100 meters underground in Cessy, France and is 28.7 meters long, 15.0 meters in diameter, and weighs approximately 14,000 tonnes. It is arranged in a cylindrical, multi-layered structure consisting of a ``barrel" and two endcaps, with the LHC beam passing through the central axis of the cylinder. The central feature of the CMS apparatus is a superconducting solenoid of 6 m internal diameter, providing a magnetic field of 3.8 T. Within the solenoid volume are a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (ECAL), and a brass and scintillator hadron calorimeter (HCAL), each composed of a barrel and two endcap sections. Forward calorimeters extend the pseudorapidity coverage provided by the barrel and endcap detectors. Muons are measured in gas-ionization detectors embedded in the steel flux-return yoke outside the solenoid. A photograph of CMS can be seen in Figure~\ref{fig:CMSphoto}, and a diagram highlighting the layout of CMS can be seen in Figure~\ref{fig:CMSdiagram}..
+The Large Hadron Collider (LHC) is the world's largest and highest-energy particle accelerator. Straddling the France-Switzerland border at CERN, near Geneva, Switzerland, the LHC is installed in a 26.7 km-long circular tunnel between 45 and 170 m underground. The LHC is a proton-proton ($pp$) collider, designed to accelerate protons to near-light speed (about 3 m/s slower than $c$). The protons are accelerated in two counter-rotating beams, each housed inside vacuum tubes and bent into a ring by 8.3 T superconducting magnets. At detector locations, the beams are crossed so that collisions may occur. An overview of the experiments on the LHC ring can be seen in Figure~\ref{fig:LHCRing}. 
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/LHCRing.jpg}
   \caption{\label{fig:LHCRing} The Large Hadron Collider located underneath the Franco-Swiss border at CERN near Geneva, Switzerland. The CMS Experiment is located on the French side in Cessy, France}
 \end{figure}
 
+The protons are divided into ``bunches" by radio-frequency (RF) cavities, with about $10^{11}$ protons per bunch. Each beam contains 2808 bunches. The design center of mass collision energy is $\sqrt{s} = 14$ TeV, which corresponds to 7 TeV per colliding proton bunch. The LHC is designed for bunch spacings of about 25 ns, corresponds to a design collision rate of about 40 MHz. The design instantaneous luminosity (number of protons in a collision area per unit time) of the LHC is $\mathcal{L} = 10^{34}$ cm$^{-2}$ s$^{-1}$. Integrated over time, the instantaneous luminosity gives the \textit{integrated luminosity}:
+
+\begin{equation}
+L = \int\mathcal{L}(t)dt
+\end{equation}
+
+Over the 2012 run, during which time the LHC was running at a $pp$ collision energy of $\sqrt{s} = 8$ TeV and a bunch spacing of 50 ns, the LHC delivered 23.3 fb$^{-1}$ of integrated luminosity, of which CMS recorded 21.8 fb$^{-1}$. During the 2015 run, during which time the LHC was running at a $pp$ collision energy of $\sqrt{s} = 13$ TeV and a bunch spacing of 25 ns, the LHC delivered 4.22 fb$^{-1}$ of integrated luminosity, of which CMS recorded 3.81 fb$^{-1}$. As of this writing, the LHC is wrapping up its 2016 run, also with a $pp$ collision energy of $\sqrt{s} = 13$ TeV and a bunch spacing of 25 ns, and so far 34.1 fb$^{-1}$ of instantaneous luminosity have been delivered and 31.4 fb$^{-1}$ have been recorded by CMS. A plot of the luminosity delivered so far during 2016 is shown in Figure \ref{LumiPlot}.
+
+\begin{figure}\centering
+  \includegraphics[width=1.0\textwidth]{figures/LumiPlot.pdf}
+  \caption{\label{fig:LumiPlot} Total integrated luminosity delivered by the LHC (blue), and total integrated luminosity recorded by CMS (yellow) during the 2016 run.}
+\end{figure}
+
+
+\chapter{The Compact Muon Solenoid}
+
+The Compact Muon Solenoid (CMS) Experiment is a multipurpose particle detector located on the LHC ring underneath the France-Switzerland border at CERN near Geneva, Switzerland. The CMS experiment is located 100 meters underground in Cessy, France and is 28.7 meters long, 15.0 meters in diameter, and weighs approximately 14,000 tonnes. It is arranged in a cylindrical, multi-layered structure consisting of a ``barrel" and two endcaps, with the LHC beam passing through the central axis of the cylinder. The central feature of the CMS apparatus is a superconducting solenoid of 6 m internal diameter, providing a magnetic field of 3.8 T. Within the solenoid volume are a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (ECAL), and a brass and scintillator hadron calorimeter (HCAL), each composed of a barrel and two endcap sections. Forward calorimeters extend the pseudorapidity coverage provided by the barrel and endcap detectors. Muons are measured in gas-ionization detectors embedded in the steel flux-return yoke outside the solenoid. A photograph of CMS can be seen in Figure~\ref{fig:CMSphoto}, and a diagram highlighting the layout of CMS can be seen in Figure~\ref{fig:CMSdiagram}.
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/CMSphoto.jpg}
   \caption{\label{fig:CMSphoto} The CMS Experiment (open for maintenance)}
 \end{figure}
-
-
 The experiment uses a right-handed coordinate system: the origin is set at the $pp$ collision point, with the $x$-axis pointing towards the center of the LHC ring, the $y$-axis pointing up, and the $z$-axis pointing along the beam line in the counter-clockwise direction. CMS also uses a pseudo-polar coordinate system, with $\theta$ defined as the polar angle from the beam axis, and $\eta$ as the ``pseudorapidity", itself defined as 
 \begin{equation}
  \eta = -\ln\left[\tan\left(\theta/2\right)\right]
