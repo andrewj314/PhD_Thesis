@@ -19,7 +19,7 @@ cuts used to select $\mu\tau_{h}$ pairs are factorized in to four categories: ac
 $\mu$ identification, $\tau_{h}$ identification, and topological cuts. Acceptance criteria is completely
 driven by the limitations of the CMS detector and the need to maximize analysis
 sensitivity while also minimizing systematic effects. For example, in order to minimize systematic effects, the
-$p_{T}$ threshold on the muon leg is chosen such that it falls on the plateu of the trigger turn-on curve ($p_{T} > 30$ GeV ... see section 3). 
+$p_{T}$ threshold on the muon leg is chosen such that it falls on the plateau of the trigger turn-on curve ($p_{T} > 30$ GeV ... see Section \ref{sec:triggers}). 
 Although it is possible to achieve slightly better sensitivity by increasing the thresholds,
 the selections are also driven by the need to obtain a sample enriched with $Z\to\tau\tau$ events, 
 with minimal modifications to the final selection criteria. 
@@ -29,8 +29,8 @@ As discussed in section 5.3, the muon identification criteria is designed mostly
 against cosmic muons, punch-through pions, and muons associated to jets 
 from decays in flight. The $\tau_{h}$ identification is described in section 5.4 and is mostly designed to
 discriminate against hadronic jets produced from the fragmentation of quarks and/or
-gluons. Finally, topological cuts are mainly used to minimize the remaining W + jet(s)
-and $t\bar{t}$ contributions that remain after the muon and $\tau_{h}$ identification criteria has been
+gluons. Finally, topological cuts are principally used to minimize the remaining W + jet(s)
+and $t\bar{t}$ contributions after the muon and $\tau_{h}$ identification criteria have been
 imposed. 
 
 \begin{figure}\centering
@@ -63,8 +63,11 @@ be back-to-back in $\phi$, the presence of the neutrino from the $W$ decay and t
 back-to-back (Figure~\ref{fig:WjetsRejectionDelPhiFigure}). Therefore, one of the main 
 discriminating variables against W + jets events is the difference in $\phi$ between the jet and muon directions. 
 Figure~\ref{fig:MuTauMass} shows the cos$\Delta \phi(\mu,\tau_{h}/jet)$ distributions for Z'$\to\tau\tau$ and the relevant background samples. 
-We require cos$\Delta \phi(\mu,\tau_{h}/jet)<-0.95$, which is approximately $> 90$\% 
-efficient for $Z^{\prime} \to \tau\tau$ and approximately 25\% efficient for W+jets.
+We require 
+\begin{equation}
+\cos\Delta\phi(\mu,\tau_{h}/jet) < -0.95
+\end{equation}
+\noindent which is approximately $> 90$\% efficient for $Z^{\prime} \to \tau\tau$ and approximately 25\% efficient for W+jets.
 
 \begin{figure}
 \begin{center}
@@ -97,7 +100,7 @@ bisector of visible tau decay products ($\hat{\zeta}$) and two projection variab
 \end{equation}
 
 The sketch in Figure~\ref{fig:ZetaDiagram} displays the definitions for $p_{\zeta}^{vis}$ and $p_{\zeta}$. Figures~\ref{fig:WjetsZeta1} and~\ref{fig:WjetsZeta2} 
-shows the separation between $Z^{\prime}\rightarrow\tau\tau$ and W + jet(s) events in the $p_{\zeta}$-$p_{\zeta}^{vis}$ plane. For the case of W+jets, there is no 
+show the separation between $Z^{\prime}\rightarrow\tau\tau$ and W + jet(s) events in the $p_{\zeta}$-$p_{\zeta}^{vis}$ plane. For the case of W+jets, there is no 
 strong correlation between $p_{\zeta}^{vis}$ and $p_{\zeta}$ due to the presence of a jet that is uncorrelated to the $\mu$ and $\nu_{\mu}$ from the W boson. 
 However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$. To discriminate against W+jet(s) events, requirements on $\Delta \phi 
 (\tau_{1},\tau_{2})$ and $\zeta$ are applied. $\zeta$ is defined as a linear combination of $p_{\zeta}$ and $p_{\zeta}^{vis}$:
@@ -115,15 +118,15 @@ However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$
 \end{figure}
 \begin{figure}
 \begin{center}
-\includegraphics[angle=0,width=.75\textwidth]{figures/mt/Zeat2D_Ztautau.pdf}
-\caption{ $p_{\zeta}$ $p_{\zeta}^{vis}$ for $Z^{\prime}\rightarrow\tau\tau$.}
+\includegraphics[angle=0,width=.5\textwidth]{figures/mt/Zeat2D_Ztautau.pdf}
+\caption{ $p_{\zeta}$ vs. $p_{\zeta}^{vis}$ for $Z^{\prime}\rightarrow\tau\tau$.}
 \label{fig:WjetsZeta1}
 \end{center}
 \end{figure}
 \begin{figure}
 \begin{center}
-\includegraphics[angle=0,width=.75\textwidth]{figures/mt/Zeta2D.pdf}
-\caption{ $p_{\zeta}$ $p_{\zeta}^{vis}$ for W+Jets.}
+\includegraphics[angle=0,width=.5\textwidth]{figures/mt/Zeta2D.pdf}
+\caption{ $p_{\zeta}$ vs. $p_{\zeta}^{vis}$ for W+Jets.}
 \label{fig:WjetsZeta2}
 \end{center}
 \end{figure}
@@ -214,10 +217,7 @@ T}})^{2}-(\overrightarrow{p_{\tau_{1}}}+\overrightarrow{p_{\tau_{2}}}+\overright
 \label{eq:ditaumass}
 \end{equation}
 
-where $E_{\tau}$ and $\overrightarrow{p_{\tau}}$ represent the energy and 4-momentum of the visible objects (in this case the $\mu$ and $\tau_{h}$), respectively. 
-The energy component of $\overrightarrow{{E\!\!\!\!/_{\rm T}}}$ is the scalar quantity $\MET$, while the z-component is the default ``met.pz()" component in the 
-$\MET$ object collection. 
-As can be seen from Figure~\ref{fig:MuTauMass}, this definition successfully distinguishes 
+\noindent where $E_{\tau}$ and $\overrightarrow{p_{\tau}}$ represent the energy and 4-momentum of the visible objects (in this case the $\mu$ and $\tau_{h}$), respectively.  As can be seen from Figure~\ref{fig:MuTauMass}, this definition successfully distinguishes 
 between lower mass production of $\tau$-lepton pairs and high-mass $\tau$-lepton pairs from new massive resonant particle production.
 
 \begin{figure}\centering
@@ -236,6 +236,7 @@ and various backgrounds.}
 
 
 \begin{table}[ht]
+\here
 \begin{center}
   \caption{Event summary table after signal region selection\label{tab:summaryTable}}
   \begin{tabular}{| l | c | c | c | c |}
@@ -261,6 +262,7 @@ and various backgrounds.}
 
 
 \begin{table}[ht]
+\here
   \begin{center}
   \scalebox{0.7}{
     \begin{tabular}{| l | c | c | c | c | c | c |}
@@ -319,7 +321,7 @@ predictions from simulation.
   \includegraphics[width=0.4\textwidth]{figures/mt/ControlPlots_Met_AfterPreselections.png}
   \includegraphics[width=0.4\textwidth]{figures/mt/ControlPlots_Muon1MetMt_AfterPreselections.png}
   \caption{\label{fig:muTauPreselectionControlPlots} $p_{T}(\tau_{h})$, $\eta(\tau_{h})$, $\MET$, and $m_{T}(\mu,\MET)$ control plots using events satisfying the 
-``preselection" requirements. The background predictions are entirely based on MC.}
+``preselection" requirements. The background predictions are entirely based on MC. Agreement between data and MC is good.}
 \end{figure}
 
 \begin{figure}\centering
@@ -328,7 +330,7 @@ predictions from simulation.
   \includegraphics[width=0.4\textwidth]{figures/mt/ControlPlots_Met_AfterFinalselections.png}
   \includegraphics[width=0.4\textwidth]{figures/mt/ControlPlots_Muon1MetMt_AfterFinalselections.png}
   \caption{\label{fig:muTauFinalselectionControlPlots} $p_{T}(\tau_{h})$, $\eta(\tau_{h})$, $\MET$, and $m_{T}(\mu,\MET)$ control plots using events satisfying 
-the signal region requirements. The background predictions are entirely based on MC.}
+the signal region requirements. The background predictions are entirely based on MC. Agreement between data and MC is good.}
 \end{figure}
 
 \subsection{W + jets Background Estimation}
@@ -339,15 +341,22 @@ requirements. We estimate this background using a completely data-driven approac
 follows:
 
 \begin{itemize}
-  \item A: fail one or both of the $\zeta$ and cos$\Delta\phi$ cuts; fail ``Tight" but satisfy a relaxed $\tau_{h}$ isolation of $< 5$ GeV
+  \item A: pass both the $\zeta$ and cos$\Delta\phi$ cuts; pass ``Tight" $\tau_{h}$ isolation
   \item B: fail one or both of the $\zeta$ and cos$\Delta\phi$ cuts; pass ``Tight" $\tau_{h}$ isolation
-  \item C: pass both the $\zeta$ and cos$\Delta\phi$ cuts; fail ``Tight" but satisfy a relaxed $\tau_{h}$ isolation of $< 5$ GeV
-  \item D: pass both the $\zeta$ and cos$\Delta\phi$ cuts; pass ``Tight" $\tau_{h}$ isolation
+  \item C: pass both the $\zeta$ and cos$\Delta\phi$ cuts; fail ``Tight" but satisfy a relaxed $\tau_{h}$ isolation of $< 5$ GeV (``loose")
+  \item D: fail one or both of the $\zeta$ and cos$\Delta\phi$ cuts; fail ``Tight" but satisfy a relaxed $\tau_{h}$ isolation of $< 5$ GeV (``loose")
 \end{itemize}
 
+\begin{figure}
+\centering
+\label{fig:ABCD_muTau}
+\includegraphics[width=0.5\textwidth]{figures/ABCD_muTau.png}
+\caption{The four regions used in the ``ABCD" method of estimating W+Jets background}
+\end{figure}
+
 We estimate the W + jets component $N_{W}^{i}$ in regions $i=A,B,C$ by subtracting MC non-W backgrounds
-from data ($N_{W}^{i}=N_{\textrm{Data}}^{i}-N_{\neq W}^{i}$). We then estimate the W + jets component in the signal region D, to
-be $N_{W}^{D} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{A}}$. Said differently, we take the yield of W + jets events in data containing a non-isolated $\tau_{h}$ 
+from data ($N_{W}^{i}=N_{\textrm{Data}}^{i}-N_{\neq W}^{i}$). We then estimate the W + jets component in the signal region A, to
+be $N_{W}^{A} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{D}}$. Said differently, we take the yield of W + jets events in data containing a non-isolated $\tau_{h}$ 
 and then extrapolate to the signal region by correcting for the ``Tight-to-Loose" ratio (also referred to as a ``fake rate"), which is measured in a data sample 
 enriched with W + jets events and that is obtained by inverting the $\zeta$ and cos$\Delta\phi$ cuts. The shape of the $m(\mu,\tau_{h},\MET)$ distribution is 
 obtained from control region C (nominal selections with non-isolated $\tau_{h}$).
@@ -356,12 +365,12 @@ Figure~\ref{fig:ZetaAndCosDphiVsTauIso} shows a comparison of the $\zeta$ and co
 different $\tau_{h}$ isolation conditions: ($i$) isolated (passing ``"Tight"), and ($ii$) non-isolated (failing ``Tight" but passing loosened isolation). The 
 $\tau_{h}$ isolation does not bias the $\zeta$ and cos$\Delta\phi$ distributions, and thus we expect our ABCD background estimation method to nicely model the ``true" W + 
 jets yield in the signal region. A closure test for the background estimation method outlined above is performed with MC. Two aspects are simultaneously tested: 
-(1) closure on the normalization (i.e. $N_{W}^{D} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{A}}$); (2) correct determination of the $m(\mu,\tau_{h},\MET)$ shape. 
+(1) closure on the normalization (i.e. $N_{W}^{A} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{D}}$); (2) correct determination of the $m(\mu,\tau_{h},\MET)$ shape. 
 Figure~\ref{fig:wJetsClosureMuTau} shows the closure test in MC. The y-axis of the top left plot is in normal scale so the reader can focus on the level of 
 agreement in the low mass region. The top right plot is similar, except the y-axis is in log scale in order to emphasize the high-mass tails. We observe very 
 good agreement between the nominal yield/shape and the predicted yield/shape. The reader can perform their own cross-check of this conclusion by using the 
 MC-based W + jets yields in Table~\ref{tab:muTauWJetsCR}, which shows the data and MC background yields in the control samples, and plugging them into the 
-equation $N_{W}^{\textrm{Prediction},MC} = N_{W}^{C,MC} \cdot \frac{N_{W}^{B,MC}}{N_{W}^{A,MC}}$. The MC-based prediction using the ABCD method is 
+equation $N_{W}^{\textrm{Prediction},MC} = N_{W}^{C,MC} \cdot \frac{N_{W}^{B,MC}}{N_{W}^{D,MC}}$. The MC-based prediction using the ABCD method is 
 %$N_{W}^{\textrm{Prediction},MC} = (2222.81 \pm 75.60) \cdot \frac{(10443.71 \pm 163.29)}{(16046.17 \pm 201.87)} = 1446.68 \pm 57.13$, while the MC-based nominal 
 %yield is $1510.98 \pm 62.85$ (see Table~\ref{tab:muTauCutFlowEff}). Therefore, the MC-based nominal yield to predicted yield ratio is 
 %$\frac{N_{W}^{\textrm{Nominal},MC}}{N_{W}^{\textrm{Prediction},MC}} = \frac{1510.98 \pm 62.85}{1446.68 \pm 57.13} = 1.05 \pm 0.06$, which is statistically 
@@ -399,6 +408,7 @@ Bottom Right: Comparison of the reconstructed mass distributions in regions A an
 \end{figure}
 
 \begin{table}[ht]
+ \here
   \centering{
     \begin{tabular}{| l | c | c | c | c |}
       \hline\hline
@@ -462,6 +472,7 @@ $m_{T}(\mu,\MET)$ distributions in W + jets control region $A$, requiring $\MET 
 \end{figure}
 
 \begin{table}[ht]
+\here
   \centering{
     \begin{tabular}{| l | c | c | c | c |}
       \hline\hline

@@ -9,17 +9,18 @@ Jets are clustered using the anti-$k_{T}$ algorithm~\cite{anti-kT}, with a dista
 The jets require energy corrections obtained using simulated events that are generated with \texttt{PYTHIA}, processed through a detector simulation based on 
 \texttt{GEANT4}, and confirmed with in situ measurements of the $p_T$ balance.
 The overall jet-energy corrections depend on the $\eta$ and $p_T$ values of jets.
-The jet-energy corrections are applied by L1 FastJet, L2 Relative, and L3 Absolute corrections. In order to remove the extra energy in jets from underlying event 
+These jet-energy corrections are known as L1 FastJet, L2 Relative, and L3 Absolute corrections. In order to remove the extra energy in jets from underlying event 
 (UE) and pileup (PU), the L1 FastJet corrections use the event-by-event UE/PU densities.
 The L2 and L3 corrections use jet balancing and photon+jet events to improve and provide a better energy response as a function of jet $p_T$ and $\eta$.
 For data, additional residual corrections are applied.
 
 Jets are required to have $p_T >$ 30 GeV and $|\eta| <$ 2.4.
-For the identification of jets the loose PF ID is used in this analysis.
+For the identification of jets the loose PF ID is used in this analysis. Recommended by the CMS Jet/\MET physics object group (POG), the loose PF ID describes a series of requirements that jet candidates must pass in order to be considered for this analysis. The ``loose" working point requires a jet candidate to have \pt > 10 GeV, charged hadron fraction $> 0.0$, neutral hadron fraction $< 0.99$, charged EM fraction $< 0.99$, and neutral EM fraction $< 0.99$. ``Hadron fraction" refers to the percentage of jet constituents taken from HCAL hits, and ``EM fraction" refers to the percentage of jet constituents taken from ECAL hits.
 Table 4 shows the selection criteria used for the recommended loose PF ID, which are validated in other studies~\cite{CMS-PAS-FSQ-12-035}.
 The jet reconstruction and ID efficiency in simulation is $>$98\%.
 
 \begin{table}[ht]
+\here
 \begin{center}
  \caption{Loose Jet-ID Selections.\label{tab:jetId}}
  \begin{tabular}{|cc|}
@@ -48,6 +49,6 @@ reconstructed secondary vertex and track-based lifetime information to build a l
 from charm or light quarks and gluons.
 
 The minimum thresholds on these discriminators define loose, medium, and tight operating points with a b-jet misidentification probability of about 10\%, 1\%, and 
-0.1\%, respectively, with an average jet $p_T$ of about 80 GeV. The loose operating point for an efficiency about 85\% is used in this analysis.
-A large sample of pair-produced top quark events is used to measure b-tagging efficiency using several methods~\cite{CMS-PAS-BTV-13-001}. A scale factor is 
+0.1\%, respectively, with an average jet $p_T$ of about 80 GeV. The loose operating point with an efficiency about 85\% is used in this analysis.
+A sample of pair-produced top quark events is used to measure b-tagging efficiency using several methods~\cite{CMS-PAS-BTV-13-001}. A scale factor is 
 applied to correct for differences in b-tagging efficiency between data and simulation~\cite{bTagging}.
