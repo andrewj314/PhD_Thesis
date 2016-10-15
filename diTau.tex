@@ -25,14 +25,14 @@ The number of events in the signal region is given by the following equation:
 N_{\textrm{Signal}}^{\textrm{QCD}} = N_{\textrm{LS}}^{\textrm{QCD}} \cdot R_{OS/LS},
 \end{equation}
    
-Here $N_{\textrm{LS}}^{\textrm{QCD}}$ and $R_{OS/LS}$ are evaluated using the following approach. For its estimation, we rely on the classical method of counting events selected in a similar way as the signal events but selecting $\tau_{h}\tau_{h}$ pairs with like-sign electrical charge. This leads to events heavily dominated by the QCD multi-jet background. Assuming that QCD dijets are charge-blind, the number of like-sign events $N_{LS}$ should be equal to the number of opposite-sign $N_{OS}$ QCD multi-jet events after correcting $N_{LS}$ measured in data for known contamination from electroweak backgrounds using simulation. However, the assumption of the charge symmetry in events with two jets is not always true. An asymmetry in the charges of jets in multi-jet events can arise from the remaining correlation
+Here $N_{\textrm{LS}}^{\textrm{QCD}}$ and $R_{OS/LS}$ are evaluated using the following approach. For its estimation, we rely on the classical method of counting events selected in a similar way to the signal events, but selecting $\tau_{h}\tau_{h}$ pairs with like-sign electrical charge. This criterion leads to events heavily dominated by the QCD multi-jet background. Assuming that QCD dijets are charge-blind, the number of like-sign events $N_{LS}$ should be equal to the number of opposite-sign $N_{OS}$ QCD multi-jet events after correcting $N_{LS}$ measured in data for known contamination from electroweak backgrounds using simulation. However, the assumption of the charge symmetry in events with two jets is not always true. An asymmetry in the charges of jets in multi-jet events can arise from the remaining correlation
 between the quark charge and the leading track charge of the jet in events where quark charges are correlated. 
 %e.g. $gg \to q \bar{q}$, $W \to q \bar{q}^{\prime}$. 
 Note that the correlation between the charge of the quark and the charge of the track
 becomes stronger in jets, in which the entire jet fluctuates into just a few high momentum tracks. Calculation of QCD $N_{LS}$ and $N_{OS}$ terms are made in control regions of the lower $\MET$ sidebands for the calculation of the asymmetry factor $R_{OS/LS}$ (shown in the next section). 
 The contamination from signal in the LS control regions are small since the charge mis-measurement is small ($\sim 1-5\%$) for $m(Z^{\prime}) < 2.5$ TeV. 
 
-The QCD estimation and validation strategy used in this analysis is shown in Figure~\ref{fig:qcd} .    
+The QCD estimation and validation strategy used in this analysis is shown in Figure~\ref{fig:qcd}. The shape is taken from region C and scaled to the signal estimation using a OS/LS scale factor derived in the low-$\MET$ sideband (regions B and D).    
 
  \begin{figure}[tbh!]
      \centering
@@ -44,7 +44,7 @@ The QCD estimation and validation strategy used in this analysis is shown in Fig
    \end{figure}
 
 
-The shape of the $m(\tau_{h},\tau_{h},\MET)$ distribution is obtained from control region C (same-sign $\tau_{h}\tau_{h}$ with nominal $\MET$). To extract the OS/LS ratio from data , two control regions 1B and 1D are obtained by keeping the same selections as signal selections but inverting the $\MET$ cut $(\MET < 30$ GeV) and requiring OS and LS $\tau_{h}\tau_{h}$ pairs respectively. The contribution of non-QCD MC backgrounds are subtracted from data in these control regions and then the $R_{OS/LS}$ is measured:
+The shape of the $m(\tau_{h},\tau_{h},\MET)$ distribution is obtained from control region C (same-sign $\tau_{h}\tau_{h}$ with nominal $\MET$). To extract the OS/LS ratio from data, two control regions, B and D, are obtained by keeping the same selections as signal selections, but inverting the $\MET$ cut $(\MET < 30$ GeV) and requiring OS and LS $\tau_{h}\tau_{h}$ pairs respectively. The contribution of non-QCD MC backgrounds (Drell-Yan + Jets, $t\bar{t}$, W + Jets, and diboson) are subtracted from data in these control regions and then the $R_{OS/LS}$ is measured:
 
 \begin{center}
 \begin{eqnarray}
@@ -56,24 +56,24 @@ R_{\textrm{OS/LS}} = N^{\textrm{QCD}}_{\textrm{OS}}/N^{\textrm{QCD}}_{\textrm{LS
 \end{eqnarray}
 \end{center}
 
-Table~\ref{table:OLSStable} shows the data and MC yields in controls regions 1B and 1D. The purity of QCD multijet, defined by Data - $\sum\limits_{i} BG_{i}$, is 
+Table~\ref{table:OLSStable} shows the data and MC yields in controls regions B and D. The purity of QCD multijet, defined by Data - $\sum\limits_{i} BG_{i}$, is 
 approximately $96-99$\% depending on the sample. The measured OS/LS ratio is $1.64\pm0.21$. The above equation shows the mathematical procedure used to obtain 
 this ratio. 
 
 Closure and validation tests for the background estimation method outlined above is performed with real data, since there are insufficient statistics to perform 
 such a test with simulation. Two aspects are simultaneously tested: (1) closure on the normalization (i.e. $N_{\textrm{QCD}}^{A} = N_{\textrm{QCD}}^{C} \cdot 
-\frac{N_{\textrm{QCD}}^{B}}{N_{\textrm{QCD}}^{D}}$); (2) correct determination of the $m(\tau_{h},\tau_{h},\MET)$ shape. In order to check (with data) whether same-sign $\tau_{h}\tau_{h}$ events can correctly model the mass shapes in the opposite-sign regions, we perform a shape closure/validation test by taking the shape from region 1D (obtained as Data - $\sum\limits_{i} BG_{i}$) and normalize it to the QCD yield in control region 1B. By comparing the
-shape for the QCD prediction in region 1B with the observed mass spectrum in the same region, we can determine whether same-sign $\tau_{h}\tau_{h}$ correctly models the mass shapes in the opposite-sign region. Furthermore, any disagreement in the shape between data and the QCD prediction can be used to assign systematic uncertainty on the shape. Figure~\ref{fig:MG304} shows the $m(\tau_{h},\tau_{h},\MET)$ mass distribution for this closure test in control region 1B. We observe very good agreement between the observed shape and the predicted shape and thus no additional
+\frac{N_{\textrm{QCD}}^{B}}{N_{\textrm{QCD}}^{D}}$); (2) correct determination of the $m(\tau_{h},\tau_{h},\MET)$ shape. In order to check (with data) whether same-sign $\tau_{h}\tau_{h}$ events can correctly model the mass shapes in the opposite-sign regions, we perform a shape closure/validation test by taking the shape from region D (obtained as Data - $\sum\limits_{i} BG_{i}$) and normalize it to the QCD yield in control region B. By comparing the
+shape for the QCD prediction in region B with the observed mass spectrum in the same region, we can determine whether same-sign $\tau_{h}\tau_{h}$ correctly models the mass shapes in the opposite-sign region. Furthermore, any disagreement in the shape between data and the QCD prediction can be used to assign systematic uncertainty on the shape. Figure~\ref{fig:MG304} shows the $m(\tau_{h},\tau_{h},\MET)$ mass distribution for this closure test in control region B. We observe very good agreement between the observed shape and the predicted shape and thus no additional
 systematic uncertainties are applied due to this particular closure test on the shape. 
 
 
 
 \begin{table}[!htpb]
-   \caption{ Yields in the controls region 1(B) and 1(D) used for calculation of OS/LS ratio.}
+   \caption{ Yields in the control regions B and D used for calculation of OS/LS ratio.}
    \centering{
      \begin{tabular}{ | l | c | c | }
         \hline \hline
-        Process & OS $\tau_{h}\tau_{h}$ isolated + MET < 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET < 30 GeV \\ \hline
+        Process & OS $\tau_{h}\tau_{h}$ isolated + MET $<$ 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET $<$ 30 GeV \\ \hline
         Data & 207 & 113 \\ \hline
         W + jets & 0.897455 $\pm$ 1.57954 & 1.20229 $\pm$ 1.26803 \\ \hline
         Z + jets & 21.8385 $\pm$ 4.67317 & 0.132112 $\pm$ 0.363472 \\ \hline
@@ -98,7 +98,7 @@ systematic uncertainties are applied due to this particular closure test on the 
         \includegraphics[width=0.45\textwidth]{figures/OSLowMetCR_NormalScale_1or3prong.png}
         \includegraphics[width=0.45\textwidth]{figures/OSLowMetCR_LogScale_1or3prong.png}
       \end{tabular}
-     \caption{$\tau_{h} - \tau_{h}$ mass distribution in isolated OS, low-$\MET$ sideband (Left: normal scale.  Right: log scale).}
+     \caption{$\tau_{h} - \tau_{h}$ mass distribution in isolated OS, low-$\MET$ sideband (region B). Left: normal scale.  Right: log scale.}
     \label{fig:MG304}
  \end{figure}
 
@@ -108,14 +108,14 @@ systematic uncertainties are applied due to this particular closure test on the 
         \includegraphics[width=0.45\textwidth]{figures/QCDBGEst_Closure_LowMET_CR_1_20_16.pdf}
         \includegraphics[width=0.45\textwidth]{figures/QCDBGEst_Closure_LowMET_CR__Log_1_20_16.pdf}
       \end{tabular}
-     \caption{$m(\tau_{h},\tau_{h},\MET)$ mass distribution in anti-isolated OS, low-$\MET$ sideband (Left: normal scale.  Right: log scale).}
+     \caption{$m(\tau_{h},\tau_{h},\MET)$ mass distribution in anti-isolated OS, low-$\MET$ sideband (region 2B) Left: normal scale.  Right: log scale.}
     \label{fig:MG305}
  \end{figure}
 
 
 Two additional control samples are utilized in order to provide further closure for this method. Control regions 2B and 2D are obtained by using
-the $\tau_{h}$ isolation sidebands (passing the "loose" isolation working point and failing the "tight" isolation working point) with otherwise similar selections
-to control regions 1B and 1D (low $\MET$). The QCD multi-jet prediction in control region 2B is determined as data minus non-QCD backgrounds. The QCD shapes and 
+the $\tau_{h}$ anti-isolation sidebands (passing the ``loose" isolation working point and failing the ``tight" isolation working point) with otherwise similar selections
+to control regions B and D (low $\MET$). The QCD multi-jet prediction in control region 2B is determined as data minus non-QCD backgrounds. The QCD shapes and 
 rates extracted from control region 2D (after subtracting non-QCD backgrounds) are normalized to the QCD yield in control region 2B. Figure ~\ref{fig:MG305} 
 summarizes this closure test. Nice agreement between the data and predicted QCD rate in control region 2B (Figure ~\ref{fig:MG305}) validates the
 ability to extract the shapes of distributions in OS from LS samples (we will extract the QCD signal region $m(\tau_{h,1},\tau_{h,2},\MET)$ shape from LS data).
@@ -154,39 +154,39 @@ Next we perform the full-blown closure test for the ABCD method by comparing the
       \centering
       \begin{tabular}{cc}
         \includegraphics[width=0.45\textwidth]{figures/QCDBGEst_Closure_SR_1_20_16.pdf}
-        \includegraphics[width=0.45\textwidth]{figures/QCD_Closure_SR_FixedTitles_Log_1_26_16.pdf}
+        \includegraphics[width=0.65\textwidth]{figures/QCD_Closure_SR_FixedTitles_Log_1_26_16.pdf}
       \end{tabular}
      \caption{$m(\tau_{h},\tau_{h},\MET)$ mass distribution in anti-isolated OS region with nominal $\MET$ (Left: normal scale.  Right: log scale).}
     \label{fig:MG306}
  \end{figure}
  
          
-Table 17 represents the event rate of data and backgrounds in regions 1A (signal region) and 1C (same-sign, isolated $\tau_{h}\tau_{h}$ with nominal $\MET$). QCD 
-shapes/rates are extracted in data-driven way from control region 1C and scaled by the OS/LS ratio determined from control region 1B and 1D. The non-QCD 
-backgrounds are taken directly from MC in Table 17 (see the next section for a validation of the DY + jets background yield). Other processes such as W + jets, 
+Table \ref{table:SignalEst} represents the event rate of data and backgrounds in regions A (signal region) and C (same-sign, isolated $\tau_{h}\tau_{h}$ with nominal $\MET$). QCD 
+shapes/rates are extracted in data-driven way from control region C and scaled by the OS/LS ratio determined from control region B and D. The non-QCD 
+backgrounds are taken directly from MC in Table \ref{table:SignalEst} (see the next section for a validation of the DY + jets background yield). Other processes such as W + jets, 
 $t\bar{t}$, and diboson represent only $\sim 1$\% of the total background 
-rate in the signal region, and are thus taken directly from MC. The final prediction of QCD events in the signal region 1A is given in the right-most column of 
-Table 18. The procedure outlined in this section yields a QCD estimate of $N_{\textrm{QCD}}^{\textrm{Signal}} = 48.72 \pm 11.0$. The uncertanty is based on the 
+rate in the signal region, and are thus taken directly from MC. The final prediction of QCD events in the signal region A is given in the right-most column of 
+Table \ref{tab:QCDBGEstimationTable}. The procedure outlined in this section yields a QCD estimate of $N_{\textrm{QCD}}^{\textrm{Signal}} = 48.7 \pm 11.0$. The uncertanty is based on the 
 statistics of the data and MC samples. We stress that this is the QCD predicted rate over the entire $m(\tau_{h},\tau_{h},\MET)$ spectrum. As was mentioned
 in the strategy section of this note, we fit for a potential signal that would appear as an excess of events over the standard model expectation in the high 
 $m(\tau_{h},\tau_{h},\MET)$ part of the distribution. The total predicted background $m(\tau_{h},\tau_{h},\MET)$ spectrum will be shown in the results section of 
 this chapter. 
 
-\begin{table}[ht]
+\begin{table}[htbp!]
   \centering{
-
+  \caption{Background and data yields in QCD control regions $A$ and $C$ under nominal isolation and $\MET$ conditions (i.e. isolated $+$ $\MET > 30$ GeV).}
 
 \begin{tabular}{ | l | c | c | }
 \hline \hline
-Process & OS $\tau_{h}\tau_{h}$ isolated + MET > 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET > 30 GeV \\ \hline
+Process & OS $\tau_{h}\tau_{h}$ isolated + MET $>$ 30 GeV  & SS $\tau_{h}\tau_{h}$ isolated + MET $>$ 30 GeV \\ \hline
 Data & 55 & 30 \\ \hline
-W + jets & 0.0935669 $\pm$ 0.352639 & 0.281734 $\pm$ 0.612064 \\ \hline
-Z + jets & 8.117 $\pm$ 2.84904 & 0.101807 $\pm$ 0.319072 \\ \hline
+W + jets & 0.09 $\pm$ 0.35 & 0.28 $\pm$ 0.61 \\ \hline
+Z + jets & 8.1 $\pm$ 2.8 & 0.10 $\pm$ 0.32 \\ \hline
 WZ + jets & 0 $\pm$ 0 & 0 $\pm$ 0 \\ \hline
-WW + jets & 0.487436 $\pm$ 0.768961 & 0 $\pm$ 0 \\ \hline
+WW + jets & 0.49 $\pm$ 0.77 & 0 $\pm$ 0 \\ \hline
 ZZ + jets & 0 $\pm$ 0 & 0 $\pm$ 0 \\ \hline
 $t\bar{t}$ & 0 $\pm$ 0 & 0 $\pm$ 0 \\ \hline
-Data - $\sum\limits_{i} BG_{i}$ & 46.302 $\pm$ 7.98953 & 29.6165 $\pm$ 5.52055 \\ \hline \hline
+Data - $\sum\limits_{i} BG_{i}$ & 46.3 $\pm$ 8.0 & 29.6 $\pm$ 5.5 \\ \hline \hline
 \end{tabular}
 
 
@@ -195,18 +195,18 @@ Data - $\sum\limits_{i} BG_{i}$ & 46.302 $\pm$ 7.98953 & 29.6165 $\pm$ 5.52055 \
 
 
   }
-  \caption{Background and data yields in QCD control regions $A$ and $C$ under nominal isolation and $\MET$ conditions (i.e. isolated $+$ $\MET > 30$ GeV).}
   \label{table:CR3table}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[htpb!]
   \centering{
+  \caption{QCD yields in the isolated regions $A$ (signal region), $B$, $C$, and $D$.}
   \scalebox{0.7}{
 
 \begin{tabular}{ | l | c | c | c | c | }
 \hline \hline
-Region & OS $\tau_{h}\tau_{h}$ + MET < 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET < 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET > 30 GeV  & OS $\tau_{h}\tau_{h}$ + MET > 30 GeV \\ \hline
-isolated & 183.679 $\pm$ 15.4261 & 111.666 $\pm$ 10.7129 & 29.6165 $\pm$ 5.52111 & 48.7161 $\pm$ 11.0027 \\ \hline \hline
+Region & OS $\tau_{h}\tau_{h}$ + MET $<$ 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET $<$ 30 GeV  & SS $\tau_{h}\tau_{h}$ + MET $>$ 30 GeV  & OS $\tau_{h}\tau_{h}$ + MET $>$ 30 GeV \\ \hline
+isolated & 183.7 $\pm$ 15.4 & 111.7 $\pm$ 10.7 & 29.6 $\pm$ 5.5 & 48.7 $\pm$ 11.0 \\ \hline \hline
 \end{tabular}
 
 
@@ -215,7 +215,7 @@ isolated & 183.679 $\pm$ 15.4261 & 111.666 $\pm$ 10.7129 & 29.6165 $\pm$ 5.52111
 
   }
   }
-  \caption{QCD yields in the isolated regions $A$ (signal region), $B$, $C$, and $D$.}
+  
   \label{tab:QCDBGEstimationTable}
 \end{table}
 

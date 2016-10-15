@@ -2,7 +2,7 @@
 
 \section{Motivation}
 
-One of the most significant challenges faced in searches for heavy resonances decaying to tau pairs is the presence of neutrinos in the tau decays. Hadronic tau decays produce one neutrino, and leptonic tau decays produce two neutrinos so that, depending on the channel studied, each di-tau event may have two, three, or four neutrinos present in the decay products. These neutrinos do not interact with the detector, and carry energy away from the event. Information about the neutrinos can only be inferred from $\MET$, an event-level (as opposed to particle-level) quantity which estimates the net (event-wide) neutrino momentum in the transverse direction. If, for example, two neutrinos are produced back-to-back, the only recoverable information about them is the net difference in transverse momentum. Given that the taus, and by extension their decay products, are generated back-to-back in $Z^\prime$ decays, $\MET$ alone does not provide sufficient information to precisely model the di-tau mass. The current mass estimator used in the 8 TeV and 13 TeV $Z^\prime\to\tau\tau$ searches, $\massvis$, depends on $\MET$ and, as shown in Figure \ref{fig:massVisSigVsMC}, suffers due to this loss of information.
+One of the most significant challenges faced in searches for heavy resonances decaying to tau pairs is the presence of neutrinos in the tau decays. Hadronic tau decays produce one neutrino, and leptonic tau decays produce two neutrinos so that, depending on the channel studied, each di-tau event may have two, three, or four neutrinos present in the decay products. These neutrinos do not interact with the detector, and carry energy away from the event. Information about the neutrinos can only be inferred from $\MET$, an event-level (as opposed to particle-level) quantity which estimates the net (event-wide) neutrino momentum in the transverse direction. If, for example, two neutrinos are produced back-to-back, the only recoverable information about them is the net difference in transverse momentum. Given that the taus, and by extension their decay products, are generated back-to-back (in the transverse plane) in $Z^\prime$ decays, $\MET$ alone does not provide sufficient information to precisely model the di-tau mass. The current mass estimator used in the 8 TeV and 13 TeV $Z^\prime\to\tau\tau$ searches, $\massvis$, depends on $\MET$ and, as shown in Figure \ref{fig:massVisSigVsMC}, suffers due to this loss of information.
 
 \begin{figure}[tbh!]
 \centering
@@ -17,13 +17,13 @@ One proposal to improve the discriminating power of these searches is to add add
 \centering
 \includegraphics[width=1.0\textwidth]{figures/DiTauDecay.png}
 \includegraphics[width=1.0\textwidth]{figures/WWDecay.png}
-\caption{A ditau event (top) will produce decay products whose tracks miss the PV, whereas leptonic decays from a shorter-lived parent produced in the $pp$ collision, such as a $W^+W_-$ event (bottom), will produce ``prompt" leptons which can be traced back to the PV.}
+\caption{A ditau event (top) will produce decay products whose tracks miss the PV, whereas leptonic decays from a shorter-lived parent produced in the $pp$ collision, such as a $W^+W^-$ event (bottom), will produce ``prompt" leptons which can be traced back to the PV.}
 \label{fig:PromptVsTauDecay}
 \end{figure}
 
 \section{Methods}
 
-Efforts to study the efficacy of the tau lifetime cuts began in the $\emu$ channel with a simple cut on the individual impact parameters (IPs) of the electron and muon in each ditau event. In this case, IP is defined as the closest distance between the track and a point with the x- and y-coordinates of the beam spot (BS) and the z-coordinate of the PV. The beam spot is a fixed quantity indicating the coordinates of the beam, and the PV is a quantity that is reconstructed from tracks in each event. In this channel, the principal prompt backgrounds are $t\bar{t}$, where the $b$ quarks from $t$ decays decay leptonically into an electron and muon, and $W^+W_-$, where the $W$s decay leptonically into an electron and muon. Drell-Yan events where virtual $Z$ bosons decay into tau pairs are in principle an irreducible background, but the rate falls off significantly in the high-mass (signal) region being considered.
+Efforts to study the efficacy of the tau lifetime cuts began in the $\emu$ channel with a simple cut on the individual impact parameters (IPs) of the electron and muon in each ditau event. In this case, IP is defined as the closest distance between the track and a point with the x- and y-coordinates of the beam spot (BS) and the z-coordinate of the PV. The beam spot is a fixed quantity indicating the coordinates of the beam, and the PV is a quantity that is reconstructed from tracks in each event. In this channel, the principal prompt backgrounds are $t\bar{t}$, where the $b$ quarks from $t$ decays decay leptonically into an electron and muon, and $W^+W^-$, where the $W$s decay leptonically into an electron and muon. Drell-Yan events where virtual $Z$ bosons decay into tau pairs are in principle an irreducible background, but the rate falls off significantly in the high-mass (signal) region being considered.
 
 The cut was first defined as the sum of the absolute values of the IPs of each lepton:
 
@@ -40,12 +40,15 @@ The cut was first defined as the sum of the absolute values of the IPs of each l
 \label{eq:IP}
 \end{equation}
 
-\noindent where the error on a track is defined according to the recommendations laid down by the Tracker POG\cite{TrackerPOG}:
+\noindent where the error on the track IP is defined according to the recommendations laid down by the Tracker POG\cite{TrackerPOG}:
 
 \begin{equation}
 \centering
-\sigma_e = \textrm{abs(theGSFElec.gsfTrack()->dxy(theBeamSpot))}
-\sigma_\mu = \textrm{abs(thePatMuon.track()->dxy(theBeamSpot))}
+\sigma_e = \textrm{abs(theGSFElec.gsfTrack()-$>$dxy(theBeamSpot))}
+\end{equation}
+\begin{equation}
+\centering
+\sigma_\mu = \textrm{abs(thePatMuon.track()-$>$dxy(theBeamSpot))}
 \end{equation}
 
 The cut is placed at the very end of the selection sequence, immediately following the b-jet veto. The quantity in Equation \ref{eq:IP} is required to exceed a value chosen based on optimization studies. These studies, based in signal and background MC, compare the acceptance of signal events with the rejection of background events across several values of this threshold. The threshold value is chosen based on its associated value of $\frac{s}{\sqrt{s+b}}$, where $s$ is the signal rate and $b$ is the aggregated background rate. Figure \ref{fig:IPstudy} shows the performance of the IP-based lifetime cut in MC. A cut threshold of 2 is chosen on the basis of maximizing both $\frac{s}{\sqrt{s+b}}$ and signal MC acceptance.
@@ -117,22 +120,22 @@ For the 13 TeV analysis, the focus of the lifetime study is shifted to the fully
 \label{fig:13TeVComparison}
 \end{figure}
 
-Figure \ref{fig:13TeVLifetimeLimits} shows the impact of the addition of the lifetime cut (``OR" definition) on the overall limit. In this channel and at this collision center-of-mass energy, the addition of the lifetime cut appears to decrease both the expected and observed limits by $\sim$100 GeV. It's likely that the extremely low event rates in the high mass region (i.e. the search region with the highest sensitivity) is what drives this behavior. Since the background rate in the high mass region is already quite low, the fact that the lifetime cut rejects $\sim$50\% of the signal is likely to have a larger impact on the limit than boosting the signal-to-background ratio. In an effort to increase signal events in this region, the $p_\zeta$ cut was removed. However, this alone permitted a significant increase in QCD background, so the $\MET$ cut was tightened to $\MET > 50$. The results are shown in Figure \ref{fig:13TeVImprovedLimits}. These modifications appear to increase the baseline limit. However, even with increased statistics, the addition of the lifetime cut appears to decrease the limit relative to the limit without the lifetime cut. The conclusion is that, in the high-mass region, the loss of signal events due to the lifetime cut affects the limit sensitivity more than the concurrent suppression of background.
+Figure \ref{fig:13TeVLifetimeLimits} shows the impact of the addition of the lifetime cut (``OR" definition) on the overall limit. In this channel and at this collision center-of-mass energy, the addition of the lifetime cut appears to decrease both the expected and observed limits by $\sim$100 GeV. It's likely that the extremely low event rates in the high mass region (i.e. the search region with the highest sensitivity) is what drives this behavior. Since the background rate in the high mass region is already quite low, the fact that the lifetime cut rejects $\sim$50\% of the signal is likely to have a larger impact on the limit than boosting the signal-to-background ratio. In an effort to increase signal events in this region, the $p_\zeta$ cut was removed. However, this alone permitted a significant increase in QCD background, so the $\MET$ cut was tightened to $\MET > 50$. The results are shown in Figure \ref{fig:13TeVImprovedLimits}. These modifications appear to increase the baseline limit. However, even with increased statistics, the addition of the lifetime cut appears to decrease the limit relative to the limit without the lifetime cut. The conclusion is that, in the high-mass region, the loss of signal events due to the lifetime cut affects the limit sensitivity more than the concurrent suppression of background. The lifetime cuts will once again be tested as statistics accumulate during the 2016 run and beyond. Multivariate analysis (MVA) techniques will also be applied so that these new cuts can be fully integrated and properly ``tuned" with the rest of the $Z^\prime\to\tau\tau$ selection cuts.
 
 \begin{figure}[tbh!]
 \centering
 %\includegraphics[width=0.5\textwidth]{figures/limits/Limit_TauTau}
-\includegraphics[width=0.5\textwidth]{figures/Limit_noLifetime.pdf}
+\includegraphics[width=0.5\textwidth]{figures/Limit_noLifetime.png}
 %\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_2_NoPZeta_123prong.pdf}
-\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_3.pdf}
+\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_3.png}
 \caption{Limit calculated with standard 13 TeV selection sequence (top) compared with limit calculated with the standard selection sequence and a lifetime threshold of 3 applied (bottom).}
 \label{fig:13TeVLifetimeLimits}
 \end{figure}
 
 \begin{figure}[tbh!]
 \centering
-\includegraphics[width=0.5\textwidth]{figures/Limit_NoLifetime_NoPZeta_MET_gt_50.pdf}
-\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_2_NoPZeta_123prong.pdf}
+\includegraphics[width=0.5\textwidth]{figures/Limit_NoLifetime_NoPZeta_MET_gt_50.png}
+\includegraphics[width=0.5\textwidth]{figures/Limit_Lifetime_gt_2_NoPZeta_123prong.png}
 \caption{Limit comparison with the $p_\zeta$ requirement removed and the $\MET$ minimum threshold increased to 50. The top plot has no lifetime threshold applied, while the bottom plot has a lifetime threshold of 2 applied. While the removal of $p_\zeta$ and the tightening of the $\MET$ threshold increases the baseline limit, the limit with the lifetime cut added is still lower (worse) than that without it applied.}
 \label{fig:13TeVImprovedLimits}
 \end{figure}
