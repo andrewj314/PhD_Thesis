@@ -2,14 +2,14 @@
 
 \section{Introduction}\label{sec:intro}
 
-The mission of particle physics is to increase our understanding of the most fundamental constituents of our universe and their interactions. These efforts have arguably been going on since the era of the Greek philosophers, who classified all matter into the elemental categories of earth, air, wind, and fire. As the centuries progressed, our knowledge of the nature of the universe has been refined as new theories were proposed to explain the phenomena we observe in nature, and, at the same time, more and more sophisticated experiments were designed to test them. Particle physicists are broadly divided into two sub-fields: theorists and experimentalists. Theorists seek to develop models that offer a more complete explanation of particle interactions, and experimentalists are tasked with validating these models. Efforts in particle theory in the late-20th century culminated in the Standard Model (SM) of particle physics, which has proven to be tremendously successful at describing a large number of observed particle phenomena (some which have been accurately validated to one part in ten billion!).
+The mission of particle physics is to increase our understanding of the most fundamental constituents of our universe and their interactions. These efforts have arguably been going on since the era of the Greek philosophers, who classified all matter into the elemental categories of earth, air, wind, and fire. As the centuries progressed, our knowledge of the nature of the universe has been refined as new theories were proposed to explain the phenomena we observe in nature, and, at the same time, more and more sophisticated experiments were designed to test them. Particle physicists are broadly divided into two sub-fields: theorists and experimentalists. Theorists seek to develop models that offer a more complete explanation of particle interactions, and experimentalists are tasked with validating these models. Efforts in particle theory in the late-20th century culminated in the Standard Model (SM) of particle physics, which has proven to be tremendously successful at describing a large number of observed particle phenomena.
 
 The SM is not without its deficiencies, however. Today, there remain many open questions in particle physics that are not sufficiently (or at all) addressed by the SM. To name just a few: 
 
 Why is there more matter than antimatter in the universe?
 What is dark matter?
 What is dark energy?
-Can the strong iteraction be unified with the electroweak interaction?
+Can the strong interaction be unified with the electroweak interaction?
 Why is the Higgs mass 125 GeV and not at the Planck scale?
 
 Attempts to answer these questions require new theories modifying and building on the SM. These theories must then be tested, which is where the experimentalists come in. While the SM was perhaps the crowning achievement of high energy theory in the twentieth century, the Large Hadron Collider (LHC) is arguably the most noteworthy undertaking in high energy experiment in the twenty-first. Located in Geneva, Switzerland at the European Organization for Nuclear Research (CERN, from the French ``Conseil Européen pour la Recherche Nucléaire"), the LHC is the highest-energy particle collider ever built and has been an invaluable tool in the quest to validate theories of new physics.
@@ -20,7 +20,7 @@ This thesis presents an effort to use one of the primary experiments on the LHC,
 \chapter{The Standard Model}
 
 
-As mentioned, the Standard Model (SM) of particle physics is the set of theories describing subatomic particles and their interactions according to the electromagnetic, weak, and strong forces. Describing these interactions individually are the theory of quantum electrodynamics (QED, electromagnetic), electroweak theory (EW, weak and elecromagnetic), and the theory of quantum chromodynamics (QCD, strong). These individual theories combine to form the symmetry group describing the SM:
+As mentioned, the Standard Model (SM) of particle physics is the set of theories describing subatomic particles and their interactions according to the electromagnetic, weak, and strong forces. Describing these interactions individually are the theory of quantum electrodynamics (QED, electromagnetic), electroweak theory (EW, weak and electromagnetic), and the theory of quantum chromodynamics (QCD, strong). These individual theories combine to form the symmetry group describing the SM:
 \begin{equation}
 SU(3)_{C} \times SU(2)_{L} \times U(1)_{Y}
 \end{equation}
@@ -95,11 +95,11 @@ D_{\mu} \equiv \partial_{\mu} + ieA_{\mu}
 \mathcal{L}_{\text{QED}} = \bar{psi}\left(i\gamma^{\mu}D_{\mu} - m\right)\psi - \frac{1}{4}F_{\mu}{\nu}F^{\mu}{\nu}.
 \end{equation} 
 
-\noindent A typical QED interaction, an electron-positron pair annihilating into a photon which then decays into another electron-positron pair, is shown in Figure~\ref{fig:FeynmanQED}.
+\noindent A typical QED interaction, a pair of photons decaying to an electron-positron pair, is shown in Figure~\ref{fig:FeynmanQED}.
 
 \begin{figure}
 \centering
-  \includegraphics[width=0.4\textwidth]{figures/FeynmanQED.jpg}
+  \includegraphics[width=0.4\textwidth]{figures/PairProd.png}
   \caption{\label{fig:FeynmanQED} Typical QED interaction\cite{QEDFeynman}}
 \end{figure}
 
@@ -112,20 +112,17 @@ The weak force is responsible for radioactive decay and is mediated by the W and
 The symmetry group of EW theory is $SU(2)_{L} \times U(1)_{Y}$, where $SU(2)_{L}$ is non-Abelian with generators $I_{i} = \sigma_{i}$ where $\sigma_{i}$ are the standard Pauli matrices, and where $U(1)_{Y}$ is Abelian with generator $Y/2 = Q - I_{3}$ where $Q$ is the electric charge. The corresponding gauge bosons are the $W_{1}$, $W_{2}$, and $W_{3}$ from $SU(2)_{L}$, and the $B$ from $U(1)_{Y}$ and are all massless. Through spontaneous symmetry breaking via the Higgs mechanism, these four massless bosons become the massive $W^{\pm}$ and $Z$ and the massless photon of the SM.
 
 Before electroweak symmetry breaking, the EW Lagrangian is defined to be\cite{srednicki}
-
 \begin{equation}
 \mathcal{L}_{\text{EW}} = -\frac{1}{4}W^{i}_{\mu\nu}W^{\mu\nu}_{i} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} + \bar{f_{L}}\gamma^{\mu}\left(i\partial_{\mu} - \frac{g}{2}\sigma_{i}W^{i} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{L} + 
 \bar{f_{R}}\gamma^{\mu}\left(i\partial_{\mu} - g^{\prime}\frac{Y}{2}B_{\mu}\right)f_{R}
 \end{equation}
 
 \noindent where we define:
-
 \begin{equation}
 W^{i}_{\mu\nu} \equiv \partial_{\mu}W^{i}_{\mu} - \partial_{\nu}W^{i}_{\mu} - g\epsilon_{ijk}W^{j}_{\mu}W^{k}_{\nu}
 \end{equation}
 
 \noindent and
-
 \begin{equation}
 B_{\mu\nu} \equiv \partial_{\mu}B_{\nu} - \partial_{\nu}B_{\mu}.
 \end{equation}
@@ -133,7 +130,6 @@ B_{\mu\nu} \equiv \partial_{\mu}B_{\nu} - \partial_{\nu}B_{\mu}.
 Here, $g$ and $g^{\prime}$ are the respective coupling constants for $SU(2)_{L}$ and $U(1)_{Y}$, and $f_{R}$ and $f_{L}$ represent right- and left-handed fermionic fields, respectively. ``Handedness", or helicity, is simply the dot product of the momentum and spin unit vectors of the particle. Right-handed particles have helicity +1, and left-handed particles have helicity -1.
 
 After spontaneous symmetry breaking, the massless $W_{1}$ and $W_{2}$ combine to form the massive $W^{\pm}$ via the relation
-
 \begin{equation}
 W^{\pm} = \frac{1}{\sqrt{2}}\left(W_{1} \mp iW_{2}\right)
 \end{equation}
@@ -144,53 +140,45 @@ W^{\pm} = \frac{1}{\sqrt{2}}\left(W_{1} \mp iW_{2}\right)
 \end{equation}
 
 \noindent where $\theta_{W}$ is the weak mixing angle, which defines the rotation by which spontaneous symmetry breaking transforms the $W_{1,2,3}$ and $B$ into the $W^{\pm}$, $Z$, and photon of the SM. In terms of the coupling constants of $SU(2)_{L}$ and $U(1)_{Y}$, the weak mixing angle may be defined as\cite{srednicki}:
-
 \begin{equation}
 \cos \theta_{W} = \frac{g}{\sqrt{g^{2} + g^{\prime2}}}
 \end{equation}
 
-\noindent and empirically as 
-
+\noindent and empirically as~\cite{halzen}
 \begin{equation}
 \cos \theta_{W} = \frac{m_{W}}{m_{Z}}.
-\end{equation}~\cite{halzen}
+\end{equation}
 
 \section{Quantum Chromodynamics}
 
 Quantum chromodynamics (QCD) is the theory that describes the strong force. QCD introduces a new property, called ``color," that is only felt by particles which strongly interact. These particles are quarks ($q$, the constituents of baryons and mesons) and gluons ($g$, the mediator of the strong force). Particles can have color charge ``red", ``green", or ``blue" according to rotations in the group $SU(3)_{C}$, the portion of the SM relevant to QCD.
 
 The generators of $SU(3)$ are eightfold, and can be used to represent the gauge transformation $U(\alpha)$:
-
 \begin{equation}
 U(\alpha) = e^{i\alpha_{j}}T^{j} \approx I + i\alpha_{j}T^{j} + O(\alpha^{2})
 \end{equation}
 
 \noindent They satisfy the commutation relation:
-
 \begin{equation}
 \left[T^{a}, T^{b}\right] = if^{abc}T^{c}
 \end{equation}
 
 \noindent where 
-
 \begin{equation}
 f^{abc} \equiv -2i\text{Tr}\left(T^{a}T^{b}T^{c} - T^{b}T^{a}T^{c}\right).
 \end{equation}
 
-\noindent We can write the Lagrangian of QCD as:
-
+\noindent We can write the Lagrangian of QCD as:\cite{halzen}
 \begin{equation}
 \mathcal{L}_{\text{QCD}} = -\frac{1}{4}F^{\mu\nu}_{\alpha}F^{\alpha}_{\mu\nu} + \bar{q}\left(i\gamma^{\mu}D_{\mu} - m\right)q - \frac{1}{2\xi}\partial_{\mu}A^{\alpha\mu}\partial_{\nu}A^{\alpha\nu} + \partial_{\mu}\bar{c}^{a}\left(\partial^{\mu}\delta^{ab} + g_{s}f_{abc}A^{c\mu}\right)c_{b}.
-\end{equation}\cite{halzen}
+\end{equation}
 
 \noindent Here, we define
-
 \begin{equation}
 D_{\mu} \equiv \partial_{\mu} + ig_{s}A^{\mu}_{a}T^{a}
 \end{equation}
 
 \noindent and
-
 \begin{equation}
 F^{\alpha}_{\mu\nu} \equiv \partial_{\mu}A^{\alpha}_{\nu} - \partial_{\nu}A^{\alpha}_{\mu} - g_{s}f^{abc}A^{b}_{\mu}A^{c}_{\nu}
 \end{equation}
@@ -238,9 +226,8 @@ m_{Z} = \frac{m_{W}}{\cos{\theta_W}}.
 \end{equation}
 
 The final piece of the SM, the Higgs boson, has a mass which is dependent entirely on the VEV:
-
 \begin{equation}
-m_H = sqrt{2|\mu^2|}.
+m_H = \sqrt{2|\mu^2|}.
 \end{equation}
 
 In July 2012, the Higgs boson was discovered concurrently by the ATLAS and CMS collaborations, and was measured to have a mass of 125.4 GeV.~\cite{CMSHiggs}~\cite{ATLASHiggs}
@@ -256,7 +243,7 @@ For example, string theory is considered a promising candidate for describing gr
 There are several ways new heavy gauge bosons appear. The most natural possibility is one in which these heavy gauge bosons are the gauge field of a new local broken symmetry. Examples include models with a new U(1) gauge symmetry, little Higgs models, and E6 Grand Unified Theories (GUT). In models with a new U(1) gauge symmetry, the $Z^\prime$ is the gauge boson of the broken symmetry. In little Higgs models, breaking of the global symmetry by gauge and Yukawa interactions generates Higgs mass and couplings at the TeV scale that cancel off the SM quadratic divergence of the Higgs mass from top, gauge, and Higgs loops. This results in one or more $Z^\prime$ bosons. In Kaluza-Klein models, the $Z^\prime$ bosons are excited states of a neutral, bulk gauge symmetry. From the breadth, scope, and implications of these models, it is apparent that probing these questions and puzzles potentially lies in the physics of new
 particles at the TeV scale. As such, it is highly worthwhile to engage in searches for $Z^\prime$ candidates.
 
-Of particular interest such searches are models that include an extra $Z^\prime$-like neutral gauge boson that decays to pairs of high-$p_{T}$ $\tau$ leptons. Although many models with extra gauge bosons obey the universality of the couplings, some models include generational dependent couplings resulting in extra neutral gauge bosons that preferentially decay to $\tau$ leptons, making this analysis an important mode for discovery. However, even if a new gauge boson decaying to $\mu\mu$ is discovered first, it will be critical to establish the $\tau\tau$ decay channel to establish the coupling relative to $\mu\mu$ channel. The primary model studied in this thesis is the Sequential Standard Model $Z^\prime$, denoted $Z^{\prime}_{SSM}$. This model assumes universality of the couplings (just like the SM $Z$) which makes it a useful benchmark, both for testing other models and for fine-tuning the search methodology.
+Of particular interest in such searches are models that include an extra $Z^\prime$-like neutral gauge boson that decays to pairs of high-$p_{T}$ $\tau$ leptons. Although many models with extra gauge bosons obey the universality of the couplings, some models include generational dependent couplings resulting in extra neutral gauge bosons that preferentially decay to $\tau$ leptons, making this analysis an important mode for discovery. However, even if a new gauge boson decaying to $\mu^+\mu^-$ is discovered first, it will be critical to establish the $\tau\tau$ decay channel to establish the coupling relative to $\mu\mu$ channel. The primary model studied in this thesis is the Sequential Standard Model $Z^\prime$, denoted $Z^{\prime}_{SSM}$. This model assumes universality of the couplings (just like the SM $Z$) which makes it a useful benchmark, both for testing other models and for fine-tuning the search methodology. The current CMS published limit on a $Z^{\prime}_{SSM}$ decaying to pairs of electrons or muons, established with the data taken during the 2012 run at $\sqrt{s} = 8$ TeV, excludes a $Z^{\prime}_{SSM}$ below a mass of 2.90 TeV.\cite{ZprimeToEE}
 
 In $pp$ collisions at the LHC, the $Z^\prime_{SSM}$ is expected to be generated in much the same way as the SM $Z$, through Drell-Yan production via quark-quark interactions from the colliding protons. A diagram of this process is shown in Figure~\ref{fig:ZprimeToTauTau}.
 
@@ -274,7 +261,7 @@ The SSM does not predict the existence of a $Z^{\prime}$ due to a larger symmetr
 \begin{equation}
 \Gamma_{Z^{\prime}} = \Gamma_Z \times M_{Z^{\prime}}/M_{Z}.
 \end{equation}
-\noindent While the SSM is typically not gauge-invariant, it still serves as an exceptionally useful benchmark in the search for new physics, as it can be used as a baseline for comparison with other models should an excess be observed.\cite{SSM} Given this, the $Z^{\prime}_{SSM}$ is the chief signal used in the physics searches described in this thesis.
+\noindent While the SSM is typically not gauge-invariant, it still serves as an exceptionally useful benchmark in the search for new physics, as it can be used as a baseline for comparison with other models should an excess be observed.\cite{SSM} Given this, the $Z^{\prime}_{SSM}$ is the chief signal used in the physics searches described in this thesis. 
 
 \subsection{Grand Unified Theory (GUT)-inspired Models}
 
@@ -284,9 +271,8 @@ E_6 \to SO(10) \times U(1)_\psi \to SU(5) \times U(1)_\chi \times U(1)_\psi \to 
 \end{equation}
 
 \noindent The new gauge boson ($Z^\prime$ candidate) is predicted to arise as a mixing of the $U(1)_\psi$ and $U(1)_\chi$ groups with a mixing angle $\theta_{E_6}$:
-
 \begin{equation}
 Z^{\prime} = Z^\prime_\chi \cos{\theta_{E_6}} + Z^\prime_\psi \sin{\theta_{E_6}}.
 \end{equation}
 
-$\theta_{E_6}$ is a free parameter ranging from $-90^{\deg}$ to $90^{\deg}$. The choice of $\theta_{E_6}$ is dictated by the model, and the four most popular values are $\theta_{E_6} = 0^{\deg}$ ($Z^\prime_\chi$), $\theta_{E_6} = 90^{\deg}$ ($Z^\prime_\psi$), $\theta_{E_6} = \arcsin{\sqrt{3/8}}$ ($Z^\prime_\eta$), and $\theta_{E_6} = \arcsin{\sqrt{5/8}}$ ($Z^\prime_I$).\cite{E6} While these $E_6$-inspired models were not included in the 13 TeV search, the $Z^\prime_\psi$ signal was one of the principal signal Monte Carlo samples used in the 8 TeV analysis.
+\noindent$\theta_{E_6}$ is a free parameter ranging from $-90^{\deg}$ to $90^{\deg}$. The choice of $\theta_{E_6}$ is dictated by the model, and the four most popular values are $\theta_{E_6} = 0^{\deg}$ ($Z^\prime_\chi$), $\theta_{E_6} = 90^{\deg}$ ($Z^\prime_\psi$), $\theta_{E_6} = \arcsin{\sqrt{3/8}}$ ($Z^\prime_\eta$), and $\theta_{E_6} = \arcsin{\sqrt{5/8}}$ ($Z^\prime_I$).\cite{E6} While these $E_6$-inspired models were not included in the 13 TeV search, the $Z^\prime_\psi$ signal was one of the principal signal Monte Carlo samples used in the 8 TeV analysis.
