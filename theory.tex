@@ -4,20 +4,15 @@
 
 The mission of particle physics is to increase our understanding of the most fundamental constituents of our universe and their interactions. These efforts have arguably been going on since the era of the Greek philosophers, who classified all matter into the elemental categories of earth, air, wind, and fire. As the centuries progressed, our knowledge of the nature of the universe has been refined as new theories were proposed to explain the phenomena we observe in nature, and, at the same time, more and more sophisticated experiments were designed to test them. Particle physicists are broadly divided into two sub-fields: theorists and experimentalists. Theorists seek to develop models that offer a more complete explanation of particle interactions, and experimentalists are tasked with validating these models. Efforts in particle theory in the late-20th century culminated in the Standard Model (SM) of particle physics, which has proven to be tremendously successful at describing a large number of observed particle phenomena.
 
-The SM is not without its deficiencies, however. Today, there remain many open questions in particle physics that are not sufficiently (or at all) addressed by the SM. To name just a few: 
-
-Why is there more matter than antimatter in the universe?
-What is dark matter?
-What is dark energy?
-Can the strong interaction be unified with the electroweak interaction?
+The SM is not without its deficiencies, however. Today, there remain many open questions in particle physics that are not sufficiently (or at all) addressed by the SM. To name just a few: Why is there more matter than antimatter in the universe? What is dark matter? What is dark energy? Can the strong interaction be unified with the electroweak interaction?
 Why is the Higgs mass 125 GeV and not at the Planck scale?
 
 Attempts to answer these questions require new theories modifying and building on the SM. These theories must then be tested, which is where the experimentalists come in. While the SM was perhaps the crowning achievement of high energy theory in the twentieth century, the Large Hadron Collider (LHC) is arguably the most noteworthy undertaking in high energy experiment in the twenty-first. Located in Geneva, Switzerland at the European Organization for Nuclear Research (CERN, from the French ``Conseil Européen pour la Recherche Nucléaire"), the LHC is the highest-energy particle collider ever built and has been an invaluable tool in the quest to validate theories of new physics.
 
-This thesis presents an effort to use one of the primary experiments on the LHC, the Compact Muon Solenoid (CMS), to search for a new particle, called the \emph{$Z^\prime$}, predicted by many such ``Beyond Standard Model" (BSM) theories. Chapter 2 will lay the groundwork, offering an overview of the SM and then a discussion of the modifying theories which predict the $Z^\prime$'s existence. Chapters 3 and 4 will discuss the tools used in the search: the LHC, the CMS experiment, and the substantial computing resources needed to conduct a full search for new physics. Chapter 5 will discuss the searches for $Z^\prime$s decaying to tau pairs at both $\sqrt{s} = 8$ TeV and $\sqrt{s} = 13$ TeV. Chapter 6 features proposed improvements to the analysis exploiting the lifetime of the tau, and Chapter 7 will offer an overview of future possibilities in this search effort as well as concluding remarks.
+This thesis represents an effort using one of the primary experiments on the LHC, the Compact Muon Solenoid (CMS), to search for a new particle, called the \emph{$Z^\prime$}, predicted by many such ``Beyond Standard Model" (BSM) theories. Chapter 2 lays the groundwork, offering an overview of the SM and then a discussion of the modifying theories which predict the $Z^\prime$'s existence. Chapters 3 and 4 discuss the tools used in the search: the LHC, the CMS experiment, and the substantial computing resources needed to conduct a full search for new physics. Chapter 5 discusses the searches for $Z^\prime$s decaying to tau pairs at both $\sqrt{s} = 8$ TeV and $\sqrt{s} = 13$ TeV. Chapter 6 features proposed improvements to the analysis exploiting the lifetime of the tau, and Chapter 7 offers an overview of future possibilities in this search effort as well as concluding remarks.
 \clearpage
 
-\chapter{The Standard Model}
+\chapter{The Standard Model and Beyond}
 
 
 The Standard Model (SM) of particle physics is the set of theories describing subatomic particles and their interactions according to the electromagnetic, weak, and strong forces. Describing these interactions individually are the theory of quantum electrodynamics (QED), which describes the electromagnetic interaction, electroweak theory (EW), which encompasses QED and adds the weak interaction to form a broader theory of both interaction, and finally the theory of quantum chromodynamics (QCD), which describes the strong interaction. These individual theories combine to form the symmetry group describing the SM:
@@ -41,7 +36,7 @@ Shown in Figure~\ref{fig:StandardModel}, the particles included the SM are belie
 
 Fermions make up the matter of our universe. They are further divided into quarks and leptons. Each of these particles also has an antiparticle partner with identical mass and spin but opposite charge (except for antineutrinos, which are electrically neutral). Quarks combine with other quarks to form \textit{hadrons}. Hadrons are divided into \textit{baryons} and \textit{mesons}. Baryons are three-quark states such as the protons and neutrons which form atomic nuclei. Mesons are quark-antiquark pairs such as pions and kaons. Quarks have electric charge and interact via the electromagnetic and weak forces, and they also have color charge, meaning they interact via the strong force as well. This strong force is what keeps baryons and mesons held together and will be discussed further in the section on QCD. Quarks are divided into pairs of positive and negative charge across three ``generations" of increasing mass. In each pair, the positively-charged quark has electric charge +2/3 and the negatively-charged quark has electric charge -1/3. The first generation consists of the positively-charged \textit{up (u)} quark and the negatively-charged \textit{down (d)} quark. These are the quarks most commonly found in matter as they make up protons and neutrons in matter as well as the pions. The second generation consists of the positively-charged \textit{charm (c)} quark and the negatively-charged \textit{strange (s)} quark. These quarks form more exotic hadrons such as kaons and lambdas. The third generation consists of the positively-charged \textit{top (t)} quark and the negatively-charged \textit{bottom (b)} quark. These are quite heavy, quite short-lived quarks. The  $b$ quark is found in some exotic bound states, but the $t$ quark is so short-lived that it is never found in bound states as it decays too quickly.
 
-While the quarks interact via both the strong and electroweak forces, the leptons only experience the electroweak interaction. The nature of this interaction will be discussed further in the sections on QED and EW theory. Like the quarks, the leptons are divided into three generations. Each generation consists of a negatively-charged particle with charge -1, and a companion neutrino which is electrically-neutral. The first generation consists of the electron (\textit{e}), the most commonly-found lepton forming shells around nuclei to create atoms and being responsible for electric current, and its corresponding neutrino, the electron neutrino (\textit{$\nu_{e}$}). The second generation consists of the muon (\textit{$\mu$}) and its corresponding neutrino, the muon neutrino (\textit{$\nu_{\mu}$}). Muons are heavier than electrons and decay primarily into an electron, a muon neutrino, and an electron antineutrino. The mean lifetime of a muon is about 2 $\mu$s (in the reference frame of the muon). The third generation consists of the tau (\textit{$\tau$}) and its corresponding neutrino, the tau neutrino (\textit{$\nu_{\tau}$}). Taus are heavier still and can decay either leptonically or hadronically. In both cases, the tau decays directly into a tau neutrino and a $W$ boson matching the sign of the tau. In the hadronic case, the $W$ decays into a quark-antiquark pair which quickly hadronizes into jets, and in the leptonic case, the $W$ decays into either an electron and electron antineutrino or a muon and a muon antineutrino.  The mean lifetime of a tau is about $3 \times 10^{-13}$s (in the reference frame of the tau).\cite{pdg}
+While the quarks interact via both the strong and electroweak forces, the leptons only experience the electroweak interaction. The nature of this interaction will be discussed further in the sections on QED and EW theory. Like the quarks, the leptons are divided into three generations. Each generation consists of a negatively-charged particle with charge -1, and a companion neutrino which is electrically-neutral. The first generation consists of the electron (\textit{e}), the most commonly-found lepton forming shells around nuclei to create atoms and being responsible for electric current, and its corresponding neutrino, the electron neutrino (\textit{$\nu_{e}$}). The second generation consists of the muon (\textit{$\mu$}) and its corresponding neutrino, the muon neutrino (\textit{$\nu_{\mu}$}). Muons are heavier than electrons and decay primarily into an electron, a muon neutrino, and an electron antineutrino. The mean lifetime of a muon is about 2 $\mu$s (in the reference frame of the muon). The third generation consists of the tau (\textit{$\tau$}) and its corresponding neutrino, the tau neutrino (\textit{$\nu_{\tau}$}). Taus are heavier still and can decay either leptonically or hadronically. In both cases, the tau decays directly into a tau neutrino and a $W$ boson matching the sign of the tau. In the hadronic case, the $W$ decays into a quark-antiquark pair which quickly hadronizes into jets, and in the leptonic case, the $W$ decays into either an electron and electron antineutrino or a muon and a muon antineutrino.  The mean lifetime of a tau is about $3 \times 10^{-13}$s (in the reference frame of the tau)\cite{pdg}.
 
 The bosons act as the force carriers of the SM. The photon (\textit{$\gamma$}) mediates the electromagnetic interaction, the gluon (\textit{g}) mediates the strong interaction, and the W and Z bosons mediate the weak interaction. The W can have electric charge +1 (\textit{$W^{+}$}) or -1 (\textit{$W^{-}$}), while the Z, photon, and gluon are all electrically neutral. The W and Z are also massive, while the photon and gluon are each massless. These bosons, known as guage bosons or vector bosons, each have spin 1. The final boson, the scalar (spin 0) Higgs boson, is the final boson in the Standard Model and is responsible for mediating the Higgs field (discussed further in the section on the Higgs mechanism).
 
@@ -55,7 +50,7 @@ where the $\gamma^{\mu}$ are Dirac matrices representing Lorentz transformations
 \begin{equation}
 \psi(x) \to e^{ie\alpha(x)}\psi(x)
 \end{equation}
-where $\alpha(x)$ is some position-dependent angle. This gauge invariance corresponds to conservation of electric charge via the $U(1)_Q$ gauge symmetry.
+where $\alpha(x)$ is some position-dependent angle. This $U(1)_Q$ gauge invariance corresponds to conservation of electric charge.
 
 To transform $\psi(x)$ in position to $\psi(y)$, we define the scalar operator $U(x, y)$ such that
 \begin{equation}
@@ -161,7 +156,7 @@ U(\alpha) = e^{i\alpha_{j}}T^{j}
 f^{abc} \equiv -2i\text{Tr}\left(T^{a}T^{b}T^{c} - T^{b}T^{a}T^{c}\right).
 \end{equation}
 
-\noindent We can write the Lagrangian of QCD as:\cite{halzen}
+\noindent We can write the Lagrangian of QCD as\cite{halzen}:
 \begin{equation}
 \mathcal{L}_{\text{QCD}} = -\frac{1}{4}F^{\mu\nu}_{\alpha}F^{\alpha}_{\mu\nu} + \bar{q}\left(i\gamma^{\mu}D_{\mu} - m\right)q.
 \end{equation}
@@ -185,7 +180,7 @@ No stable particle may have non-neutral overall color charge. Since quarks and g
 
 Recall from ~\ref{sec:EW} that, although the gauge bosons of the electroweak interaction, the $W_{1,2,3}$ and the $B$, are required by gauge invariance to be massless, some of their SM counterparts, the $W^{\pm}$ and $Z$, are observed to be massive (80.4 GeV and 91.2 GeV, respectively). In order for these bosons to retain their mass without violating the gauge symmetry, the Higgs mechanism was introduced to explain this spontaneous symmetry breaking.
 
-Developed in 1964 by Peter Higgs, Robert Brout, and Fran\c{c}ois Englert, the Higgs mechanism introduces two new complex scalar fields $\phi^{+}$ and $\phi^0$ into the EW Lagrangian. These fields can be written in terms of an $SU(2)_L$ doublet 
+Developed in 1964 by Peter Higgs, Robert Brout, and Fran\c{c}ois Englert, the Higgs mechanism introduces two new complex scalar fields $\phi^{+}$ and $\phi^0$ into the EW Lagrangian. These fields are invariant under $SU(3)$ and can be written in terms of an $SU(2)_L$ doublet 
 
 \begin{equation}
 \Phi \equiv \begin{pmatrix}\phi^{+} \\ \phi^{0}\end{pmatrix}_{L}.
@@ -203,11 +198,11 @@ V(\Phi) \equiv \mu^{2}\Phi^{\dagger}\Phi + \lambda\left(\Phi^{\dagger}\Phi\right
 \mathcal{L}_{Add} = D_{\mu}\Phi\ D^{\mu}\Phi - V(\Phi).
 \end{equation}
 
-Minimizing the potential $V(\Phi)$ in $\Phi$ gives the vacuum expectation value (VEV) of $\Phi$. If we choose $\mu^{2} < 0$, we arrive at multiple critical points in our minimization and a degenerate state is possible. The VEV can be chosen to take the form
+Minimizing the potential $V(\Phi)$ in $\Phi$ gives the vacuum expectation value (VEV) of $\Phi$. If we choose $\mu^{2} < 0$, we arrive at multiple critical points in our minimization and a degenerate state is possible. The VEV can be chosen to take the form\cite{srednicki}
 
 \begin{equation}
 \Phi^\dagger\Phi = \frac{v^2}{2} = -\frac{\mu^2}{2\lambda}
-\end{equation}~\cite{srednicki}
+\end{equation}
 
 This VEV has inifinite degenerate minima all with the same magnitude but different phase. Choosing one phase leads to spontaneous symmetry breaking, and the $W$ and $Z$ bosons acquire mass via\cite{halzen}
 
@@ -223,7 +218,7 @@ The final piece of the SM, the Higgs boson, has a mass which is dependent entire
 m_H = \sqrt{-2\mu^2}.
 \end{equation}
 
-In July 2012, the Higgs boson was discovered concurrently by the ATLAS and CMS collaborations, and was measured to have a mass of 125.4 GeV.~\cite{CMSHiggs}~\cite{ATLASHiggs}
+In July 2012, the Higgs boson was discovered concurrently by the ATLAS and CMS collaborations, and was measured to have a mass of 125.4 GeV~\cite{CMSHiggs}~\cite{ATLASHiggs}.
 
 \section{Beyond the Standard Model}
 
@@ -235,7 +230,7 @@ For example, string theory is considered a promising candidate for describing gr
 
 There are several ways new heavy gauge bosons appear. The most natural possibility is one in which these heavy gauge bosons are the gauge field of a new local broken symmetry. Examples include models with a new U(1) gauge symmetry, little Higgs models, and $E_6$ Grand Unified Theories (GUT). In models with a new U(1) gauge symmetry, the $Z^\prime$ is the gauge boson of the broken symmetry. In little Higgs models, breaking of the global symmetry by gauge and Yukawa interactions generates Higgs mass and couplings at the TeV scale that cancel off the SM quadratic divergence of the Higgs mass from top, gauge, and Higgs loops. This results in one or more $Z^\prime$ bosons. In Kaluza-Klein models, the $Z^\prime$ bosons arise as a result of hidden extra dimensions.  It should be noted that little Higgs and Kaluza-Klein models were not considered in the searches presented in the upcoming chapters, and therefore will not be discussed further in this thesis. Even so, from the breadth, scope, and implications of these models, it is apparent that probing these questions and puzzles potentially lies in the physics of new particles at the TeV scale. As such, it is highly worthwhile to engage in searches for $Z^\prime$ candidates.
 
-Of particular interest in such searches are models that include an extra $Z^\prime$-like neutral gauge boson that decays to pairs of high-$p_{T}$ $\tau$ leptons. Although many models with extra gauge bosons obey the universality of the couplings (meaning the bosons decay to each generation of fermions with equal frequency), some models include generational-dependent couplings resulting in extra neutral gauge bosons that preferentially decay to $\tau$ leptons, making this analysis an important mode for discovery. However, even if a new gauge boson decaying to $\mu^+\mu^-$ is discovered first, it will be critical to establish the $\tau\tau$ decay channel to establish the coupling relative to $\mu\mu$ channel. The primary model studied in this thesis is the Sequential Standard Model $Z^\prime$, denoted $Z^{\prime}_{SSM}$. This model assumes universality of the couplings (just like the SM $Z$) which makes it a useful benchmark, both for testing other models and for fine-tuning the search methodology. The current CMS published limit on a $Z^{\prime}_{SSM}$ decaying to pairs of electrons or muons, established with the data taken during the 2012 run at $\sqrt{s} = 8$ TeV, excludes a $Z^{\prime}_{SSM}$ below a mass of 2.90 TeV.\cite{ZprimeToEE}
+Of particular interest in such searches are models that include an extra $Z^\prime$-like neutral gauge boson that decays to pairs of high-$p_{T}$ $\tau$ leptons. Although many models with extra gauge bosons obey the universality of the couplings (meaning the bosons decay to each generation of fermions with equal frequency), some models include generational-dependent couplings resulting in extra neutral gauge bosons that preferentially decay to $\tau$ leptons, making this analysis an important mode for discovery. However, even if a new gauge boson decaying to $\mu^+\mu^-$ is discovered first, it will be critical to establish the $\tau\tau$ decay channel to establish the coupling relative to $\mu\mu$ channel. The primary model studied in this thesis is the Sequential Standard Model $Z^\prime$, denoted $Z^{\prime}_{SSM}$. This model assumes universality of the couplings (just like the SM $Z$) which makes it a useful benchmark, both for testing other models and for fine-tuning the search methodology. The current CMS published limit on a $Z^{\prime}_{SSM}$ decaying to pairs of electrons or muons, established with the data taken during the 2012 run at $\sqrt{s} = 8$ TeV, excludes a $Z^{\prime}_{SSM}$ below a mass of 2.90 TeV\cite{ZprimeToEE}.
 
 In $pp$ collisions at the LHC, the $Z^\prime_{SSM}$ is expected to be generated in much the same way as the SM $Z$, through Drell-Yan production via quark-quark interactions from the colliding protons. A diagram of this process is shown in Figure~\ref{fig:ZprimeToTauTau}.
 
@@ -253,7 +248,7 @@ The SSM does not predict the existence of a $Z^{\prime}$ due to a larger symmetr
 \begin{equation}
 \Gamma_{Z^{\prime}} = \Gamma_Z \times M_{Z^{\prime}}/M_{Z}.
 \end{equation}
-\noindent While the SSM is typically not gauge-invariant, it still serves as an exceptionally useful benchmark in the search for new physics, as it can be used as a baseline for comparison with other models should an excess be observed.\cite{SSM} Given this, the $Z^{\prime}_{SSM}$ is the chief signal used in the physics searches described in this thesis. 
+\noindent While the SSM is typically not gauge-invariant, it still serves as an exceptionally useful benchmark in the search for new physics, as it can be used as a baseline for comparison with other models should an excess be observed\cite{SSM}. Given this, the $Z^{\prime}_{SSM}$ is the chief signal used in the physics searches described in this thesis. 
 
 \subsubsection{Grand Unified Theory (GUT)-inspired Models}
 
@@ -267,4 +262,4 @@ E_6 \to SO(10) \times U(1)_\psi \to SU(5) \times U(1)_\chi \times U(1)_\psi \to 
 Z^{\prime} = Z^\prime_\chi \cos{\theta_{E_6}} + Z^\prime_\psi \sin{\theta_{E_6}}.
 \end{equation}
 
-\noindent$\theta_{E_6}$ is a free parameter ranging from $-90^{\circ}$ to $90^{\circ}$. The choice of $\theta_{E_6}$ is dictated by the model, and the four most popular values are $\theta_{E_6} = 0^{\circ}$ ($Z^\prime_\chi$), $\theta_{E_6} = 90^{\circ}$ ($Z^\prime_\psi$), $\theta_{E_6} = \arcsin{\sqrt{3/8}}$ ($Z^\prime_\eta$), and $\theta_{E_6} = \arcsin{\sqrt{5/8}}$ ($Z^\prime_I$).\cite{E6} While these $E_6$-inspired models were not included in the 13 TeV search, the $Z^\prime_\psi$ signal was one of the principal signal Monte Carlo samples used in the 8 TeV analysis.
+\noindent$\theta_{E_6}$ is a free parameter ranging from $-90^{\circ}$ to $90^{\circ}$. The choice of $\theta_{E_6}$ is dictated by the model, and the four most popular values are $\theta_{E_6} = 0^{\circ}$ ($Z^\prime_\chi$), $\theta_{E_6} = 90^{\circ}$ ($Z^\prime_\psi$), $\theta_{E_6} = \arcsin{\sqrt{3/8}}$ ($Z^\prime_\eta$), and $\theta_{E_6} = \arcsin{\sqrt{5/8}}$ ($Z^\prime_I$)\cite{E6}. While these $E_6$-inspired models were not included in the 13 TeV search, the $Z^\prime_\psi$ signal was one of the principal signal Monte Carlo samples used in the 8 TeV analysis.
