@@ -17,7 +17,7 @@ Over the 2012 run, during which the LHC was running at a $pp$ collision energy o
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/LumiPlot.pdf}
-  \caption{\label{fig:LumiPlot} Total integrated luminosity delivered by the LHC (blue), and total integrated luminosity recorded by CMS (yellow) during the 2016 run.}
+  \caption{\label{fig:LumiPlot} Total integrated luminosity delivered by the LHC (blue), and total integrated luminosity recorded by CMS (yellow) during the 2016 run. The difference is a measure of the experiment's efficiency.}
 \end{figure}
 
 
@@ -28,7 +28,7 @@ The Compact Muon Solenoid (CMS) Experiment is a multipurpose particle detector l
   \includegraphics[width=1.0\textwidth]{figures/CMSphoto.jpg}
   \caption{\label{fig:CMSphoto} The CMS Experiment (open for maintenance)}
 \end{figure}
-The experiment uses a right-handed coordinate system: the origin is set at the $pp$ collision point, with the $x$-axis pointing towards the center of the LHC ring, the $y$-axis pointing up, and the $z$-axis pointing along the beam line in the counter-clockwise direction. CMS also uses a pseudo-polar coordinate system, with $\phi$ defined as the azimuthal angle measured from the $x$-axis in the $x-y$ plane, $\theta$ defined as the polar angle from the $+z$ axis, and $\eta$ as the ``pseudorapidity", itself defined as 
+The experiment uses a right-handed coordinate system: the origin is set at the $pp$ collision point, with the $x$-axis pointing towards the center of the LHC ring, the $y$-axis pointing up, and the $z$-axis pointing along the beam line in the counter-clockwise direction. CMS also uses a pseudo-polar coordinate system, with $\phi$ defined as the azimuthal angle measured from the $x$-axis in the $x-y$ plane, $\theta$ defined as the polar angle from the $+z$ axis, and $\eta$ as the ``pseudorapidity", defined as 
 \begin{equation}
  \eta = -\ln\left[\tan\left(\theta/2\right)\right]
  \end{equation}
@@ -66,7 +66,7 @@ Common measurements of the detector performance are hit efficiency and hit resol
 
 \begin{figure}\centering
   \includegraphics[width=0.5\textwidth]{figures/PixelEfficiency.png}
-  \caption{\label{fig:PixelEfficiency} Hit efficiency vs. the average number of inelastic proton-proton collisions for pixel barrel layers and forward disks.}
+  \caption{\label{fig:PixelEfficiency} Hit efficiency vs. the average number of vertices for pixel barrel layers and forward disks.}
 \end{figure}
 
 \begin{figure}\centering
@@ -109,7 +109,7 @@ In the barrel section of the ECAL, an energy resolution of about 1\% is achieved
 
 \begin{figure}\centering
   \includegraphics[width=1.0\textwidth]{figures/ECAL_Resolution.png}
-  \caption{\label{fig:ECAL_Resolution} Relative energy resolution vs $|\eta|$ in EB (a) and EE (b) for both Monte Carlo and data. The vertical dashed lines indicate module boundaries in EB.}
+  \caption{\label{fig:ECAL_Resolution} Relative energy resolution vs $|\eta|$ in EB (a) and EE (b) for both Monte Carlo and data. The vertical dashed lines indicate module boundaries in EB. The mismatch between data and MC is corrected by applying $\eta$-dependent correcting factors to subsequent models.}
 \end{figure}
 
 
@@ -202,6 +202,7 @@ Even after a given event has passed the L1 trigger and HLT requirements, its con
 \subsection{Particle Flow}
 
 The global event reconstruction (also called particle-flow event reconstruction~\cite{CMS-PAS-PFT-09-001,CMS-PAS-PFT-10-001}) consists of reconstructing and identifying each single particle with an optimized combination of all subdetector information. In this process, the identification of the particle type (photon, electron, muon, charged hadron, neutral hadron) plays an important role in the determination of the particle direction and energy. Photons are identified as ECAL energy clusters not linked to the extrapolation of any charged particle trajectory to the ECAL. Electrons are identified as a primary charged particle track and ECAL energy clusters corresponding to this track extrapolation to the ECAL and to possible bremsstrahlung photons emitted along the way through the tracker material. Muons are identified as a track in the central tracker consistent with either a track or several hits in the muon system, associated with an energy deficit in the calorimeters. Charged hadrons are identified as charged particle tracks neither identified as electrons, nor as muons. Finally, neutral hadrons are identified as HCAL energy clusters not linked to any charged hadron trajectory, or as ECAL and HCAL energy excesses with respect to the expected charged hadron energy deposit.
+
 The energy of photons is directly obtained from the ECAL measurements. The energy of electrons is determined from a combination of the track momentum at the main interaction vertex, the corresponding ECAL cluster energy, and the energy sum of all bremsstrahlung photons attached to the track. The energy of muons is obtained from the corresponding track momentum. The energy of charged hadrons is determined from a combination of the track momentum and the corresponding ECAL and HCAL energy, corrected for the response function of the calorimeters to hadronic showers. Finally, the energy of neutral hadrons is obtained from the corresponding ECAL and HCAL energy measurements.
 For each event, hadronic jets are clustered from these reconstructed particles with the infrared and collinear safe anti-$k_T$ algorithm, operated with a size parameter $R$ of 0.5, where $R = \sqrt{\eta^2 + \phi^2}$\cite{Chatrchyan:2011ds}. The jet momentum is determined as the vectorial sum of all particle momenta in this jet, and is found in the simulation to be within 5 to 10\% of the true momentum over the whole \pt spectrum and detector acceptance. Jet energy corrections are derived from the simulation, and are confirmed with in situ measurements with the energy balance of dijet and photon + jet events~\cite{Chatrchyan:2011ds}. The jet energy resolution amounts typically to 15\% at 10\GeV, 8\% at 100\GeV, and 4\% at 1\TeV, to be compared to about 40\%, 12\%, and 5\% obtained when the calorimeters alone are used for jet clustering.
 
