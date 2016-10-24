@@ -149,7 +149,7 @@ important, of these differences is the presence of b--jets in the event.
 %$p_{T}$ lepton in the event.\\
 %The first tool to identify and reject $t\overline{t}$ events is counting the number of jets in the event are tagged as b--jets.  
 For our purposes, jets with 
-$p_{T} > 30$ GeV/$c$ and $|\eta| < 2.4$ are counted as b--tagged jets if the ``combined secondary vertex" discriminator, described in section 5, 
+$p_{T} > 30$ GeV and $|\eta| < 2.4$ are counted as b--tagged jets if the ``combined secondary vertex" discriminator, described in section 5, 
 returns a value consistent with that of a b--jet. 
 %The  ``track counting" discriminators are very simple, yet robust discriminators that return the significance of 
 %the second  (hiEff) or third (hiPurity) most significant track  in the jet. 
@@ -189,6 +189,7 @@ The entire signal selection criteria are summarized below, while Table~\ref{tab:
   \item Isolation: ``byTightCombinedIsolationDeltaBetaCorr3Hits"
 \end{itemize}
 
+\newpage
 \textbf{Topological requirements:}
 
 \begin{itemize}
@@ -212,7 +213,7 @@ $\mu$ and $\tau_{h}$ candidates to be back-to-back in $\phi$ (see above descript
 which the collinear approximation fails. Therefore, the mass is reconstructed as follows:
 
 \begin{equation}
-   M(\tau_{1},\tau_{2},{E\!\!\!\!/_{\rm T}}) = \sqrt{(E_{\tau_{1}}+E_{\tau_{2}}+{E\!\!\!\!/_{\rm
+   m(\tau_{1},\tau_{2},{E\!\!\!\!/_{\rm T}}) = \sqrt{(E_{\tau_{1}}+E_{\tau_{2}}+{E\!\!\!\!/_{\rm
 T}})^{2}-(\overrightarrow{p_{\tau_{1}}}+\overrightarrow{p_{\tau_{2}}}+\overrightarrow{{E\!\!\!\!/_{\rm T}}})^{2}}
 \label{eq:ditaumass}
 \end{equation}
@@ -306,7 +307,7 @@ and various backgrounds.}
 %\end{tabular}
 %}
 
-Figure~\ref{fig:muTauPreselectionControlPlots} shows the $p_{T}(\tau_{h})$, $\eta(\tau_{h})$, $\MET$, and $m_{T}(\mu,\MET)$ control plots using events satisfying 
+Figure~\ref{fig:muTauPreselectionControlPlots} shows the $p_{T}(\tau_{h})$, $\eta(\tau_{h})$, $\MET$, and $m_{T}(\mu,\MET)$ (transverse mass) control plots using events satisfying 
 the ``preselection" requirements (i.e. acceptance + $\mu$ identification + $\tau_{h}$ identification cuts described above). 
 Figure~\ref{fig:muTauFinalselectionControlPlots} shows the $p_{T}(\tau_{h})$, $\eta(\tau_{h})$, $\MET$, and $m_{T}(\mu,\MET)$ control plots in the signal region. 
 In these particular set of plots, the background predictions are entirely based on MC. In general, there is good agreement between the observed distributions and the 
@@ -359,7 +360,7 @@ enriched with W + Jets events and that is obtained by inverting the $\zeta$ and 
 obtained from control region C (nominal selections with non-isolated $\tau_{h}$).
 
 Figure~\ref{fig:ZetaAndCosDphiVsTauIso} shows a comparison of the $\zeta$ and cos$\Delta\phi$ distributions in W + Jets MC, normalized to unity, under two 
-different $\tau_{h}$ isolation conditions: ($i$) isolated (passing ``"Tight"), and ($ii$) non-isolated (failing ``Tight" but passing loosened isolation). The 
+different $\tau_{h}$ isolation conditions: ($i$) isolated (passing ``Tight"), and ($ii$) non-isolated (failing ``Tight" but passing loosened isolation). The 
 $\tau_{h}$ isolation does not bias the $\zeta$ and cos$\Delta\phi$ distributions, and thus we expect our ABCD background estimation method to nicely model the ``true" W + 
 jets yield in the signal region. A closure test for the background estimation method outlined above is performed with MC. Two aspects are simultaneously tested: 
 (1) closure on the normalization (i.e. $N_{W}^{A} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{D}}$); (2) correct determination of the $m(\mu,\tau_{h},\MET)$ shape. 
@@ -445,7 +446,7 @@ W}^{MC}}{N_{W}^{MC}}$, show about a $\sim 20$\% mismodeling in simulation. The t
 $m_{T}(\mu,\MET)$ distributions in control regions $C$(top left) and $A$(top right). The previously mentioned scale factors have been applied to the plots. 
 
 A natural comment or question from the reader is that while the MC closure test looks good, it is possible that mis-modeled $\MET$ in simulation could perhaps 
-pull the closure test in the wrong direction. In other words, how stable is the background estimation method with respect to $\MET$. The middle row of plots in 
+pull the closure test in the wrong direction? In other words, how stable is the background estimation method with respect to $\MET$? The middle row of plots in 
 Figure~\ref{fig:wJetsClosureMuTau} show similar closure tests, but without a $\MET$ cut. We find that closure is observed even without the $\MET$ cut, adding 
 to the robustness of the methodology. Table \ref{tab:muTauWJetsCR_noMet} shows the data and MC background yields in control regions $A$, $B$, and $C$ obtained 
 without the $\MET$ requirement. The purity 
@@ -510,9 +511,9 @@ because the systematic uncertainty for DY + Jets is typically $< 15$\% (see sect
 (i.e. upper bound on systematic effect is $0.35 \cdot 0.15 \sim 5$\%). The total predicted background
 $m(\mu,\tau_{h},\MET)$ spectrum will be shown in the results section of this chapter.
 
-\subsubsection{W + Jets Background Validation with High mT}
+\subsubsection{W + Jets Background Validation with High $m_T$}
 
-The standard approach to estimate the W + Jets background in the Higgs search is to use a control sample of events with high $m_{T}(\mu,\MET)$. 
+The standard approach to estimate the W + Jets background in the Higgs search is to use a control sample of events with high $m_{T}(\mu,\MET)$.
 The W + Jets yield in that region is determined by subtracting the non-W predictions from data using simulation, and subsequently extrapolating to the 
 signal region using an extrapolation factor determined from MC. We do not employ a similar approach in this analysis as we are motivated by wanting a fully 
 data-driven approach to estimating both the normalization and the mass shape. However, we use a similar control sample of high $m_{T}(\mu,\MET)$ events to 

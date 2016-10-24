@@ -88,15 +88,15 @@ distribution in the signal region, in log scale.}
 An upper bound at 95\% confidence level (CL) is set on $\sigma \cdot BR$, 
 where $\sigma$ is the cross-section for pair production of $pp\to Z^{\prime}$ and $BR$ the branching fraction for $Z^{\prime}\to\tau\tau$.
 
-The calculation of the exclusion limit is obtained by using each bin of the $m(\tau_{1},\tau_{1},\MET)$ distribution to construct one bin of the likelihood 
+The calculation of the exclusion limit is obtained by using each bin of the $m(\tau_{1},\tau_{2},\MET)$ distribution to construct one bin of the likelihood 
 and computing the 95\% confidence level (CL) upper limit on the signal cross-section using the asymptotic CL$_{s}$ method. 
 %in the official limit calculation tool ``combine". 
-Said differently, a shape based analysis is performed, using the $m(\tau_{1},\tau_{1},\MET)$ distribution as the fit discriminant to determine the 
+Said differently, a shape based analysis is performed, using the $m(\tau_{1},\tau_{2},\MET)$ distribution as the fit discriminant to determine the 
 likelihood of observing signal in the presence of the predicted background rate, given the observed yield in data. Systematic uncertainties are represented by nuisance parameters, which are profiled, assuming a log normal prior for normalization parameters, and Gaussian priors for mass-spectrum shape uncertainties.
 
 The above procedure is performed using the Higgs limit calculation tool ``combine". The tool takes as input data cards with the yields and nuisance parameters in 
-each $m(\tau_{1},\tau_{1},\MET)$ bin of the search channels. These data cards are provided for the four channels being considered. The only further input that 
-is required is the correlations within and across channels. As only an example, if all the channels had 10 bins from $0 < m(\tau_{1},\tau_{1},\MET) < 5000$ GeV 
+each $m(\tau_{1},\tau_{2},\MET)$ bin of the search channels. These data cards are provided for the four channels being considered. The only further input that 
+is required is the correlations within and across channels. As only an example, if all the channels had 10 bins from $0 < m(\tau_{1},\tau_{2},\MET) < 5000$ GeV 
 (500 GeV/bin), this means there will be 10 cards per channel and therefore 40 cards in total for the four channels (if all the channels have the same bin size).
 The cards corresponding to a specific final state, e.g. $\mu\tau_{h}$, were then combined using the ``CombineCards.py" tool provided by the Higgs limit tool, 
 resulting in a single \textit{combined} data card. This procedure was performed for all the final states considered in the analysis, resulting in 
@@ -154,14 +154,14 @@ We exclude $Z^{\prime}$ (decaying through $Z^{\prime}\to\tau\tau$) masses below 
   \includegraphics[width=0.4\textwidth]{figures/limits/Limit_TauTau.png}\\
   \includegraphics[width=0.4\textwidth]{figures/limits/Limit_eTau.png}
   \includegraphics[width=0.4\textwidth]{figures/limits/Limit_eMu.png}
-  \caption{Expected and observed limits for the $\tau_{\mu}\tau_{h}$, $\tau_{h}\tau_{h}$, $\tau_{e}\tau_{h}$, $\tau_{e}\tau_{\mu}$ channels. A k factor of 1.3 has been used to scale the leading order (LO) signal cross-section.} 
+  \caption{Expected and observed limits for the $\tau_{\mu}\tau_{h}$, $\tau_{h}\tau_{h}$, $\tau_{e}\tau_{h}$, and $\tau_{e}\tau_{\mu}$ channels for the 13 TeV search. A k factor of 1.3 has been used to scale the leading order (LO) signal cross-section.} 
     \label{fig:Limits}
 \end{figure}
 
 \begin{figure}[tbh!]
   \centering
   \includegraphics[width=0.6\textwidth]{figures/limits/CombinedLimit.png}
-  \caption{Combined expected limit for the $\tau_{\mu}\tau_{h}$, $\tau_{h}\tau_{h}$, $\tau_{e}\tau_{h}$, $\tau_{e}\tau_{\mu}$ channels. A k factor of 1.3 has been used to scale the leading order (LO) signal cross-section.}
+  \caption{Combined expected limit for the $\tau_{\mu}\tau_{h}$, $\tau_{h}\tau_{h}$, $\tau_{e}\tau_{h}$, $\tau_{e}\tau_{\mu}$ channels for the 13 TeV search. A k factor of 1.3 has been used to scale the leading order (LO) signal cross-section.}
   \label{fig:CombinedLimits}
 \end{figure}
 
@@ -176,7 +176,7 @@ Figure \ref{fig:8TeV_SR} and Table \ref{tab:8TeV_BGRates} show the unblinded sig
 \begin{figure}[tbh!]
 \centering
 \includegraphics[width=0.6\textwidth]{figures/8TeV_SR.png}
-\caption{$m(e,\tau_{h},\MET)$ distribution for SR in 8TeV search. A 1.5TeV $Z^{\prime}_{SSM}$ sample is also included.}
+\caption{$m(e,\tau_{h},\MET)$ distribution for the SR in the 8 TeV search. A 1.5 TeV $Z^{\prime}_{SSM}$ sample is also included.}
 \label{fig:8TeV_SR}
 \end{figure}
 
@@ -231,12 +231,12 @@ $Z^\prime_{SSM}$ (1750)
 \end{center}
 \end{table}
 
-Finally, the limit on a $Z^{\prime}_{SSM}$ decaying to two taus are given in Figure \ref{fig:8TeV_Limits}. Upper limits are placed on $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ as a function of mass. The limit is set as the point at which the experimental value of $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ exceeds the theoretical value. Below this point, we exclude the existence of $Z^{\prime}$-like particles decaying to tau pairs. Figure \ref{fig:8TeV_Limits} shows that, at 95\% confidence level, we exclude the $Z^{\prime}_{SSM}$ below a mass of 1300 GeV/c$^2$, and that we exclude the $Z^{\prime}_{\psi}$ below a mass of 810 GeV/c$^2$.
+Finally, the limit on a $Z^{\prime}_{SSM}$ decaying to two taus are given in Figure \ref{fig:8TeV_Limits}. Upper limits are placed on $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ as a function of mass. The limit is set as the point at which the experimental value of $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ exceeds the theoretical value. Below this point, we exclude the existence of $Z^{\prime}$-like particles decaying to tau pairs. Figure \ref{fig:8TeV_Limits} shows that, at 95\% confidence level, we exclude the $Z^{\prime}_{SSM}$ below a mass of 1300 GeV, and that we exclude the $Z^{\prime}_{\psi}$ below a mass of 810 GeV.
 
 \begin{figure}[tbh!]
 \centering
 \includegraphics[width=0.6\textwidth]{figures/8TeV_Limits.png}
-\caption{95\% CL upper limit on $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ 
+\caption{8 TeV 95\% CL upper limit on $\sigma\left(pp\to Z^{\prime}\right)\times BR\left(Z^{\prime}\to\tau\tau\right)$ 
 as a function of $Z^{\prime}$ mass. The color bands on the expected limits represent one standard deviation (green) and two standard deviations (yellow).}
 \label{fig:8TeV_Limits}
 \end{figure}
