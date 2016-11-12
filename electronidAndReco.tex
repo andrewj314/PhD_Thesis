@@ -28,26 +28,24 @@ detector. The good energy-momentum matching is measured by taking the ratio  bet
 energy $E_{corr}$ in the ECAL  supercluster and the momentum of the track $P_{in}$  measured in the
 inner layers of the tracker.
 
-Electron selections have two main components, electron  identification (eID) and electron isolation. 
+The electron selection requirements have two main components: electron  identification (eID) and electron isolation. 
 In this analysis we use the non-triggering MVA (multivariate analysis) electron identification recommended by the e/$\gamma$ POG. 
 The MVA cuts used to define the 80\% and 90\% signal efficiency working points are summarized in Table~\ref{eIDtable}. 
 %Note that detector based isolation, instead of PF based isolation, is used in the single electron trigger paths we are using in this analysis.
 %In addition, electrons which arise from photon conversions are removed  by requiring that the track associated with the electron to have hits in the inner layers 
 %of the pixel detector. 
-In all channels, the identification and isolation used follows the POG recommended criteria. 
-The exact discriminator names and working points for each channel are listed and described in their respective sections.
 %The electron trigger/identification efficiencies and scale factors used in these analyses have been taken from:
 %``https://twiki.cern.ch/twiki/bin/view/Main/EGammaScaleFactors2012\#2012\_8\_TeV\_Jan22\_Re\_recoed\_data"
 
 \begin{table}[ht]
 \begin{center}
- \caption{Electron ID Selections.\label{eIDtable}}
+ \caption{Electron ID selection criteria\label{eIDtable}}
  \begin{tabular}{| l | c | c | c |}
  \hline\hline
        Category                              & MVA$_{\textrm{min cut}}$ (80\% signal eff)	& MVA$_{\textrm{min cut}}$ (90\% signal eff)  \\[0.5ex] \hline
-       Barrel ($\eta < 0.8$) $p_{T}$ 5--10           	& 0.287435 & -0.083313             	\\
-       Barrel ($\eta > 0.8$) $p_{T}$ 5--10           	& 0.221846 & -0.235222             	\\
-       Endcap $p_{T}$ 5--10           			& -0.303263 & -0.67099             	\\
+       Barrel ($\eta < 0.8$) $5 < p_{T} < 10$           	& 0.287435 & $-0.083313$             	\\
+       Barrel ($\eta > 0.8$) $5 < p_{T} < 10$          	& 0.221846 & $-0.235222$             	\\
+       Endcap $5 < p_{T} < 10$           			& $-0.303263$ & $-0.67099$             	\\
        Barrel ($\eta < 0.8$) $p_{T}>10$            	& 0.967083 & 0.913286             	\\
        Barrel ($\eta > 0.8$) $p_{T}>10$            	& 0.929117 & 0.805013             	\\
        Endcap $p_{T}>10$          		  	& 0.726311 & 0.358969             	\\

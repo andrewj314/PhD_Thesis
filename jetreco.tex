@@ -1,6 +1,6 @@
 \subsection{Jet Reconstruction}
 
-Particle-flow (PF) technique~\cite{CMS-PAS-PFT-09-001,CMS-PAS-PFT-10-002} is used to improve the jet $p_T$ and angular resolution in this analysis.
+The particle-flow (PF) technique~\cite{CMS-PAS-PFT-09-001,CMS-PAS-PFT-10-002} is used to improve the jet $p_T$ and angular resolution in this analysis.
 The PF technique combines information from different subdetectors to produce a mutually exclusive collection of particles (namely muons, electrons, photons, 
 charged hadrons and neutral hadrons) that are used as input for the jet clustering algorithms.
 Jets are clustered using the anti-$k_{T}$ algorithm~\cite{anti-kT}, with a distance parameter of $\Delta R$ = 0.4 in $\eta$-$\phi$ plane (defined as $\Delta R = 
@@ -14,8 +14,8 @@ These jet-energy corrections are known as L1 FastJet, L2 Relative, and L3 Absolu
 The L2 and L3 corrections use jet balancing and photon+jet events to improve and provide a better energy response as a function of jet $p_T$ and $\eta$.
 For data, additional residual corrections are applied.
 
-Jets are required to have $p_T >$ 30 GeV and $|\eta| <$ 2.4.
-For the identification of jets the loose PF ID is used in this analysis. Recommended by the CMS Jet/\MET ~physics object group (POG), the loose PF ID describes a series of requirements that jet candidates must pass in order to be considered for this analysis. The ``loose" working point requires a jet candidate to have \pt ~$>$ 10 GeV, charged hadron fraction $> 0.0$, neutral hadron fraction $< 0.99$, charged EM fraction $< 0.99$, and neutral EM fraction $< 0.99$. ``Hadron fraction" refers to the percentage of jet constituents taken from HCAL hits, and ``EM fraction" refers to the percentage of jet constituents taken from ECAL hits.
+In this analysis, jets are required to have $p_T >$ 30 GeV and $|\eta| <$ 2.4.
+For the identification of jets, the loose PF ID is used as recommended by the CMS Jet/\MET ~physics object group (POG).  The ``loose" working point requires a jet candidate to have \pt ~$>$ 10 GeV, charged hadron fraction $> 0.0$, neutral hadron fraction $< 0.99$, charged EM fraction $< 0.99$, and neutral EM fraction $< 0.99$. ``Hadron fraction" refers to the fraction of the jet's energy taken from HCAL hits, and ``EM fraction" refers to the fraction of jet energy taken from ECAL hits.
 Table 4 shows the selection criteria used for the recommended loose PF ID, which are validated in other studies~\cite{CMS-PAS-FSQ-12-035}.
 The jet reconstruction and ID efficiency in simulation is $>$98\%.
 
@@ -28,7 +28,7 @@ The jet reconstruction and ID efficiency in simulation is $>$98\%.
        Neutral Hadron Fraction          & $<0.99$      \\
        Neutral EM Fraction              & $<0.99$      \\
        Number of Constituents           & $> 1$        \\
-       And for $\eta < 2.4$ , $\eta > -2.4$ in addition apply &\\
+       And for $|\eta| < 2.4$ in addition apply &\\
        Charged Hadron Fraction 	        & $> 0$   \\
        Charged Multiplicity             & $> 0$   \\
        Charged EM Fraction              & $<0.99$ \\
@@ -43,11 +43,11 @@ The jet reconstruction and ID efficiency in simulation is $>$98\%.
 In this analysis, b-tagged jets are used for two purposes: to reduce $\rm{t\bar{t}}$ background in the signal region and to obtain $\rm{t\bar{t}}$ enriched 
 control samples used to estimate the signal rate.
 
-The CSVv2 algorithm~\cite{Chatrchyan:2012jua} is used to identify jet as originating from hadronization of a b-quark. This algorithm combines 
+The CSVv2 algorithm~\cite{Chatrchyan:2012jua} is used to identify a jet as originating from hadronization of a b-quark. This algorithm combines 
 reconstructed secondary vertex and track-based lifetime information to build a likelihood-based discriminator to distinguish between jets from b-quarks and those 
 from charm or light quarks and gluons.
 
 The minimum thresholds on these discriminators define loose, medium, and tight operating points with a b-jet misidentification probability of about 10\%, 1\%, and 
-0.1\%, respectively, with an average jet $p_T$ of about 80 GeV. The loose operating point with an efficiency about 85\% is used in this analysis.
+0.1\%, respectively, with an average jet $p_T$ of about 80 GeV. The loose operating point with an efficiency of about 85\% is used in this analysis.
 A sample of pair-produced top quark events is used to measure b-tagging efficiency using several methods~\cite{CMS-PAS-BTV-13-001}. A scale factor is 
 applied to correct for differences in b-tagging efficiency between data and simulation~\cite{bTagging}.

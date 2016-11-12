@@ -3,13 +3,12 @@
 Muon reconstruction is a multistep process that begins with the information gathered from the muon subdetector. As a
 first step, standalone muons are reconstructed from hits in the individual drift tube (DT) and
 cathode strip (CSC) chambers. Hits from the innermost muon stations are combined with hits in the other muon segments
-using the Kalman fitting technique\cite{Kalman}. The standalone muon trajectory is reconstructed by extrapolating from the
+using the Kalman fitting technique\cite{Kalman}. The standalone muon trajectory is extrapolated from the
 innermost muon station to the outer tracker surface. This standalone trajectory is then used to find a matching track
 reconstructed in the inner silicon tracker. Finally, standalone muons and matching silicon tracks are used to perform a
-global fit resulting in a ``global'' muon. 
+global fit resulting in ``global'' muons. 
 
-Global muons are reconstructed by combining tracker muons from the inner silicon tracker and standalone muons from the
-muon chambers. Once a muon is required to have matching tracks in the inner and outer detectors,
+Once a muon is required to have matching tracks in the inner and outer detectors,
 the main source of background consists of charged hadrons that leave a
 signature in the inner silicon tracker while also penetrating through the hadronic calorimeter and creating hits in the
 muon chambers. Charged hadrons that penetrate the hadronic calorimeter and leave hits in the muon system will deposit 
@@ -20,12 +19,12 @@ uncertainty of the performance of such algorithms in the presence of high PU.
 %validate tau identification and the trigger performance, the use of the calorimeter compatibility is not required. 
 The presence of punch-throughs often occur due to pions from the hadronization of quarks and gluons. These punch-throughs 
 can often be discriminated against by requiring isolation. Similarly, non-prompt muons from heavy flavor decays and 
-decays in flights are expected to be within jets and can be discriminated against by imposing an isolation requirement. 
+decays in flights (secondary decays) are expected to be within jets and can be discriminated against by imposing an isolation requirement. 
 Muon identification is described in more detail in \cite{CMS_MUO_10-004} and \cite{CMS_MUO_11-001}.
 
 Isolated muons are required to have minimal energy from PF neutral and charged candidates in a cone of $\Delta R =
 0.4$ around the lepton trajectory. PF charged candidates considered in the calculation of isolation are required to be near the 
-primary vertex. Isolation for muons is defined as:
+primary vertex. Relative isolation is used for muons, and it is defined as:
 \begin{equation}
    I = \frac{\sum_{i} p_{T}^{i}}{p_{T}^{\mu}}
 \label{eq:muIso}
@@ -39,7 +38,7 @@ In all channels, the identification and isolation used follows the POG recommend
 %``https://twiki.cern.ch/twiki\\/bin/viewauth/CMS/MuonReferenceEffs\#22Jan2013\_ReReco\_of\_2012\_data\_re"
 
 \begin{table}[htbp!]
-  \caption{$\mu$ Identification}
+  \caption{$\mu$ Identification requirements}
   \centering{
   \begin{tabular}{| l | c |}
   \hline\hline
