@@ -4,51 +4,48 @@ The motivation for analyzing events where one $\tau$ lepton decays to a muon,
 while the other decays to hadrons is the same for all \ditau related analyses: because
 muons have the lowest jet misidentification among leptons, the mere requirement of a
 muon removes a substantial amount of background processes, especially the QCD multijet background. Once this requirement
-is made, a main source of background is due to Drell-Yan
-processes giving rise to $\tau$ leptons. Because we seek particles with masses
+is made, a main source of background is due to the Drell-Yan (DY)
+process giving rise to $\tau$ leptons. Because we seek particles with masses
 much larger than that of the Z boson, this source of background can be easily discriminated
-against by looking at larger reconstructed \ditau mass regions (reconstructed mass to be defined later). This process,
-however, can also serve as a ``standard candle" to validate the $\tau_{h}$ identification criteria and
+against by looking at larger reconstructed \ditau mass regions (reconstructed mass to be defined later). This process can also serve as a ``standard candle" to validate the $\tau_{h}$ identification criteria and
 ensure the robustness of the analysis. Other main sources 
 of background include (1) QCD multijet events where light-quark or gluon jets are misidentified 
 as a $\tau_{h}$, (2) W + Jets events where the W boson decays to a muon and a jet is
 misidentified as a $\tau_{h}$, and (3) $t\bar{t}$ events where two leptons can
-come from the prompt decay of W bosons or one misidentified $\tau_{h}$ from a jet. The sum of the Drell-Yan and W + Jets backgrounds represent 
-approximately $89$\% of the total background (according to simulation) in this channel.  The 
+come from the prompt decay of W bosons or one misidentified $\tau_{h}$ from a jet. The sum of the Drell-Yan and W + Jets backgrounds represent $89$\% of the total background (according to simulation) in this channel.  The 
 cuts used to select $\mu\tau_{h}$ pairs are factorized in to four categories: acceptance, 
-$\mu$ identification, $\tau_{h}$ identification, and topological cuts. Acceptance criteria is completely
+$\mu$ identification, $\tau_{h}$ identification, and topological cuts. The acceptance criteria are completely
 driven by the limitations of the CMS detector and the need to maximize analysis
-sensitivity while also minimizing systematic effects. For example, in order to minimize systematic effects, the
-$p_{T}$ threshold on the muon leg is chosen such that it falls on the plateau of the trigger turn-on curve ($p_{T} > 30$ GeV ... see Section \ref{sec:triggers}). 
+sensitivity while also minimizing systematic effects. For example, to minimize systematic effects, the
+$p_{T}$ threshold on the muon leg is chosen such that it falls on the plateau of the trigger turn-on curve ($p_{T} > 30$ GeV, see Section \ref{sec:triggers}). 
 Although it is possible to achieve slightly better sensitivity by increasing the thresholds,
-the selections are also driven by the need to obtain a sample enriched with $Z\to\tau\tau$ events, 
+the selection criteria are also driven by the need to obtain a sample enriched with $Z\to\tau\tau$ events, 
 with minimal modifications to the final selection criteria. 
 Figure~\ref{fig:muTauKinematics} shows 
 the $p_{T}$ distributions for signal and background processes relevant to this analysis. 
-As discussed in section 5.3, the muon identification criteria is designed mostly to discriminate
+As discussed in Section 5.3, the muon identification criteria are designed mostly to discriminate
 against cosmic muons, punch-through pions, and muons associated to jets 
-from decays in flight. The $\tau_{h}$ identification is described in section 5.4 and is mostly designed to
+from decays in flight. The $\tau_{h}$ identification is described in Section 5.4 and is mostly designed to
 discriminate against hadronic jets produced from the fragmentation of quarks and/or
 gluons. Finally, topological cuts are principally used to minimize the remaining W + jet(s)
 and $t\bar{t}$ contributions after the muon and $\tau_{h}$ identification criteria have been
 imposed. 
 
-\begin{figure}\centering
+\begin{figure}[htbp]\centering
   \includegraphics[width=0.4\textwidth]{figures/mt/Muon1Pt_ProbabilityPlot_AfterRecoTau1NmaxBeforeRecoBJetNmax.png}
   \includegraphics[width=0.4\textwidth]{figures/mt/TauJet1Pt_ProbabilityPlot_AfterRecoTau1NmaxBeforeRecoBJetNmax.png}
-  \caption{\label{fig:muTauKinematics} Left: $p_{T}(\mu)$ after acceptance, $\mu$ identification, and $\tau_{h}$ identication cuts.  Right: 
-$p_{T}(\tau_{h})$ after acceptance, $\mu$ identification, and $\tau_{h}$ identification cuts.}
+  \caption{\label{fig:muTauKinematics} The distributions of $p_{T}(\mu)$ (left) and $p_{T}(\tau_{h})$ (right) after acceptance, $\mu$ identification, and $\tau_{h}$ identification cuts.}
 \end{figure}
 
-W boson production in association with jets becomes a dominant background because a clean, well-reconstructed muon is produced by the W boson. 
+The production of W bosons in association with jets becomes a dominant background because a clean, well-reconstructed muon can be produced by the decay of the W boson. 
 Therefore, the requirement of a clean muon signature does not provide additional discrimination. Additionally, the neutrino from the W boson decay acquires 
 an average energy of approximately $m_{W}/2 \sim 40$ GeV. Because the neutrino will escape the CMS detector undetected, the average measurement of the momentum 
 imbalance will be approximately 40 GeV. Therefore, our requirement on the momentum imbalance in the event ($\MET > 30$ GeV) does not provide significant 
 discrimination against this background. 
-Figure~\ref{fig:muTauTopologicalVariables} shows
+Figure~\ref{fig:muTauTopologicalVariables} (left) shows
 the $\MET$ distribution for signal and background processes relevant to this analysis. 
 Finally, the presence of ``associated jets" means that the contamination from W + Jets in the signal region is 
-highly dependent on the jet$\to\tau_{h}$ fake rate, which is the largest among leptons. Therefore, reducing W + Jets also requires additional 
+highly dependent on the jet$\to\tau_{h}$ fake rate, which is the largest among leptons. Therefore, reducing the W + Jets background also requires additional 
 topological requirements. 
 
 \begin{figure}\centering
@@ -67,9 +64,9 @@ We require
 \begin{equation}
 \cos\Delta\phi(\mu,\tau_{h}/jet) < -0.95
 \end{equation}
-\noindent which is approximately $> 90$\% efficient for $Z^{\prime} \to \tau\tau$ and approximately 25\% efficient for W+Jets.
+\noindent which is $> 90$\% efficient for $Z^{\prime} \to \tau\tau$ and \approx 25\% efficient for W+Jets.
 
-\begin{figure}
+\begin{figure}[htbp]
 \begin{center}
 \includegraphics[angle=0,width=.5\textwidth]{figures/mt/WjetsRejectionDelPhiFigure.pdf}
 \caption{ Sketch depicting the W+Jets rejection power of a $\Delta \phi$ cut.}
@@ -106,16 +103,16 @@ However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$
 (\tau_{1},\tau_{2})$ and $\zeta$ are applied. $\zeta$ is defined as a linear combination of $p_{\zeta}$ and $p_{\zeta}^{vis}$:
 
 \begin{itemize}
-  \item $cos\Delta\phi(\tau_{1},\tau_{2}) < -0.95$
+  \item $\cos\Delta\phi(\tau_{1},\tau_{2}) < -0.95$
   \item $p_{\zeta} - 3.1 p_{\zeta}^{vis} > -50$
 \end{itemize}
-\begin{figure}
+\begin{figure}[htbp]
 \begin{center}
 \includegraphics[angle=0,width=.75\textwidth]{figures/mt/zeta.png}
 \caption{ Definitions for $p_{\zeta}$ and $p_{\zeta}^{vis}$.}
 \label{fig:ZetaDiagram}
 \end{center}
-\end{figure}
+\end{figure}[htbp]
 \begin{figure}
 \begin{center}
 \includegraphics[angle=0,width=.5\textwidth]{figures/mt/Zeat2D_Ztautau.pdf}
@@ -123,7 +120,7 @@ However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$
 \label{fig:WjetsZeta1}
 \end{center}
 \end{figure}
-\begin{figure}
+\begin{figure}[htbp]
 \begin{center}
 \includegraphics[angle=0,width=.5\textwidth]{figures/mt/Zeta2D.pdf}
 \caption{ $p_{\zeta}$ vs. $p_{\zeta}^{vis}$ for W+Jets.}
@@ -131,7 +128,7 @@ However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$
 \end{center}
 \end{figure}
 
-Although events containing $t\overline{t}$ contribute to the expected background in all channels containing light leptons, it's contribution to the $\mu\tau_{h}$ 
+Although events containing $t\overline{t}$ contribute to the expected background in all channels containing light leptons, its contribution to the $\mu\tau_{h}$ 
 channel is only $\sim 1.4$\% of the total background (according to simulation). For $\mu\tau_{h}$ final states the 
 $t\overline{t}$ contribution comes in the form of a real light lepton from the semileptonic decay of the
 $W^\pm$ and a fake $\tau_{h}$ from the hadronic decay of the second $W^\pm$. These events are characterized by an isolated light lepton, passing all lepton 
@@ -141,7 +138,7 @@ larger multiplicity of the hadronically decaying W boson.
 %isolated light leptons and taus that satisfy all identification and isolation requirements. 
 These events are suppressed with the use of topological cuts.
 
-After only applying lepton identification and isolation requirements, a non-negligible background contribution from $t\overline{t}$ events remain. These events 
+After applying the lepton identification and isolation requirements, a non-negligible background contribution from $t\overline{t}$ events remain. These events 
 can be further suppressed with cuts that take advantage of the very different topologies between $Z^\prime\to\tau\tau$ and $t\overline{t}$ events. The first, and most 
 important, of these differences is the presence of b--jets in the event. 
 %Other important differences include the presence of extra jets and the angle between the 

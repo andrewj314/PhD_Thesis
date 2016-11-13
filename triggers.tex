@@ -2,8 +2,8 @@
 
 %We are using the triggers in Table~\ref{triggertable} for the analysis with 19.4 fb$^{-1}$ of data. 
 
-For the semileptonic final states, we use single lepton triggers instead of
-$l\times\tau_{h}$ cross-triggers to maintain a similar strategy across
+For the \etau and \mutau final states, we use single electron or muon triggers instead of
+$l\times\tau_{h}$ cross-triggers (which require both an electron or muon and hadronic tau) to maintain a similar strategy across
 channels. This also allows us to use the $\tau_{h}$ isolation sidebands
 as control and validation samples (see Section \ref{sec:dihad}. For the \emu ~final state, any
 trigger with an isolation requirement on the muon, either an e-$\mu$ cross-trigger or
@@ -39,16 +39,15 @@ leading light leptons and $\tau_{h}$'s across the different channels.
 
 \subsection{Single Lepton Trigger Efficiency}\label{sec:lepTrigger}
 The single electron and muon trigger efficiencies are measured
-using a tag and probe method where we selected events with at 
-least one electron and one muon pair satisfying the following
-requirements:
+using a tag and probe method, where we select events with at 
+least one electron or muon pair. Each pair is required to satisfy a series of selection requirements:
 
 For electrons:
 \begin{itemize}
   \item $p_T > 13$ GeV, $|\eta| < 2.1$, isolation $< 0.15$, $d_{xy}<0.045$~cm, $d_{z}<0.2$~cm
   \item passing electron ID (we performed different measurements for ``MVANonTrigWP80", ``HEEP", ``MVATrigWP80")
-  \item no matched conversions
-  \item number of missing hits = 0
+  \item no matched conversions from photons
+  \item number of missing hits in the silicon tracker = 0
 \end{itemize}
 
 For muons:
@@ -70,7 +69,7 @@ To measure the single-electron trigger efficiency, after the
 preselection mentioned above, we select (tag) events with a
 single-muon trigger (HLT\_IsoMu18 for data and HLT\_IsoMu17\_eta2p1
 for MC with L1 $\mu~p_{T} > 18$ GeV) with the offline muon matching
-the HLT muon that fired the trigger.  Then, the trigger efficiency is
+the HLT muon that fired the trigger.  Then, the electron trigger efficiency is
 defined at the fraction of events which also pass (probe) the
 single-electron trigger (HLT\_Ele27\_eta2p1\_WPLoose for data and
 HLT\_Ele27\_eta2p1\_WP75 for MC).
@@ -120,13 +119,13 @@ Then, the trigger efficiency is defined as the fraction of events
 which also pass (probe) the single-muon trigger 
 (HLT\_IsoMu18 for data and HLT\_IsoMu17\_eta2p1 for MC with L1 $\mu~p_T > $ 18 GeV).
 
-The efficiency curves of the single-muon triggers, measured vs. muon
-$p_{T}$, are shown in Figure~\ref{fig:muturnon}. A $p_{T} > 25$ GeV cut is
-motivated to avoid the turn-on region. As shown in lower two plots,
+The efficiency curves of the single-muon triggers, measured vs.~muon
+$p_{T}$, are shown in Figure~\ref{fig:muturnon}. A $p_{T} > 30$ GeV cut is
+motivated to avoid the turn-on region. As shown in the lower two plots,
 the efficiency curves were further binned into two bins containing
 similar numbers of events.  Weights of 0.991 and 0.986 are measured,
 and used in the analysis, as the ratios between simulated and observed
-events in which the selected muon $|\eta| \leq 1.2$ and $|\eta|>1.2$.
+events in which the selected muon has $|\eta| \leq 1.2$ or $|\eta|>1.2$.
 \begin{figure}\centering
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy/muonTrigTurnOnCurve_mPt_em_MVANonTrig80_mu_barrel}
   \includegraphics[width=0.45\textwidth]{figures/et-em/triggerStudy/muonTrigTurnOnCurve_mPt_em_MVANonTrig80_mu_endcap} \\
@@ -145,22 +144,21 @@ $Z\to\tau\tau\to\mu\tau_{h}$ events.  The $\tau_{h}$ candidates
 reconstructed in the selected $Z\to\tau\tau\to\mu\tau_{h}$ events are 
 required to pass the same $\tau_{h}$ identification used for the final
 analysis and which will be described in more detail in the sections to follow. The 
-``denominator" selections used to define the $Z\to\tau\tau\to\mu\tau_{h}$ control sample 
-are summarized below:
+``denominator" selections used to define the $Z\to\tau\tau\to\mu\tau_{h}$ control sample are based on POG-recommended ID criteria and are summarized below:
 
 \begin{itemize}
-  \item Events must fire the HLT{\_}IsoMu18 trigger ( HLT{\_}IsoMu17{\_}eta2p1 with HLT pt cut of 18 GeV for MC )
+  \item Events must fire the HLT{\_}IsoMu18 trigger ( HLT{\_}IsoMu17{\_}eta2p1 with HLT $p_T$ cut of 18 GeV for MC )
   \item $\ge 1$ global $\mu$ with $|\eta| < 2.1, p_{T} > 19$ GeV
   \item ``isMediumMuon"
-  \item muon best track d$_{xy}$ $<$ 0.2~cm , d$_{z}$ $<$ 0.045~cm w.r.t. PV
+  \item muon best track d$_{z}$ $<$ 0.2~cm , d$_{xy}$ $<$ 0.045~cm w.r.t. PV
   \item Relative isolation (with $\delta\beta$ corrections) $< 0.1$
   \item $\ge 1$ HPS $\tau_{h}$ with $|\eta| < 2.1, p_{T} > 20$ GeV
 %  \item d$_{xy}$ w.r.t PV $<$ 0.2 , d$_{z}$ w.r.t PV $<$ 0.045 
   \item Muon veto: ``againstMuonTight3"
   \item Electron veto: ``againstElectronVLooseMVA5"
-  \item ``old" decay mode finding %(1, 2, or 3 signal charged hadrons; see section 5)
+  \item ``old" decay mode finding (1 or 3 charged hadrons)  %(1, 2, or 3 signal charged hadrons; see section 5)
   \item Isolation: ``byTightCombinedIsolationDeltaBetaCorr3Hits"
-  \item p$_{T} >$ 5. GeV for leading Track of tau with d$_{xy} <$ 0.2~cm and d$_{z} <$ 0.045~cm w.r.t. PV
+  \item p$_{T} >$ 5 GeV for leading Track of tau with d$_{z} <$ 0.2~cm and d$_{xy} <$ 0.045~cm w.r.t. PV
   \item $\Delta R(\mu,\tau_{h}) > 0.5$
   \item $Q(\mu) \times Q(\tau_{h}) < 0 $
   \item $m_{T}(\mu,\MET) < 40$ GeV
@@ -171,8 +169,8 @@ are summarized below:
 
 The numerator is defined by additionally requiring those events to 
 pass the \\
-HLT{\_}IsoMu17{\_}etap2p1{\_}MediumIsoPFTau40* trigger. 
-The efficiency is measured for each $\tau_{h}$ leg individually and
+HLT{\_}IsoMu17{\_}etap2p1{\_}MediumIsoPFTau40 trigger. 
+The efficiency is measured for each leg individually and
 parameterized as function of $p_{T}$ (Figure~\ref{fig:trigger}). From the 
 plot it is clear that the emulation of the trigger in simulation does not 
 provide the correct trigger efficiency observed in data. This is mainly 
@@ -190,14 +188,14 @@ the plateau is approximately 90\%.
   \centering
     \includegraphics[width=0.4\textwidth]{figures/TriggerEff_Signal.pdf}
     \includegraphics[width=0.5\textwidth]{figures/CrystalBall.pdf}
-  \caption{The per-leg $\tau_{h}$ trigger efficiency as a function of p$_{T}(\tau_{h})$ for (a) simulated Z$^{\prime}$ signal sample on left (b) for data and all backgrounds obtained by requiring mu-tau region on right.}
+  \caption{The per-leg $\tau_{h}$ trigger efficiency as a function of p$_{T}(\tau_{h})$ for simulated Z$^{\prime}$ signal sample (left) and for data and all backgrounds obtained by requiring mu-tau region (right).}
   \label{fig:trigger}
 \end{figure}
 
-Figure ~\ref{fig:trigger} (right) shows the trigger efficiency for data and all backgrounds obtained by requiring $Z\to\tau_{\mu} \tau_{h}$. Most of the backgrounds are taken from simulation except QCD whose shape and rate have been taken from same sign control region from data by subtracting the contribution of other backgrounds. QCD normalization is  then corrected by OS/LS ratio which is taken as $\sim$1.05. Table ~\ref{table:BGYieldtable} shows the event yield in this control region requiring the denominator selections. The ``purity", fraction of DY+Jets events out of all backgrounds, of this region comes out to be $\sim$65-66\% . The efficiency curves on Figure ~\ref{fig:trigger} (right) are fitted with crystal-ball (modified Gaussian) function.
+The trigger efficiency for data and all backgrounds is obtained by requiring $Z\to\tau_{\mu} \tau_{h}$ using the preselection cuts described above. Most of the backgrounds are taken from simulation except QCD whose shape and rate have been taken from same sign control region from data by subtracting the contribution of other backgrounds. The QCD normalization is  then corrected by opposite-sign-to-like-sign (OS/LS) ratio which is taken as $\sim$1.05. Table ~\ref{table:BGYieldtable} shows the event yield in this control region requiring the denominator selections. The ``purity" is the fraction of DY+Jets events out of all backgrounds, and comes out to be $\sim$65-66\% . The efficiency curves are fitted with crystal-ball (modified Gaussian) function and are shown in Figure ~\ref{fig:trigger}.
 
 \begin{table}[!htpb]
-   \caption{Event rate in mu-tau control region after requiring denominator level selections }
+   \caption{The number of events in the mu-tau control region after requiring the denominator level selection criteria}
    \centering{
     \begin{tabular}{| l | c |}
        \hline\hline

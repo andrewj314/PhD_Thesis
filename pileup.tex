@@ -4,7 +4,7 @@ Quantities such as \MET ~and isolation, where energy depositions are
 summed up over some range of the detector, can suffer large
 inefficiencies or systematic effects due to particles from pile-up
 interactions. Therefore, a simple and robust method must be employed
-to subtract off the contribution from secondary interactions.  In the
+to subtract off this contribution.  In the
 case of \MET, this is done by using the FastJet corrections to
 determine the density of PU on an event by event basis. For isolation, the 
 recommended $\delta\beta$ corrections are applied. The
@@ -22,10 +22,7 @@ the channels.
 %percentage of particle flow charge hadrons considered for isolation that arise from PU. The recommended 
 %PU corrections have been included for all objetcs in all the channels.
 
-We apply event-by-event the ``official'' pile-up weights
-($\sigma=69$~mb).  Figure~\ref{fig:nvtx} shows the distributions of
-the number of reconstructed vertices, before and after applying the
-pile-up weights.
+We apply event-by-event the ``official'' pile-up weights recommended by the Jet/MET POG.  Figure~\ref{fig:nvtx} shows the distributions of the number of reconstructed vertices, before and after applying the pile-up weights.
 
 \begin{figure}
   \centering
@@ -34,9 +31,7 @@ pile-up weights.
   \includegraphics[width=0.4\textwidth]{figures/et-em/PUReweighting/13TeV_et_OS_1and3prong}
   \includegraphics[width=0.4\textwidth]{figures/et-em/PUReweighting/13TeV_et_puweight_OS_1and3prong} \\
   \caption{\label{fig:nvtx} Distributions of the number of
-    reconstructed primary vertices.  Top: \emu ~channel.  Bottom: \etau ~channel.  Left: before reweighting.  Right: after reweighting
-    (``official'' 69~mb).  The ratios after reweighting become flatest
-    at an ``unofficial'' value of 71~mb.  The apparent substantial
+    reconstructed primary vertices.  Top: \emu ~channel.  Bottom: \etau ~channel.  Left: before reweighting.  Right: after reweighting. The apparent substantial
     differences in the QCD ``integrals'' are artifacts of the plotting
     procedure, in which bins with negative contributions are zero-ed.}
 \end{figure}
