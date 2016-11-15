@@ -17,7 +17,7 @@ The observed $m(\tau_{1},\tau_{2},\MET)$ spectrum in the signal region does not 
 \begin{table}[ht]
 
 \begin{center}
-\caption{Number of observed events in data and estimated background events for the whole mass range.
+\caption{Number of observed events in data and estimated background events for the entire mass range.
 The uncertainties quoted on the number of background events represent the combined statistical and systematic uncertainty.}\label{tab:EvtSR_allMass}
 %\begin{subtable}
 \begin{tabular}{| c | c | c | c | c | c |}
@@ -30,7 +30,7 @@ Diboson    & 0.5  $\pm$ 0.5  & 29     $\pm$ 7     & 18.0   $\pm$ 4     & 108   $
 $t\bar{t}$ & --              & 26     $\pm$ 7     & 26     $\pm$ 8     & 223   $\pm$ 45     \\
 Multijet   & 49   $\pm$ 13   & 122    $\pm$ 84    & 117    $\pm$ 72    & 32    $\pm$ 24     \\
 \hline
-Total      & 58   $\pm$ 13   & 1976   $\pm$ 180   & 1082   $\pm$ 162   & 703   $\pm$ 113    \\
+Total BG     & 58   $\pm$ 13   & 1976   $\pm$ 180   & 1082   $\pm$ 162   & 703   $\pm$ 113    \\
 \hline     
 Observed   & 55              & 1807               & 1113               & 728               \\
 \hline
@@ -57,7 +57,7 @@ Diboson    & 0.02  $\pm$ 0.02   & 6  $\pm$ 3  & 2  $\pm$ 1 & 23 $\pm$ 4   \\
 $t\bar{t}$ & --                 & 4  $\pm$ 2  & 5  $\pm$ 1 & 65 $\pm$ 13  \\
 Multijet   & 18    $\pm$ 6      & 4  $\pm$ 3  & 6  $\pm$ 2 & 1  $\pm$ 1   \\
 \hline
-Total      & 23    $\pm$ 6      & 51 $\pm$ 11 & 39 $\pm$ 8 & 94 $\pm$ 14  \\
+Total BG     & 23    $\pm$ 6      & 51 $\pm$ 11 & 39 $\pm$ 8 & 94 $\pm$ 14  \\
 \hline     
 Observed   & 20                & 42              & 40             & 96               \\
 \hline
@@ -78,9 +78,7 @@ Observed   & 20                & 42              & 40             & 96          
    \includegraphics[width=0.4\textwidth]{figures/SR_diTauHad_Unblinded_LogScale_withoutPoissonErrorOnBGRateInBand_1or3prong_ZaixingColors.pdf} \\
    \includegraphics[width=0.4\textwidth]{figures/bkgTemplate_ZPrime1500_et.pdf}
    \includegraphics[width=0.4\textwidth]{figures/bkgTemplate_ZPrime1500_em.pdf}
-  \caption{ Top Left: $m(\mu,\tau_{h},\MET)$ distribution in the signal region, in log scale.  Top Right: $m(\tau_{h},\tau_{h},\MET)$ distribution in 
-the signal region, in log scale.  Bottom Left: $m(e,\tau_{h},\MET)$ distribution in the signal region, in log scale.  Bottom Right: $m(e,\mu,\MET)$ 
-distribution in the signal region, in log scale.}
+  \caption{Effective mass plots in the signal region after unblinding. Top Left: $m(\mu,\tau_{h},\MET)$.  Top Right: $m(\tau_{h},\tau_{h},\MET)$.  Bottom Left: $m(e,\tau_{h},\MET)$.  Bottom Right: $m(e,\mu,\MET)$. All plots in log scale.}
     \label{fig:SignalRegionPlot_a}
 \end{figure}
 
@@ -94,7 +92,7 @@ and computing the 95\% confidence level (CL) upper limit on the signal cross-sec
 Said differently, a shape based analysis is performed, using the $m(\tau_{1},\tau_{2},\MET)$ distribution as the fit discriminant to determine the 
 likelihood of observing signal in the presence of the predicted background rate, given the observed yield in data. Systematic uncertainties are represented by nuisance parameters, which are profiled, assuming a log normal prior for normalization parameters, and Gaussian priors for mass-spectrum shape uncertainties.
 
-The above procedure is performed using the Higgs limit calculation tool ``combine". The tool takes as input data cards with the yields and nuisance parameters in 
+The above procedure is performed using the Higgs limit calculation tool ``combine"\cite{HiggsCombine}. The tool takes as input data cards with the yields and nuisance parameters in 
 each $m(\tau_{1},\tau_{2},\MET)$ bin of the search channels. These data cards are provided for the four channels being considered. The only further input that 
 is required is the correlations within and across channels. As only an example, if all the channels had 10 bins from $0 < m(\tau_{1},\tau_{2},\MET) < 5000$ GeV 
 (500 GeV/bin), this means there will be 10 cards per channel and therefore 40 cards in total for the four channels (if all the channels have the same bin size).

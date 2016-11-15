@@ -64,9 +64,9 @@ We require
 \begin{equation}
 \cos\Delta\phi(\mu,\tau_{h}/jet) < -0.95
 \end{equation}
-\noindent which is $> 90$\% efficient for $Z^{\prime} \to \tau\tau$ and \approx 25\% efficient for W+Jets.
+\noindent which is $> 90$\% efficient for $Z^{\prime} \to \tau\tau$ and $\approx$ 25\% efficient for W+Jets.
 
-\begin{figure}[htbp]
+\begin{figure}
 \begin{center}
 \includegraphics[angle=0,width=.5\textwidth]{figures/mt/WjetsRejectionDelPhiFigure.pdf}
 \caption{ Sketch depicting the W+Jets rejection power of a $\Delta \phi$ cut.}
@@ -96,8 +96,8 @@ bisector of visible tau decay products ($\hat{\zeta}$) and two projection variab
 \label{eq:zeta}
 \end{equation}
 
-The sketch in Figure~\ref{fig:ZetaDiagram} displays the definitions for $p_{\zeta}^{vis}$ and $p_{\zeta}$. Figures~\ref{fig:WjetsZeta1} and~\ref{fig:WjetsZeta2} 
-show the separation between $Z^{\prime}\rightarrow\tau\tau$ and W + jet(s) events in the $p_{\zeta}$-$p_{\zeta}^{vis}$ plane. For the case of W+Jets, there is no 
+The sketch in Figure~\ref{fig:ZetaDiagram} displays the definitions for $p_{\zeta}^{vis}$ and $p_{\zeta}$. Figure~\ref{fig:WjetsZeta1}
+shows the separation between $Z^{\prime}\rightarrow\tau\tau$ and W + jet(s) events in the $p_{\zeta}$-$p_{\zeta}^{vis}$ plane. For the case of W+Jets, there is no 
 strong correlation between $p_{\zeta}^{vis}$ and $p_{\zeta}$ due to the presence of a jet that is uncorrelated to the $\mu$ and $\nu_{\mu}$ from the W boson. 
 However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$. To discriminate against W+jet(s) events, requirements on $\Delta \phi 
 (\tau_{1},\tau_{2})$ and $\zeta$ are applied. $\zeta$ is defined as a linear combination of $p_{\zeta}$ and $p_{\zeta}^{vis}$:
@@ -115,16 +115,10 @@ However, there is a strong correlation for the case of $Z^{\prime} \to \tau\tau$
 \end{figure}[htbp]
 \begin{figure}
 \begin{center}
-\includegraphics[angle=0,width=.5\textwidth]{figures/mt/Zeat2D_Ztautau.pdf}
-\caption{ $p_{\zeta}$ vs. $p_{\zeta}^{vis}$ for $Z^{\prime}\rightarrow\tau\tau$.}
+\includegraphics[angle=0,width=.4\textwidth]{figures/mt/Zeat2D_Ztautau.pdf}
+\includegraphics[angle=0,width=.4\textwidth]{figures/mt/Zeta2D.pdf}
+\caption{ $p_{\zeta}$ vs. $p_{\zeta}^{vis}$ for $Z^{\prime}\rightarrow\tau\tau$ (left) and for W+Jets (right).}
 \label{fig:WjetsZeta1}
-\end{center}
-\end{figure}
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[angle=0,width=.5\textwidth]{figures/mt/Zeta2D.pdf}
-\caption{ $p_{\zeta}$ vs. $p_{\zeta}^{vis}$ for W+Jets.}
-\label{fig:WjetsZeta2}
 \end{center}
 \end{figure}
 
@@ -146,20 +140,17 @@ important, of these differences is the presence of b--jets in the event.
 %$p_{T}$ lepton in the event.\\
 %The first tool to identify and reject $t\overline{t}$ events is counting the number of jets in the event are tagged as b--jets.  
 For our purposes, jets with 
-$p_{T} > 30$ GeV and $|\eta| < 2.4$ are counted as b--tagged jets if the ``combined secondary vertex" discriminator, described in section 5, 
+$p_{T} > 30$ GeV and $|\eta| < 2.4$ are counted as b--tagged jets if the ``combined secondary vertex" discriminator 
 returns a value consistent with that of a b--jet. 
 %The  ``track counting" discriminators are very simple, yet robust discriminators that return the significance of 
 %the second  (hiEff) or third (hiPurity) most significant track  in the jet. 
-In this analysis, the ``loose" operating point of the ``combined secondary vertex" 
-discriminator (CSVL) is used. 
 %The TCHEM discriminator requires a discriminant larger than 3.3 $\sigma$ for a jet to be tagged as a b--jet. The 
 %mis-tag rate  associated with the ``medium" operating point is 1\% \cite{BjetCommissioning}. Figure~\ref{fig:JetTCHE} shows the TCHE b-jet discriminator for jets 
 %in $Z^{\prime} \to \tau \tau$ and various backgrounds. Jets considered for b-tagging are required to be well separated from the tagged $\mu\tau_{h}$ pair 
 %($\Delta 
 %R(jet,\mu / \tau_{h})>0.5$).\\
 
-The entire signal selection criteria are summarized below, while Table~\ref{tab:muTauCutFlowEff} is the cut flow efficiency table (yields normalized to $\sigma 
-\cdot L \cdot \varepsilon$).
+The entire signal selection criteria are summarized below, while Table~\ref{tab:muTauCutFlowEff} is the cut flow efficiency table (yields normalized to lumi).
 
 \textbf{Acceptance Selection:}
 
@@ -182,7 +173,7 @@ The entire signal selection criteria are summarized below, while Table~\ref{tab:
 \begin{itemize}
   \item Muon veto: ``againstMuonTight3"
   \item Electron veto: ``againstElectronMVAVLooseMVA5"
-  \item ``new" decay mode finding with 1 or 3 signal charged hadrons
+  \item ``old" decay mode finding with 1 or 3 signal charged hadrons
   \item Isolation: ``byTightCombinedIsolationDeltaBetaCorr3Hits"
 \end{itemize}
 
@@ -190,23 +181,19 @@ The entire signal selection criteria are summarized below, while Table~\ref{tab:
 \textbf{Topological requirements:}
 
 \begin{itemize}
-  \item $\cos \Delta \phi (\mu,\tau_{h})$ $<$ -0.95. The $\tau_{h}$ jet direction is calculated using the sum of the four-momenta of decay mode constituents:
-\begin{equation}
-   \overrightarrow{p}_{\tau_{h}} = \sum_{i} \overrightarrow{p}_{signal\mbox{ }constituents}^{i}
-   \label{eq:taudirection}
-\end{equation}
+  \item $\cos \Delta \phi (\mu,\tau_{h})$ $<$ -0.95
   \item $Q(\mu) \times Q(\tau_{h}) < 0 $
   \item $\MET$ $>$ 30 GeV
   \item $P_{\zeta}- 3.1 \times P_{\zeta}^{vis} > -50$
   \item 0 jets tagged as b-jets
 \end{itemize}
 
-Because $\tau$ leptons decay to neutrinos which leave the detector undetected, one cannot fully reconstruct the mass resonance with the visible $\tau$ decay 
+Because $\tau$ leptons decay to neutrinos, which leave the detector undetected, one cannot fully reconstruct the mass resonance with the visible $\tau$ decay 
 products. Additionally, because the invariant mass for background processes such as QCD are typically steeply falling distributions in the tails (where new mass 
 resonances are expected), it becomes important to make use of $\MET$ to attempt to separate signal from background and reconstruct the true mass 
 resonance. Historically, several methods such as the collinear approximation have been employed to reconstruct the true mass resonance. However, for the analysis 
 presented, one of the main sources of backgrounds is W + jet(s). In this case, the analysis achieves a high degree of sensitivity by requiring the 
-$\mu$ and $\tau_{h}$ candidates to be back-to-back in $\phi$ (see above description). This is precisely the regime in 
+$\mu$ and $\tau_{h}$ candidates to be back-to-back in $\phi$. This is precisely the regime in 
 which the collinear approximation fails. Therefore, the mass is reconstructed as follows:
 
 \begin{equation}
@@ -222,7 +209,7 @@ between lower mass production of $\tau$-lepton pairs and high-mass $\tau$-lepton
   \includegraphics[angle=0,width=.4\textwidth]{figures/mt/Muon1Tau1CosDphi_ProbabilityPlot_AfterRecoBJetNmaxBeforeSusyCombinationsNmin.png}
   \includegraphics[angle=0,width=.4\textwidth]{figures/mt/Muon1Tau1ReconstructableMass_ProbabilityPlot_AfterRecoBJetNmaxBeforeSusyCombinationsNmin.png}
   \caption{\label{fig:MuTauMass} Left: cos$\Delta \phi$ between the muon and tau/jet directions.  Right: $m(\mu,\tau_{h},\MET)$ for signal $Z^{\prime}$ 
-and various backgrounds.}
+and various backgrounds. Both plots normalized to unity.}
 \end{figure}
 %\begin{figure}
 %\begin{center}
@@ -264,20 +251,20 @@ and various backgrounds.}
   \scalebox{0.7}{
     \begin{tabular}{| l | c | c | c | c | c | c |}
       \hline\hline
-      Process & Trigger: HLT\_IsoMu18 & $1 \mu$ & $1 \tau_{h}$ & b-jet Veto & $\MET > 30$ GeV & $\mu\tau_{h}$ topology cuts  [0.5ex] \\ \hline
+      Process & Trigger: HLT\_IsoMu18 & $1 \mu$ & $1 \tau_{h}$ & b-jet Veto & $\MET > 30$ GeV & $\mu\tau_{h}$ topology cuts  \\ \hline
 
       Data & 47386261 & 15478176 & 61718 & 53254 & 28131 & 1807 \\
-      WW & 24673.4 $\pm$ 77.5 & 20329.8 $\pm$ 70.4 & 431.9 $\pm$ 10.3 & 371.9 $\pm$ 9.5 & 257.1 $\pm$ 7.9 & 24.1 $\pm$ 2.4  \\
-      WZ & 7650.2 $\pm$ 27.9 & 6515.0 $\pm$ 25.7 & 123.6 $\pm$ 3.5 & 100.1 $\pm$ 3.2 & 64.4 $\pm$ 2.6 & 4.5 $\pm$ 0.7  \\
-      ZZ & 1825.7 $\pm$ 8.0 & 1642.5 $\pm$ 7.6 & 39.2 $\pm$ 1.2 & 31.6 $\pm$ 1.0 & 14.0 $\pm$ 0.7 & 0.7 $\pm$ 0.2  \\
-      $t\bar{t}$ & 231246.4 $\pm$ 189.0 & 193282.7 $\pm$ 172.8 & 4369.2 $\pm$ 26.0 & 606.8 $\pm$ 9.7 & 510.8 $\pm$ 8.9 & 26.1 $\pm$ 2.0  \\
-      W+Jets & 16090363.1 $\pm$ 5271.1 & 11990572.1 $\pm$ 4538.0 & 30234.3 $\pm$ 215.4 & 28230.5 $\pm$ 210.9 & 18078.6 $\pm$ 167.7 & 757.9 $\pm$ 35.0  \\
-      DY+Jets & 2668493.1 $\pm$ 2584.4 & 2140958.6 $\pm$ 2086.4 & 12872.6 $\pm$ 180.7 & 11907.2 $\pm$ 175.1 & 3611.3 $\pm$ 98.5 & 882.9 $\pm$ 34.9  \\
-      QCD & 6296741.5 $\pm$ 17403.0 & 1058693.6 $\pm$ 7136.0 & 3992.2 $\pm$ 438.3 & 3030.2 $\pm$ 381.0 & 865.8 $\pm$ 204.0 & 143.1 $\pm$ 89.8 \\ \hline
-      Total BG & 25320993.1 $\pm$ 18367.6 & 15411993.1 $\pm$ 8712.3 & 52063.0 $\pm$ 521.5 & 44278.3 $\pm$ 469.6 & 23402.0 $\pm$ 282.1 & 1839.12 $\pm$ 102.60 \\  \hline
-      $Z^\prime\to\tau\tau$(500) & 3521.2 $\pm$ 21.5 & 3219.6 $\pm$ 20.5 & 960.8 $\pm$ 11.2 & 868.7 $\pm$ 10.7 & 715.9 $\pm$ 9.7 & 502.3 $\pm$ 8.1  \\
-      $Z^\prime\to\tau\tau$(1000) & 213.8 $\pm$ 1.2 & 201.9 $\pm$ 1.1 & 73.3 $\pm$ 0.7 & 64.9 $\pm$ 0.7 & 59.4 $\pm$ 0.6 & 40.8 $\pm$ 0.5  \\
-      $Z^\prime\to\tau\tau$(1500) & 36.0 $\pm$ 0.1 & 34.2 $\pm$ 0.1 & 13.2 $\pm$ 0.1 & 11.6 $\pm$ 0.1 & 10.9 $\pm$ 0.1 & 7.2 $\pm$ 0.07  \\
+      WW & 24673 $\pm$ 77 & 20330 $\pm$ 70 & 432 $\pm$ 10 & 372 $\pm$ 10 & 257 $\pm$ 8 & 24 $\pm$ 2  \\
+      WZ & 7650 $\pm$ 28 & 6515 $\pm$ 26 & 124 $\pm$ 4 & 100 $\pm$ 3 & 64 $\pm$ 3 & 5 $\pm$ 1  \\
+      ZZ & 1826 $\pm$ 8 & 1643 $\pm$ 8 & 39 $\pm$ 1 & 32 $\pm$ 1 & 14 $\pm$ 1 & 1 $\pm$ 0.1  \\
+      $t\bar{t}$ & 231246 $\pm$ 189 & 193283 $\pm$ 173 & 4369 $\pm$ 26 & 607 $\pm$ 10 & 511 $\pm$ 9 & 26 $\pm$ 2  \\
+      W+Jets & 16090363 $\pm$ 5271 & 11990572 $\pm$ 4538 & 30234 $\pm$ 215 & 28231 $\pm$ 211 & 18079 $\pm$ 168 & 758 $\pm$ 35  \\
+      DY+Jets & 2668493 $\pm$ 2584 & 2140959 $\pm$ 2086 & 12873 $\pm$ 181 & 11907 $\pm$ 175 & 3611 $\pm$ 99 & 883 $\pm$ 35  \\
+      QCD & 6296742 $\pm$ 17403 & 1058694 $\pm$ 7136 & 3992 $\pm$ 438 & 3030 $\pm$ 381 & 866 $\pm$ 204 & 143 $\pm$ 90 \\ \hline
+      Total BG & 25320993 $\pm$ 18368 & 15411993 $\pm$ 8712 & 52063 $\pm$ 522 & 44278 $\pm$ 470 & 23402 $\pm$ 282 & 1839 $\pm$ 103 \\  \hline
+      $Z^\prime\to\tau\tau$(500) & 3521 $\pm$ 22 & 3220 $\pm$ 21 & 961 $\pm$ 11 & 869 $\pm$ 11 & 716 $\pm$ 10 & 502 $\pm$ 8  \\
+      $Z^\prime\to\tau\tau$(1000) & 214 $\pm$ 1 & 202 $\pm$ 1 & 73 $\pm$ 1 & 65 $\pm$ 1 & 59 $\pm$ 1 & 41 $\pm$ 1  \\
+      $Z^\prime\to\tau\tau$(1500) & 36 $\pm$ 0.1 & 34 $\pm$ 0.1 & 13 $\pm$ 0.1 & 12 $\pm$ 0.1 & 11 $\pm$ 0.1 & 7 $\pm$ 0.07  \\
       $Z^\prime\to\tau\tau$(2000) & 8.7 $\pm$ 0.05 & 8.2 $\pm$ 0.04 & 3.3 $\pm$ 0.03 & 2.9 $\pm$ 0.03 & 2.8 $\pm$ 0.03 & 1.8 $\pm$ 0.02  \\
       $Z^\prime\to\tau\tau$(2500) & 2.8 $\pm$ 0.01 & 2.6 $\pm$ 0.01 & 1.1 $\pm$ 0.01 & 0.9 $\pm$ 0.008 & 0.9 $\pm$ 0.008 & 0.6 $\pm$ 0.006  \\
       $Z^\prime\to\tau\tau$(3000) & 0.6 $\pm$ 0.003 & 0.6 $\pm$ 0.003 & 0.3 $\pm$ 0.002 & 0.2 $\pm$ 0.002 & 0.2 $\pm$ 0.002 & 0.1 $\pm$ 0.001  \\
@@ -328,15 +315,19 @@ predictions from simulation.
 the signal region requirements. The background predictions are entirely based on MC. Agreement between data and MC is good.}
 \end{figure}
 
+The Standard Model processes considered as backgrounds are Drell-Yan,
+diboson production, top quark single and pair production, W+Jets
+production, and QCD multijet production.
+
 \subsection{W + Jets Background Estimation}
 
 As discussed above, the main discriminators against W + Jets events are the topological variables $\zeta$ and cos$\Delta\phi(\mu,\tau_{h})$ in addition to 
-$\tau_{h}$ isolation. Thus, it is only natural to construct the W + Jets background estimation methodology using control samples obtained by inverting these 
-requirements. We estimate this background using a completely data-driven approach which relies on the classic ABCD method. The regions ABCD are defined as 
+$\tau_{h}$ isolation. Thus, it is natural to construct the W + Jets background estimation methodology using control samples obtained by inverting these 
+requirements. We estimate this background using a data-driven approach which relies on the ABCD method. The regions ABCD are defined as 
 follows:
 
 \begin{itemize}
-  \item A: pass both the $\zeta$ and cos$\Delta\phi$ cuts; pass ``Tight" $\tau_{h}$ isolation
+  \item A: pass both the $\zeta$ and cos$\Delta\phi$ cuts; pass ``Tight" $\tau_{h}$ isolation (signal region)
   \item B: fail one or both of the $\zeta$ and cos$\Delta\phi$ cuts; pass ``Tight" $\tau_{h}$ isolation
   \item C: pass both the $\zeta$ and cos$\Delta\phi$ cuts; fail ``Tight" but satisfy a relaxed $\tau_{h}$ isolation of $< 5$ GeV (``loose")
   \item D: fail one or both of the $\zeta$ and cos$\Delta\phi$ cuts; fail ``Tight" but satisfy a relaxed $\tau_{h}$ isolation of $< 5$ GeV (``loose")
@@ -349,7 +340,7 @@ follows:
 \caption{The four regions used in the ``ABCD" method of estimating W+Jets background}
 \end{figure}
 
-We estimate the W + Jets component $N_{W}^{i}$ in regions $i=A,B,C$ by subtracting MC non-W backgrounds
+We estimate the W + Jets component $N_{W}^{i}$ in regions $i=B,C,D$ by subtracting MC non-W backgrounds
 from data ($N_{W}^{i}=N_{\textrm{Data}}^{i}-N_{\neq W}^{i}$). We then estimate the W + Jets component in the signal region A, to
 be $N_{W}^{A} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{D}}$. Said differently, we take the yield of W + Jets events in data containing a non-isolated $\tau_{h}$ 
 and then extrapolate to the signal region by correcting for the ``Tight-to-Loose" ratio (also referred to as a ``fake rate"), which is measured in a data sample 
@@ -358,8 +349,8 @@ obtained from control region C (nominal selections with non-isolated $\tau_{h}$)
 
 Figure~\ref{fig:ZetaAndCosDphiVsTauIso} shows a comparison of the $\zeta$ and cos$\Delta\phi$ distributions in W + Jets MC, normalized to unity, under two 
 different $\tau_{h}$ isolation conditions: ($i$) isolated (passing ``Tight"), and ($ii$) non-isolated (failing ``Tight" but passing loosened isolation). The 
-$\tau_{h}$ isolation does not bias the $\zeta$ and cos$\Delta\phi$ distributions, and thus we expect our ABCD background estimation method to nicely model the ``true" W + 
-jets yield in the signal region. A closure test for the background estimation method outlined above is performed with MC. Two aspects are simultaneously tested: 
+$\tau_{h}$ isolation does not bias the $\zeta$ and cos$\Delta\phi$ distributions, and thus we expect our ABCD background estimation method to accurately model the ``true" W + 
+jets yield in the signal region. A closure test (procedure for validating the estimation method) of the background estimation method outlined above is performed with MC. Two aspects are simultaneously tested: 
 (1) closure on the normalization (i.e. $N_{W}^{A} = N_{W}^{C} \cdot \frac{N_{W}^{B}}{N_{W}^{D}}$); (2) correct determination of the $m(\mu,\tau_{h},\MET)$ shape. 
 Figure~\ref{fig:wJetsClosureMuTau} shows the closure test in MC. The y-axis of the top left plot is in normal scale so the reader can focus on the level of 
 agreement in the low mass region. The top right plot is similar, except the y-axis is in log scale in order to emphasize the high-mass tails. We observe very 
@@ -370,9 +361,9 @@ equation $N_{W}^{\textrm{Prediction},MC} = N_{W}^{C,MC} \cdot \frac{N_{W}^{B,MC}
 %yield is $1510.98 \pm 62.85$ (see Table~\ref{tab:muTauCutFlowEff}). Therefore, the MC-based nominal yield to predicted yield ratio is 
 %$\frac{N_{W}^{\textrm{Nominal},MC}}{N_{W}^{\textrm{Prediction},MC}} = \frac{1510.98 \pm 62.85}{1446.68 \pm 57.13} = 1.05 \pm 0.06$, which is statistically 
 %consistent with unity. 
-$N_{W}^{\textrm{Prediction},MC} = (1112.1 \pm 53.7) \cdot \frac{(5235.7 \pm 115.6)}{(7591.9 \pm 139.2)} = 766.9 \pm 43.1$, while the MC-based nominal 
-yield is $757.9 \pm 35.0$ (see Table~\ref{tab:muTauCutFlowEff}). Therefore, the MC-based nominal yield to predicted yield ratio is 
-$\frac{N_{W}^{\textrm{Nominal},MC}}{N_{W}^{\textrm{Prediction},MC}} = \frac{757.9 \pm 35.0}{766.9 \pm 43.1} = 0.99 \pm 0.05$, which is statistically 
+$N_{W}^{\textrm{Prediction},MC} = (1112 \pm 54) \cdot \frac{(5236 \pm 116)}{(7592 \pm 139)} = 767 \pm 43$, while the MC-based nominal 
+yield is $758 \pm 35$ (see Table~\ref{tab:muTauCutFlowEff}). Therefore, the MC-based nominal yield to predicted yield ratio is 
+$\frac{N_{W}^{\textrm{Nominal},MC}}{N_{W}^{\textrm{Prediction},MC}} = \frac{758 \pm 35}{767 \pm 43} = 0.99 \pm 0.05$, which is statistically 
 consistent with unity. 
 Thus, no additional systematic uncertainties are applied due to closure.
 
@@ -393,21 +384,17 @@ non-isolated $\tau_{h}$.}
   \includegraphics[width=0.4\textwidth]{figures/mt/WJetsClosure_ForZtautauCR_LogScale_2p11ifb.png} \\
   \includegraphics[width=0.4\textwidth]{figures/mt/WJetsClosure_NormalScale_2p11ifb_RegionA_vs_RegionB_ForIvan.png}
   \includegraphics[width=0.4\textwidth]{figures/mt/WJetsClosure_LogScale_2p11ifb_RegionA_vs_RegionB_ForIvan.png}
-  \caption{\label{fig:wJetsClosureMuTau} Top Left: W + Jets closure test performed with simulation (normal scale to focus on low mass) under nominal $\MET$ 
-conditions (i.e. $\MET > 30$ GeV).  Top Right: 
-W + Jets closure test performed with simulation (log scale to focus on the high mass tails) under nominal $\MET$
-conditions (i.e. $\MET > 30$ GeV).  Middle Left: W + Jets closure test performed 
-with simulation (normal scale to focus on low mass), requiring $\MET > 0$ GeV.  Middle Right: W + Jets closure test performed with simulation (log scale to 
-focus on the high mass tails), requiring $\MET > 0$ GeV.  Bottom Left: Comparison of the reconstructed mass distributions in regions A and B, in normal scale.  
-Bottom Right: Comparison of the reconstructed mass distributions in regions A and B, in log scale.} 
+  \caption{\label{fig:wJetsClosureMuTau} Top: W + Jets closure test performed with simulation (normal scale to focus on low mass) under nominal $\MET$ 
+conditions (i.e. $\MET > 30$ GeV). Middle: W + Jets closure test performed 
+with simulation requiring $\MET > 0$ GeV. Bottom: Comparison of the reconstructed mass distributions in regions A and B. Left: normal scale to focus on low mass. Right: Log scale to focus on the high mass tails.} 
 \end{figure}
 
 \begin{table}[htbp!]
   \centering{
-  \caption{Background and data yields in W + Jets control regions $A,B,C$, under nominal $\MET$ conditions (i.e. $\MET > 30$ GeV).}  \label{tab:muTauWJetsCR}
+  \caption{Background and data yields in W + Jets control regions $B,C,D$, under nominal $\MET$ conditions ($\MET > 30$ GeV).}  \label{tab:muTauWJetsCR}
     \begin{tabular}{| l | c | c | c | c |}
       \hline\hline
-      Process & $\mu\tau_{h}$ W + Jets CR $B$ & $\mu\tau_{h}$ W + Jets CR $A$ & $\mu\tau_{h}$ W + Jets CR $C$ \\ [0.5ex] \hline
+      Process & $\mu\tau_{h}$ W + Jets CR $C$ & $\mu\tau_{h}$ W + Jets CR $B$ & $\mu\tau_{h}$ W + Jets CR $D$ \\ [0.5ex] \hline
 %      ZZ + Jets & 10.02 $\pm$ 3.22 & 7.15 $\pm$ 2.72 & 1.19 $\pm$ 1.11 \\
 %      WZ + Jets & 35.93 $\pm$ 6.29 & 33.09 $\pm$ 6.04 & 3.29 $\pm$ 1.90 \\
 %      WW + Jets & 186.09 $\pm$ 15.21 & 144.75 $\pm$ 13.42 & 24.75 $\pm$ 5.55 \\
@@ -416,19 +403,19 @@ Bottom Right: Comparison of the reconstructed mass distributions in regions A an
 %      Z + Jets & 1899.95 $\pm$ 87.51 & 1579.47 $\pm$ 60.99 & 678.28 $\pm$ 55.34 \\
 %      W + Jets & 10443.71 $\pm$ 163.29 & 16046.17 $\pm$ 201.87 & 2222.81 $\pm$ 75.60 \\
 %      Data & 15546 & 21519 & 3501 \\
-      ZZ + Jets & 8.5 $\pm$ 3.0 & 4.2 $\pm$ 2.1 & 0.7 $\pm$ 0.9 \\ 
-      WZ + Jets & 24.4 $\pm$ 5.2 & 18.2 $\pm$ 4.5 & 1.8 $\pm$ 1.4 \\ 
-      WW + Jets & 141.2 $\pm$ 13.3 & 86.2 $\pm$ 10.4 & 17.2 $\pm$ 4.6 \\ 
-      QCD & 188.5 $\pm$ 96.2 & 631.3 $\pm$ 176.9 & 140.5 $\pm$ 83.4 \\ 
-      $t\bar{t}$ & 249.6 $\pm$ 17.0 & 189.7 $\pm$ 14.8 & 22.8 $\pm$ 5.1 \\ 
-      Z + Jets & 1278.2 $\pm$ 71.0 & 871.0 $\pm$ 46.5 & 425.7 $\pm$ 40.2 \\ 
-      W + Jets & 5235.7 $\pm$ 115.6 & 7591.9 $\pm$ 139.2 & 1112.1 $\pm$ 53.7 \\ 
+      ZZ + Jets & 9 $\pm$ 3 & 4 $\pm$ 2 & 0.7 $\pm$ 0.9 \\ 
+      WZ + Jets & 24 $\pm$ 5 & 18 $\pm$ 5 & 2 $\pm$ 1 \\ 
+      WW + Jets & 141 $\pm$ 13 & 86 $\pm$ 10 & 17 $\pm$ 5 \\ 
+      QCD & 189 $\pm$ 96 & 631 $\pm$ 177 & 141 $\pm$ 83 \\ 
+      $t\bar{t}$ & 250 $\pm$ 17 & 190 $\pm$ 15 & 23 $\pm$ 5 \\ 
+      Z + Jets & 1278 $\pm$ 71 & 871 $\pm$ 47 & 426 $\pm$ 40 \\ 
+      W + Jets & 5236 $\pm$ 116 & 7592 $\pm$ 139 & 1112 $\pm$ 54 \\ 
       Data & 8278 & 10434 & 1847 \\ 
       \hline
 %      Purity & 78.90\% & 84.65\% & 66.61\% \\
       Purity & 73.5\% & 80.8\% & 64.6\% \\
 %      Data - $\sum\limits_{i\neq W} BG_{i}$ & 12752.65 $\pm$ 278.56 & 18608.60 $\pm$ 312.88 & 2386.58 $\pm$ 175.68 \\
-      Data - $\sum\limits_{i\neq W} BG_{i}$ & 6387.6 $\pm$ 201.5 & 8633.4 $\pm$ 237.2 & 1238.3 $\pm$ 111.8 \\
+      Data - $\sum\limits_{i\neq W} BG_{i}$ & 6388 $\pm$ 202 & 8633 $\pm$ 237 & 1238 $\pm$ 112 \\
       \hline
 %      SF & 1.22 $\pm$ 0.03 & 1.16 $\pm$ 0.02 & 1.07 $\pm$ 0.09 \\
       SF & 1.22 $\pm$ 0.05 & 1.14 $\pm$ 0.04 & 1.11 $\pm$ 0.11 \\ 
@@ -437,7 +424,7 @@ Bottom Right: Comparison of the reconstructed mass distributions in regions A an
   }
 \end{table}
 
-As mentioned above, Table \ref{tab:muTauWJetsCR} shows the data and MC background yields in control regions $A$, $B$, and $C$. The purity of W + Jets, based on 
+As mentioned above, Table \ref{tab:muTauWJetsCR} shows the data and MC background yields in control regions $B$, $C$, and $D$. The purity of W + Jets, based on 
 simulation, ranges from $\sim 65-81$\%, depending on the sample. The W + Jets scale factors, defined as SF$=\frac{N^{\textrm{Data}}-N_{\neq 
 W}^{MC}}{N_{W}^{MC}}$, show about a $\sim 20$\% mismodeling in simulation. The top row of plots in Figure~\ref{fig:wJetsControlPlotsMuTau} are the 
 $m_{T}(\mu,\MET)$ distributions in control regions $C$(top left) and $A$(top right). The previously mentioned scale factors have been applied to the plots. 
@@ -445,7 +432,7 @@ $m_{T}(\mu,\MET)$ distributions in control regions $C$(top left) and $A$(top rig
 A natural comment or question from the reader is that while the MC closure test looks good, it is possible that mis-modeled $\MET$ in simulation could perhaps 
 pull the closure test in the wrong direction? In other words, how stable is the background estimation method with respect to $\MET$? The middle row of plots in 
 Figure~\ref{fig:wJetsClosureMuTau} show similar closure tests, but without a $\MET$ cut. We find that closure is observed even without the $\MET$ cut, adding 
-to the robustness of the methodology. Table \ref{tab:muTauWJetsCR_noMet} shows the data and MC background yields in control regions $A$, $B$, and $C$ obtained 
+to the robustness of the methodology. Table \ref{tab:muTauWJetsCR_noMet} shows the data and MC background yields in control regions $B$, $C$, and $D$ obtained 
 without the $\MET$ requirement. The purity 
 of W + Jets, based on simulation, has decreased in comparison to the purity observed with $\MET > 30$ GeV, due to the larger contribution from DY + Jets and QCD 
 multijet. 
@@ -458,18 +445,15 @@ multijet.
   \includegraphics[width=0.4\textwidth]{figures/mt/Muon2Tau1_Muon2MetMt_SRexceptNonIsolatedTauexceptInvertedCosDphiexceptInvertedZeta_25ns_2110ipb_VeryNonIsolatedTau_WjetsSF1p14.png} \\
   \includegraphics[width=0.4\textwidth]{figures/mt/Muon1Tau1_Tau1MetDeltaPhi_SRexceptNonIsolatedTauexceptMet_25ns_2110ipb_VeryNonIsolatedTau_WjetsSF1p22.png}
   \includegraphics[width=0.4\textwidth]{figures/mt/Muon2Tau1_Tau1MetDeltaPhi_SRexceptNonIsolatedTauexceptMetexceptInvertedCosDphiexceptInvertedZeta_25ns_2110ipb_VeryNonisolatedTau_WjetsSF1p22.png}
-  \caption{\label{fig:wJetsControlPlotsMuTau} Top Left: $m_{T}(\mu,\MET)$ distributions in W + Jets control region $C$, under nominal $\MET$
-conditions (i.e. $\MET > 30$ GeV).  Top Right: $m_{T}(\mu,\MET)$ distributions in W + Jets control region $A$, under nominal $\MET$
-conditions (i.e. $\MET > 30$ GeV).  Bottom Left:  $m_{T}(\mu,\MET)$ distributions in W + Jets control region $C$, requiring $\MET > 0$ GeV.  Bottom Right: 
-$m_{T}(\mu,\MET)$ distributions in W + Jets control region $A$, requiring $\MET > 0$ GeV.} 
+  \caption{\label{fig:wJetsControlPlotsMuTau} $m_{T}(\mu,\MET)$ distributions in W + Jets control region $D$ (left) and $B$ (right) with the nominal $\MET$ cut of $\MET > 30$ GeV (top) and with no $\MET$ cut (bottom).} 
 \end{figure}
 
 \begin{table}[htbp!]
   \centering{
-  \caption{Background and data yields in W + Jets control regions $A,B,C$ obtained without a $\MET$ requirement.}  \label{tab:muTauWJetsCR_noMet}
+  \caption{Background and data yields in W + Jets control regions $B,C,D$ obtained without a $\MET$ requirement.}  \label{tab:muTauWJetsCR_noMet}
     \begin{tabular}{| l | c | c | c | c |}
       \hline\hline
-      Process & $\mu\tau_{h}$ W + Jets CR $B$ & $\mu\tau_{h}$ W + Jets CR $A$ & $\mu\tau_{h}$ W + Jets CR $C$ \\ [0.5ex] \hline
+      Process & $\mu\tau_{h}$ W + Jets CR $C$ & $\mu\tau_{h}$ W + Jets CR $B$ & $\mu\tau_{h}$ W + Jets CR $D$ \\ [0.5ex] \hline
 %      ZZ + Jets & 16.18 $\pm$ 4.07 & 13.35 $\pm$ 3.70 & 2.37 $\pm$ 1.56 \\
 %      WZ + Jets & 43.26 $\pm$ 6.82 & 41.23 $\pm$ 6.66 & 5.80 $\pm$ 2.50 \\
 %      WW + Jets & 197.24 $\pm$ 15.27 & 162.60 $\pm$ 13.86 & 35.69 $\pm$ 6.50 \\
@@ -478,19 +462,19 @@ $m_{T}(\mu,\MET)$ distributions in W + Jets control region $A$, requiring $\MET 
 %      Z + Jets & 4190.96 $\pm$ 92.55 & 4573.54 $\pm$ 96.64 & 2256.33 $\pm$ 67.85 \\
 %      W + Jets & 12233.43 $\pm$ 169.20 & 18688.29 $\pm$ 209.12 & 4483.98 $\pm$ 102.44 \\
 %      Data & 25861 & 35560 & 11144 \\
-      ZZ + Jets & 16.0 $\pm$ 4.1 & 9.6 $\pm$ 3.2 & 1.8 $\pm$ 1.4 \\
-      WZ + Jets & 37.4 $\pm$ 6.4 & 26.2 $\pm$ 5.4 & 4.0 $\pm$ 2.1 \\ 
-      WW + Jets & 183.6 $\pm$ 15.1 & 114.3 $\pm$ 11.9 & 29.0 $\pm$ 6.0 \\
-      $t\bar{t}$ & 284.3 $\pm$ 18.1 & 222.6 $\pm$ 16.0 & 29.7 $\pm$ 5.9 \\
-      QCD & 411.6 $\pm$ 141.9 & 1002.9 $\pm$ 221.7 & 442.1 $\pm$ 147.2 \\ 
-      Z + Jets & 3282.9 $\pm$ 101.2 & 2754.5 $\pm$ 84.5 & 1870.1 $\pm$ 83.6 \\ 
-      W + Jets & 7586.9 $\pm$ 139.3 & 10894.9 $\pm$ 166.7 & 2699.9 $\pm$ 84.6 \\ 
+      ZZ + Jets & 16$\pm$ 4 & 10 $\pm$ 3 & 2 $\pm$ 1 \\
+      WZ + Jets & 37 $\pm$ 6 & 26 $\pm$ 5 & 4 $\pm$ 2 \\ 
+      WW + Jets & 184 $\pm$ 15 & 114 $\pm$ 12 & 29 $\pm$ 6 \\
+      $t\bar{t}$ & 284 $\pm$ 18 & 223 $\pm$ 16 & 30 $\pm$ 6 \\
+      QCD & 412 $\pm$ 142 & 1003 $\pm$ 222 & 442 $\pm$ 147 \\ 
+      DY + Jets & 3283 $\pm$ 101 & 2755 $\pm$ 85 & 1870 $\pm$ 84 \\ 
+      W + Jets & 7587 $\pm$ 139 & 10895 $\pm$ 167 & 2700 $\pm$ 85 \\ 
       Data & 13896 & 17235 & 5984 \\ 
       \hline
 %      Purity & 58.49\% & 67.14\% & 48.78\% \\
-      Purity & 64.28\% & 72.51\% & 53.18\% \\
+      Purity & 64.3\% & 72.5\% & 53.2\% \\
 %      Data - $\sum\limits_{i\neq W} BG_{i}$ & 11631.58 $\pm$ 708.78 & 18979.90 $\pm$ 747.02 & 4562.17 $\pm$ 456.33 \\
-      Data - $\sum\limits_{i\neq W} BG_{i}$ & 9680.10 $\pm$ 394.34 & 13104.88 $\pm$ 400.66 & 3607.34 $\pm$ 267.70 \\
+      Data - $\sum\limits_{i\neq W} BG_{i}$ & 9680 $\pm$ 394 & 13105 $\pm$ 401 & 3607 $\pm$ 268 \\
       \hline
 %      SF & 0.95 $\pm$ 0.06 & 1.02 $\pm$ 0.04 & 1.02 $\pm$ 0.10 \\
       SF & 1.28 $\pm$ 0.06 & 1.20 $\pm$ 0.04 & 1.34 $\pm$ 0.11 \\
@@ -499,59 +483,18 @@ $m_{T}(\mu,\MET)$ distributions in W + Jets control region $A$, requiring $\MET 
   }
 \end{table}
 
-The procedure outlined in this section yields a W + Jets estimate of $N_{W}^{\textrm{Prediction,Data}} = (1238.3 \pm 111.8) \cdot \frac{(6387.6 
-\pm 201.5)}{(8633.4 \pm 237.2)} = 916.2 \pm 91.2$ (see Data - $\sum\limits_{i\neq W} BG_{i}$ in Table \ref{tab:muTauWJetsCR}). The uncertainty on the 
-background prediction is $\sim 10$\% and is mostly dominated by $\sqrt{N_{\textrm{Data}}}$ in control regions $A$, $B$, and $C$. We note that the main source of 
+The procedure outlined in this section yields a W + Jets estimate of $N_{W}^{\textrm{Prediction,Data}} = (1238 \pm 112) \cdot \frac{(6388 
+\pm 202)}{(8633 \pm 237)} = 916 \pm 91$ (see Data $- \sum\limits_{i\neq W} BG_{i}$ in Table \ref{tab:muTauWJetsCR}). The uncertainty on the 
+background prediction is $\sim 10$\% and is mostly dominated by $\sqrt{N_{\textrm{Data}}}$ in control regions $B$, $C$, and $D$. We note that the main source of 
 contamination in Table \ref{tab:muTauWJetsCR} is DY + Jets, which we've normalized using a data-to-MC correction factor described in the next section. However, 
 even if DY + Jet(s) yields in the W control samples are taken entirely from simulation, it only provides a small effect on the W + Jets prediction in the signal region. This is true 
-because the systematic uncertainty for DY + Jets is typically $< 15$\% (see section 10), while the level of non-W background contamination is at most $\sim 35$\% 
+because the systematic uncertainty for DY + Jets is typically $< 15$\% (see Section \ref{sec:systematics}), while the level of non-W background contamination is at most $\sim 35$\% 
 (i.e. upper bound on systematic effect is $0.35 \cdot 0.15 \sim 5$\%). The total predicted background
-$m(\mu,\tau_{h},\MET)$ spectrum will be shown in the results section of this chapter.
-
-\subsubsection{W + Jets Background Validation with High $m_T$}
-
-The standard approach to estimate the W + Jets background in the Higgs search is to use a control sample of events with high $m_{T}(\mu,\MET)$.
-The W + Jets yield in that region is determined by subtracting the non-W predictions from data using simulation, and subsequently extrapolating to the 
-signal region using an extrapolation factor determined from MC. We do not employ a similar approach in this analysis as we are motivated by wanting a fully 
-data-driven approach to estimating both the normalization and the mass shape. However, we use a similar control sample of high $m_{T}(\mu,\MET)$ events to 
-validate our background estimation method and provide further confidence in our method. For this purpose we select events with $m_{T}(\mu,\MET) > 70$ GeV in 
-addition to the signal region selections. The MC-based W + Jets yield in this high $m_{T}(\mu,\MET)$ control sample is corrected using a scale factor equal to the 
-ratio of the data-driven and nominal W + Jets yields in the signal region. Table~\ref{tab:muTauHighMt} shows the data and background yields in this high 
-$m_{T}(\mu,\MET)$ control sample, while Figure~\ref{fig:muTauHighMtControlPlots} shows the $p_{T}(\tau_{h})$ and $\eta(\tau_{h})$ distributions. The measured 
-scale factor, $0.90 \pm 0.11$, is consistent with unity and therefore provides further validation of our background estimation methodology.
-
-\begin{table}[htbp!] 
-\begin{center}
- \caption{ Events in the W + Jets high $m_{T}(\mu,\MET)$ control region for data and MC.}
- \begin{tabular}{| l | c |}
- \hline\hline
-Data & 731 \\
-W + Jets & 580.2 $\pm$ 39.5 \\
-Z + Jets & 135.9 $\pm$ 17.0 \\
-WZ + Jets & 2.9 $\pm$ 1.8 \\
-WW + Jets & 15.3 $\pm$ 4.4 \\
-ZZ + Jets & 0.2 $\pm$ 0.5 \\
-QCD & 36.1 $\pm$ 39.4 \\
-$t\bar{t}$ & 17.7 $\pm$ 4.5 \\ \hline
-Purity & 73.6\% \\
-Data - $\sum\limits_{i} BG_{i}$ & 522.9 $\pm$ 51.1 \\ \hline
-SF & 0.9 $\pm$ 0.1 \\
- \hline
- \hline
- \end{tabular}
- \label{tab:muTauHighMt}
-\end{center}
-\end{table}
-
-\begin{figure}[thbp!]\centering 
-  \includegraphics[width=0.4\textwidth]{figures/mt/ControlPlots_FirstLeadingTauJet1Pt_AfterFinalselectionsWithHighMt.png}
-  \includegraphics[width=0.4\textwidth]{figures/mt/ControlPlots_FirstLeadingTauJet1Eta_AfterFinalselectionsWithHighMt.png} 
-  \caption{\label{fig:muTauHighMtControlPlots} Event yields vs $p_{T}(\tau_{h})$ and $\eta(\tau_{h})$ in the W + Jets high $m_{T}(\mu,\MET)$ control region.}
-\end{figure}
+$m(\mu,\tau_{h},\MET)$ spectrum will be shown in Section \ref{sec:results}.
 
 \subsection{DY + Jets Background Estimation}
 
-Obtaining a semi-clean sample of $Z\to\tau\tau$ events is one of the most important aspects of the analysis as it needs to be shown the $\tau_{h}$ identification 
+Obtaining a semi-clean sample of $Z\to\tau\tau$ events is one of the most important aspects of the analysis as it needs to be shown that the $\tau_{h}$ identification 
 criteria employed is successful at identifying a $\tau_{h}$. Unlike W + Jets, where a jet is misidentified as a $\tau_{h}$ and whose contribution to the 
 signal region is expected to be mismodeled by simulation, there is no reason to expect significant disagreement between data and MC for $Z\to\tau\tau$. The 
 efficiency for the requirement of a high quality muon and $\tau_{h}$ candidate is expected to be well modeled by simulation, and has indeed been validated by the 
@@ -570,10 +513,10 @@ modifications to the final signal selections:
 \item $m(\mu,\tau_{h},\MET) < 300$ GeV
 \end{itemize}
 
-It is important to note that the analysis has been designed to achieve sensitivity in the high mass region, while also enabling us to achieve a relatively clean 
-$Z\rightarrow\tau\tau$ signature in the low mass region with only minor modifications to the final selections. Figure~\ref{fig:ZtautauControlPlots} shows the 
-$m(\mu,\tau_{h},\MET)$ invariant mass in the $Z\rightarrow\tau\tau$ control region defined above, while the observed events in data and predicted 
-background yields are listed in Table~\ref{table:theztautauControlTable} (W + Jets and QCD multijet backgrounds are completely data-driven).
+It is important to note that the analysis has been designed to achieve sensitivity in the high mass region, while also enabling us to obtain a relatively clean 
+$Z\rightarrow\tau\tau$ signature in the low mass region with only minor modifications to the final selection criteria. Figure~\ref{fig:ZtautauControlPlots} shows the 
+$m(\mu,\tau_{h},\MET)$ invariant mass in the $Z\rightarrow\tau\tau$ control region defined above, while the number of observed events in data and the predicted 
+background yields are listed in Table~\ref{table:theztautauControlTable} (The W + Jets and QCD multijet backgrounds are  data-driven).
 
 \begin{table}[htbp!]
 \begin{center}
@@ -591,17 +534,17 @@ background yields are listed in Table~\ref{table:theztautauControlTable} (W + Je
 %$t\bar{t}$ & 46.3425 $\pm$ 7.31457 \\ \hline
 %%Purity & 44.5554\% \\
 %Data - $\sum\limits_{i} BG_{i}$ & 4613.45 $\pm$ 289.14 \\ \hline
-%SF & 1.0343 $\pm$ 0.069666 \\
+%SF & 1.0343 $\pm$ 0.069 \\
 Data & 6658 \\
-W + Jets & 2586.9 $\pm$ 168.2 \\
-Z + Jets & 3806.1 $\pm$ 100.7 \\
-WZ + Jets & 9.0 $\pm$ 3.1 \\
-WW + Jets & 48.8 $\pm$ 7.8 \\
-ZZ + Jets & 2.8 $\pm$ 1.7 \\
-QCD & 319.8 $\pm$ 125.1 \\
-$t\bar{t}$ & 33.0 $\pm$ 6.2 \\ \hline
+W + Jets & 2587 $\pm$ 168 \\
+Z + Jets & 3806 $\pm$ 100 \\
+WZ + Jets & 9 $\pm$ 3 \\
+WW + Jets & 49 $\pm$ 8 \\
+ZZ + Jets & 3 $\pm$ 2 \\
+QCD & 320 $\pm$ 125 \\
+$t\bar{t}$ & 33 $\pm$ 6 \\ \hline
 Purity & 55.9\% \\
-Data - $\sum\limits_{i} BG_{i}$ & 3657.8 $\pm$ 225.2 \\ \hline
+Data $- \sum\limits_{i} BG_{i}$ & 3658 $\pm$ 225 \\ \hline
 SF & 0.96 $\pm$ 0.06 \\
  \hline
  \hline
@@ -615,31 +558,31 @@ SF & 0.96 $\pm$ 0.06 \\
 %\includegraphics[angle=0,width=.75\textwidth]{figures/mt/Muon1Tau1ReconstructableMass_SRexceptMet_WJetsDataDriven_25ns_2110ipb.png}
 \includegraphics[angle=0,width=.75\textwidth]{figures/mt/Muon1Tau1ReconstructableMass_SRexceptMet_WJetsDataDriven_25ns_2110ipb_1or3prong.png}
 \caption{ $m(\mu,\tau_{h},\MET)$ distribution in the $Z \to \tau\tau$ control region defined by $\MET < 30$ GeV and $m(\mu,\tau_{h},\MET) < 300$ GeV, with 
-otherwise similar selections to the signal region. $Z \to \tau\tau$ (DY+Jets) events are shown in blue.}
+otherwise similar selection criteria to the signal region. The $Z \to \tau\tau$ (DY+Jets) events are shown in blue.}
 \label{fig:ZtautauControlPlots}
 \end{center}
 \end{figure}
 
 Table~\ref{table:theztautauControlTable} and Figure~\ref{fig:ZtautauControlPlots} clearly show that both the $Z \to \tau\tau$ rates and shapes are consistent 
-between data and MC, with a SF approximately $0.96 \pm 0.06$. Therefore, the expected $Z \to \tau\tau$ contribution in the signal region is taken from MC. The 
+between data and MC, with a SF of $0.96 \pm 0.06$. Therefore, the expected $Z \to \tau\tau$ contribution in the signal region is taken from MC. The 
 expected number of $Z \to \tau\tau$ events in the signal region is $883 \pm 35$ (see Table~\ref{tab:muTauCutFlowEff}). 
 Obtaining a semi-clean sample of $Z \to \tau\tau$ events where the number of observed events are consistent with the MC expectation ensures the robustness of the 
-analysis and validates the ability to successfully identify a $\tau_{h}$. Furthermore, since our $\tau_{h}$ identification efficiency is ``flat" vs. 
-$p_{T}(\tau_{h})$, validating correct modeling of $Z \to \tau\tau$ at low $p_{T}(\tau_{h})$ indirectly ``validates" that we can correctly identify a high-$p_{T}$ 
-$\tau_{h}$. The total predicted background $m(\mu,\tau_{h},\MET)$ spectrum will be shown in the results section of the AN.
+analysis and validates the ability to successfully identify a $\tau_{h}$. Furthermore, since our $\tau_{h}$ identification efficiency is constant vs. 
+$p_{T}(\tau_{h})$, validating the correct modeling of $Z \to \tau\tau$ at low $p_{T}(\tau_{h})$ indirectly validates that we can correctly identify a high-$p_{T}$ 
+$\tau_{h}$. The total predicted background $m(\mu,\tau_{h},\MET)$ spectrum will be shown in Section \ref{sec:results}.
 
 \subsection{Other Small Backgrounds}
 
-As mentioned in the introduction to section~\ref{sec:muTauhad} and as can be calculated from Table~\ref{tab:muTauCutFlowEff}, the sum of the Drell-Yan and W + 
-jets backgrounds represent approximately $93$\% of the total background in this channel. The remaining $t\bar{t}$, diboson, and QCD multijet processes compose 
-$\sim$ 1.3\%, 1.4\%, and 4.4\% of the total background respectively. Therefore, these backgrounds are taken directly from simulation with appropriate systematic 
-uncertainties, which are discussed and summarized in section 10. Furthermore, the $t\bar{t}$ and diboson backgrounds are expected to be well modeled by simulation 
+As mentioned in the introduction to Section~\ref{sec:muTauhad} and as can be calculated from Table~\ref{tab:muTauCutFlowEff}, the sum of the Drell-Yan and W + 
+jets backgrounds represent $89$\% of the total background in this channel. The remaining $t\bar{t}$, diboson, and QCD multijet processes compose 
+$\sim$ 1.3\%, 1.4\%, and 4.4\% of the total background, respectively. Therefore, these backgrounds are taken directly from simulation with appropriate systematic 
+uncertainties, which are discussed and summarized in Section \ref{sec:systematics}. Furthermore, the $t\bar{t}$ and diboson backgrounds are expected to be well modeled by simulation 
 and thus, for added confidence, we only perform a validation of the ``good enough" modeling of the QCD multijet background. For this purpose, we obtain a control 
 sample enriched with $\sim 91$\% purity of QCD multijet events by inverting the isolation on both the $\tau_{h}$ and $\mu$ legs as well as inverting the 
 $\mu\tau_{h}$ charge requirement (select like-sign). Table~\ref{table:theQCDMuTauControlTable} summarizes the observed data events and predicted background yields 
 in this sample. The measured data-to-MC correction factor of $\textrm{SF}=1.09 \pm 0.27$ is consistent with unity, and thus the QCD multijet yields (in the 
 signal and control regions) are taken directly from simulation. The QCD multijet contribution to the signal region is conservatively assigned an additional $27$\% 
-systematic uncertainty based on the uncertainty on the correction factor from this control sample (this is on top of the $\sim 63$\% statistical uncertainty).
+systematic uncertainty based on the uncertainty on the correction factor from this control sample (this is added in quadrature to the $\sim 63$\% uncertainty from the limited number of MC events).
 
 \begin{table}[htbp!]
 \begin{center}
@@ -648,15 +591,15 @@ systematic uncertainty based on the uncertainty on the correction factor from th
  \hline\hline
 Process & non-isolated $\tau_{h}$, non-isolated $\mu$, same-sign $\mu\tau_{h}$ \\ \hline
 Data & 442 \\
-W + Jets & 33.1 $\pm$ 9.2 \\
-Z + Jets & 1.4 $\pm$ 1.3 \\
-WZ & 0.34 $\pm$ 0.61 \\
+W + Jets & 33 $\pm$ 9 \\
+Z + Jets & 1 $\pm$ 1 \\
+WZ & 0.3 $\pm$ 0.6 \\
 WW & 0 $\pm$ 0 \\
 ZZ & 0 $\pm$ 0 \\
-QCD & 371.6 $\pm$ 90.8 \\
-$t\bar{t}$ & 1.7 $\pm$ 1.4 \\ \hline
+QCD & 372 $\pm$ 91 \\
+$t\bar{t}$ & 2 $\pm$ 1 \\ \hline
 Purity & 91.0\% \\
-Data - $\sum\limits_{i} BG_{i}$ & 405.4 $\pm$ 23.0 \\ \hline
+Data - $\sum\limits_{i} BG_{i}$ & 405 $\pm$ 23 \\ \hline
 SF & 1.09 $\pm$ 0.27 \\
  \hline
  \hline

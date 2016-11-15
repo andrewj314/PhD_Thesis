@@ -19,10 +19,10 @@ satisfying:
   \item $p_T>35$ GeV and $\vert\eta\vert<2.1$
   \item distance of closest approach to the leading 
 sum-$p_T^2$ primary vertex of less than 0.045~cm 
-(transvese) and 0.2~cm (longitudinal)
+(transverse) and 0.2~cm (longitudinal)
   \item passing the tight working point of the e/$\gamma$ 
 POG non-triggering MVA ID
-  \item having no matched conversion nor missing hits
+  \item having no matched conversions to photons nor missing hits in the tracker
   \item within $\Delta R<0.5$ of the HLT electron that fired the trigger
 
 \end{itemize}
@@ -46,7 +46,7 @@ either a 1-prong or 3-prong $\tauh$
 ``againstMuonTight3'' identification requirements
 \end{itemize}
 
-We build pairs of electrons and $\tauh$'s in which the electron and
+We build $e\tau_h$ pairs in which the electron and
 $\tauh$ are separated by at least $\Delta R > 0.5$.  In events with
 more than one such pair, we select the pair with the two most isolated
 leptons, considering first the electron, and then the $\tauh$.  This
@@ -97,7 +97,7 @@ As for the other channels, the signal region is defined as having
   \item no jet with $p_T>30$ GeV tagged as a b-jet (CSV loose)
 \end{itemize}
 
-The distributions of these variables after preselection are shown in
+The distributions of a subset of these variables after preselection are shown in
 Figures~\ref{fig:et_preselection_distributions1},~\ref{fig:et_preselection_distributions2},~\ref{fig:et_preselection_distributions3}.
 
 \begin{figure}[thbp!]\centering
@@ -107,7 +107,7 @@ Figures~\ref{fig:et_preselection_distributions1},~\ref{fig:et_preselection_distr
   \includegraphics[width=0.45\textwidth]{figures/et-em/kinematicDistributions_unblind/et_puweight_OS_1and3prong_nCSVL}
   \caption{\label{fig:et_preselection_distributions1} Distributions,
     after preselection, of the variables used for \teth ~signal
-    selection: \ETslash ~(top left), ``$\zeta$'' (top right),
+    selection: \ETslash ~(top left), ``$p_\zeta$'' (top right),
     $\cos{\Delta \phi (e,\tau_{h})}$ (bottom left), and $n_b$ (bottom
     right).}
 \end{figure}
@@ -119,7 +119,7 @@ Figures~\ref{fig:et_preselection_distributions1},~\ref{fig:et_preselection_distr
   \includegraphics[width=0.45\textwidth]{figures/et-em/kinematicDistributions_unblind/et_puweight_OS_1and3prong_tEta}
   \caption{\label{fig:et_preselection_distributions2} Distributions,
     after \teth ~preselection, of electron \pt ~(top left), electron
-    pseudorapidity (top right), $\tau$ \pt ~(bottom left), $\tau$
+    pseudorapidity (top right), $\tau_h$ \pt ~(bottom left), $\tau_h$
     pseudorapidity (bottom right).}
 \end{figure}
 
@@ -131,7 +131,7 @@ Figures~\ref{fig:et_preselection_distributions1},~\ref{fig:et_preselection_distr
     (left), $m\left(e, \tau, \ETslash\right)$ (right).}
 \end{figure}
 
-The distributions of these variables after preselection, and after
+The distributions of some variables after both the preselection and the
 selection requirements on the other variables, are shown in
 Figure~\ref{fig:et_nm1_distributions}.
 
@@ -153,7 +153,7 @@ production, and QCD multijet production.
 
 \subsection{Genuine dilepton events}
 
-Studies of simulated events indicate that for Drell-Yan process, top
+Studies of simulated events indicate that for the Drell-Yan process, top
 quark single and pair production, and diboson production, the
 reconstructed and selected electrons and hadronic taus are typically
 associated with genuine simulated leptons.  The nominal expected event
@@ -163,30 +163,30 @@ the integrated luminosity of the data samples.
 
 \subsubsection{Drell-Yan processes}
 Due to large W+Jets and QCD contamination, as shown in the left panel of 
-Figure~\ref{fig:et_dy_tt} with the following selections:
+Figure~\ref{fig:et_dy_tt} with the following selection criteria:
 \begin{itemize}
   \item $\ETslash<30$ GeV;
   \item no jet with $p_T>30$ GeV tagged as a b-jet (CSV loose);
   \item \meffetau $<$ 200 GeV
 \end{itemize}
 we use the Drell-Yan rate systematic uncertainty (12\%) estimated from
-the \tetm ~final state in~\ref{sec:em_DY}.
+the \tetm ~final state in Section~\ref{sec:em_DY}.
 
 \subsubsection{$t\bar{t}$ and single top processes}
 For \teth, we estimate the $t\bar{t}$ + single top production rate
-systematics (8\%) using the \tetm ~final state, as described in
-~\ref{sec:em_tt}, due to its higher top purity.  However we cross
+systematic uncertainty (8\%) using the \tetm ~final state, as described in
+Section~\ref{sec:em_tt}, due to its higher top purity.  However we cross
 check this in a \teth ~top-rich region, defined by the following
-selections and shown in the right panel of Figure~\ref{fig:et_dy_tt}:
+selection criteria and shown in the right panel of Figure~\ref{fig:et_dy_tt}:
 \begin{itemize}
   \item $\cos{\Delta \phi (e,\tau_{h})}<-0.95$
   \item $\ETslash>30$ GeV
   \item $P_{\zeta}- 3.1 \times P_{\zeta}^{vis} > -50$ GeV
   \item at least one jet with $p_T>30$ GeV tagged as a b-jet (CSV loose)
 \end{itemize}
-The $t\bar{t}$ + single top production rate systematics estimated to be:
+The $t\bar{t}$ + single top production rate systematic uncertainty is estimated to be:
 \begin{equation}\label{eq:et_tt}
-\text{$t\bar{t}$ + single top systematics} = \left| 1 - \frac{\text{$t\bar{t}$ + single top}}{\text{Data - other backgrounds}}\right| = 5\%\quad,
+\text{$t\bar{t}$ + single top systematics} = \left| 1 - \frac{\text{$t\bar{t}$ + single top}}{\text{Data -- other backgrounds}}\right| = 5\%\quad,
 \end{equation}
 in agreement with the estimate from \tetm.
 
@@ -198,7 +198,7 @@ in agreement with the estimate from \tetm.
 \end{figure}
 
 \subsubsection{Diboson processes}
-We take diboson processes directly from simulation with a 15\% production uncertainty. This number is a conservative estimate commonly used by many analyses in which diboson is a small background and is taken directly from MC.
+We take diboson processes directly from simulation with a 15\% production uncertainty. This number is a conservative estimate commonly used by many analyses in which the diboson contribution is a small background and is taken directly from MC.
 
     
 \subsection{QCD multijet background}\label{sec:etau_qcd}
@@ -217,19 +217,19 @@ described below:
 
 \begin{figure}[thbp!]\centering
   \includegraphics[width=0.45\textwidth]{figures/et-em/figs/ABCD}
-  \caption{\label{fig:ABCD} QCD estimation and validation strategy for the \teth ~channel.}
+  \caption{\label{fig:ABCD} QCD estimation strategy for the \teth ~channel.}
 \end{figure}
 In each region (B, C, D), QCD events are estimated by subtracting events
-with genuine leptons (estimated by simulation) bin-by-bin from data.
-QCD events are assumed to be charge blind, thus the amount of QCD events in region B should be 
-comparable to that of in the signal region. However, with the freedom to define the
+with genuine leptons (estimated by simulation) bin-by-bin from the data.
+QCD events are assumed to be charge blind, thus the number of QCD events in region B should be 
+comparable to that in the signal region. However, with the freedom to define the
 anti-isolation region, we choose an anti-isolation definition such
 that there is much more QCD in region C compared to the signal region. 
 Taking the QCD shape from region C will provide us 
 a much smoother template for QCD estimation.
 
 Hence, QCD events in the signal region are estimated with the shape from region C 
-and multiplying a scale factor derived from regions B and D. The factor is defined as:
+and multiplying a scale factor derived from regions B and D, defined as:
 \begin{equation}\label{eq:et_qcd_sf}
 f_\mathrm{LT}^\mathrm{QCD} = \left(N_\mathrm{data}^\mathrm{B} - N_\mathrm{MC}^\mathrm{B}\right)
 / \left(N_\mathrm{data}^\mathrm{D} -
@@ -238,15 +238,15 @@ N_\mathrm{MC}^\mathrm{D}\right)
 
 \noindent where $N_\mathrm{MC}^\mathrm{B}$ and $N_\mathrm{MC}^\mathrm{D}$ are the number of non-QCD MC events.
 
-This QCD estimation method is valid only if the QCD shape in
-anti-isolated correctly models the QCD shape in the isolated
+This QCD estimation method is valid only if the QCD shape in the
+anti-isolated region correctly models the QCD shape in the isolated
 region. The check is performed by comparing the observation and background
 estimation in region B with the QCD shape taken from region D and
 normalized to the QCD in region B.  An example of this test is shown
-in the right panel of Figure~\ref{fig:et_sst} with the anti-isolation
+in Figure~\ref{fig:et_sst} with the anti-isolation
 definition as: \tauh ~isolation failing the ``Tight" working point but
-below 5.0 GeV. After the signal region selection the ``Loose-to-Tight" scale factor is estimated
-to be: $0.13 \pm 0.02$ where an additional 15\% uncertainty is added to the QCD systematics 
+still $<$ 5.0 GeV. After the signal region selection the ``Loose-to-Tight" scale factor is estimated
+to be: $0.13 \pm 0.02$ where an additional 15\% uncertainty is added to the QCD systematic uncertainty 
 on top of the bin-by-bin systematics.
 
 \begin{figure}[thbp!]\centering
@@ -261,9 +261,9 @@ on top of the bin-by-bin systematics.
 
 The simulated W+Jets samples, especially at low HT, were not
 generated with large MC statistics.  Using the samples directly would
-have two disadvantages: (a) avoiding non-smooth templates in the
-signal extraction would restrict somewhat the choice of signal
-selection and binning; (b) the poorly sampled shapes degrade the
+have two disadvantages: (a) non-smooth templates in the
+signal extraction restricts somewhat the choice of signal
+selection and binning; (b) poorly sampled shapes degrade the
 ability to validate the background estimates.  As a workaround, we use
 a region of relaxed \tauh ~isolation to obtain the simulated shape:
 \tauh ~isolation is required to fail the ``Tight'' working point but be
@@ -273,7 +273,7 @@ integrated MC yield when requiring tight \tauh ~isolation.
 Figure~\ref{fig:et-w-shape} compares the direct and relaxed
 predictions in the signal region and in the control region discussed
 below.  It also shows the compatibility of the predicted shapes when
-the isolation sideband is split into to regions: \tauh isolation
+the isolation sideband is split into two regions: \tauh ~isolation
 failing ``Tight'' working point but $<2.5$ GeV; $2.5$ GeV $<$ \tauh ~isolation $< 5$ GeV.
 
 \begin{figure}[thbp!]\centering
@@ -292,9 +292,9 @@ failing ``Tight'' working point but $<2.5$ GeV; $2.5$ GeV $<$ \tauh ~isolation $
 
 To evaluate the estimated background rate in a signal-depleted and
 W-enriched region, we use the same requirements as for the signal
-region, except require $p_{\zeta} - 3.1 p_{\zeta\mathrm{vis.}}<
--50$ GeV (i.e., inverted w.r.t. the signal selection), and allow
-any value of $\cos{\Delta\phi_{e\tauh}}$ (i.e., relaxed w.r.t. the
+region, except requiring $p_{\zeta} - 3.1 \times p_{\zeta\mathrm{vis.}}<
+-50$ GeV (i.e., inverted w.r.t.~the signal selection), and allow
+any value of $\cos{\Delta\phi_{e\tauh}}$ (i.e., relaxed w.r.t.~the
 signal selection).  We then scan the W+Jets event rate from 1.0 to
 1.25, in steps of 0.05.  For each assumed rate, we redetermine the QCD
 prediction in this control region.  Figure~\ref{fig:etau_w_sf} shows
@@ -343,7 +343,7 @@ Figure~\ref{fig:etau_sm_template_and_mt}.
     mass.}
 \end{figure}
 
-Distributions of \pt ~and $\eta$ are shown in Figure~\ref{fig:etau_sr_pt_eta}.
+Distributions of \pt ~and $\eta$ after final selection are shown in Figure~\ref{fig:etau_sr_pt_eta}.
 \begin{figure}[thbp!]\centering
   \includegraphics[width=0.45\textwidth]{figures/et-em/kinematicDistributions_unblind/et_puweight_OS_signalRegion_1and3prong_ePt}
   \includegraphics[width=0.45\textwidth]{figures/et-em/kinematicDistributions_unblind/et_puweight_OS_signalRegion_1and3prong_eEta} \\
@@ -351,7 +351,7 @@ Distributions of \pt ~and $\eta$ are shown in Figure~\ref{fig:etau_sr_pt_eta}.
   \includegraphics[width=0.45\textwidth]{figures/et-em/kinematicDistributions_unblind/et_puweight_OS_signalRegion_1and3prong_tEta}
   \caption{\label{fig:etau_sr_pt_eta} Distributions, after \teth ~final
     selection, of electron \pt ~(top left), electron pseudo-rapidity
-    (top right), $\tau$ \pt ~(bottom left), $\tau$ pseudo-rapidity
+    (top right), $\tau_h$ \pt ~(bottom left), $\tau_h$ pseudo-rapidity
     (bottom right).}
 \end{figure}
 

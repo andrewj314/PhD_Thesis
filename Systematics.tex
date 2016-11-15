@@ -1,6 +1,6 @@
-\section{Systematics}\label{sec:systematics}
+\section{Systematic Uncertainty}\label{sec:systematics}
 
-The following systematics have been considered (summarized in Table~\ref{table:SystematicsTable}):
+The following systematic effects have been considered (summarized in Table~\ref{table:SystematicsTable}):
 
 \begin{itemize}
 %  \item \textbf{Parton Distribution Functions (PDF):} The systematic effect due to imprecise knowledge of the parton 
@@ -13,8 +13,8 @@ The following systematics have been considered (summarized in Table~\ref{table:S
 %missing a terms in the soft-collinear approach \cite{softCollinear} and missing NLO terms in the parton shower approach \cite{partonShower}. We 
 %obtain uncertainties of 0.9\% and 1.2\% for ISR and FSR respectively.
 
-  \item \textbf{Luminosity:} We consider a 5\% uncertainty on the measured luminosity\cite{REFLUMI}. It is considered 100\% correlated across MC based 
-backgrounds within a channel. It is also considered 100\% correlated across channels (for MC based backgrounds).
+  \item \textbf{Luminosity:} We include a 5\% uncertainty on the measured luminosity\cite{REFLUMI}. It is considered 100\% correlated across MC based 
+backgrounds within a channel. It is also considered 100\% correlated across channels (for MC-based backgrounds).
 
   \item \textbf{Trigger, Reconstruction, and Selection:} 
   An overall uncertainty is applied for the trigger uncertainties determined on the 
@@ -25,9 +25,9 @@ backgrounds within a channel. It is also considered 100\% correlated across chan
 the $\tau_{h}\tau_{h}$ channel (assuming each leg is 100\% correlated). The trigger uncertainty is considered 100\% correlated across MC based backgrounds within 
 a channel. It is also considered 100\% correlated across channels using the same trigger. For the case of the $\tau_{h}\tau_{h}$ trigger, where the trigger 
 efficiency uncertainty is measured per $\tau_{h}$ leg, the total trigger uncertainty is calculated by assuming both legs are 100\% correlated. For example, if the 
-per leg $\tau_{h}$ trigger uncertainty is 5\%, the total trigger uncertainty for the $\tau_{h}\tau_{h}$ channel will be 10\% ($2\cdot 5$\%).
+per leg $\tau_{h}$ trigger uncertainty is 5\%, the total trigger uncertainty for the $\tau_{h}\tau_{h}$ channel will be 10\%.
 
-  \item \textbf{$b$-Tagging Efficiency:} We consider a 30\% uncertainty on the mis-tag rate as measured by the 
+  \item \textbf{$b$-Tagging Efficiency (b ID):} We consider a 30\% uncertainty on the mis-tag rate as measured by the 
 b-tagging POG\cite{CMS_PAS_BTV_11-001}. For the case of our signal, the systematic 
 uncertainty on the requirement of 0 jets mis-tagged as b-jets is determined by propagating the 30\% uncertainty on the 
 mis-tag rate through the following equation (which represents the signal efficiency for requiring 0 
@@ -45,22 +45,21 @@ systematic effect of $\sim 5$\% on our signal due to the mis-tag rate. The b-tag
 backgrounds with similar composition (e.g. W + Jets and DY + Jets where there are typically no real b-jets), but completely uncorrelated to backgrounds that have 
 different composition (e.g. $t\bar{t}$ vs. DY + Jets).
 
-  \item \textbf{Electron Energy Scale:} We consider the effect on the signal acceptance efficiency of a 1\% (2.5\%) shift on the electron
+  \item \textbf{Electron Energy Scale (EES):} We consider the effect on the signal acceptance efficiency of a 1\% (2.5\%) shift on the electron
   energy scale in the barrel (endcap) region. The resultant systematic uncertainty on signal and MC-based backgrounds is $< 1$\%.
 
-  \item \textbf{Muon Momentum Scale:} We consider the effect on the signal acceptance efficiency of a 1\% momentum scale uncertainty on the
+  \item \textbf{Muon Momentum Scale (MMS):} We consider the effect on the signal acceptance efficiency of a 1\% momentum scale uncertainty on the
   muon momentum. The resultant systematic uncertainty on signal and MC-based backgrounds is $< 1$\%.
 
-  \item \textbf{Tau Energy Scale:} We consider the effect of the 5\% tau energy scale uncertainty measured by the tau 
-POG on the signal acceptance. The tau 4-momentum is scaled by a factor of $k=1.05$ ($p_{smeared} = k \cdot 
-p_{default}$) and variables are recalculated using $p_{smeared}$. We find that by using $p_{smeared}$ calculated with 
-a factor of $k=\pm 1.05$, the signal and MC-based backgrounds fluctuates by up to $\sim 11$\%. 
+  \item \textbf{Tau Energy Scale (TES):} We consider the effect of the 5\% tau energy scale uncertainty measured by the tau 
+POG on the signal acceptance. The energy component of the tau 4-momentum is scaled by a factor of $k=1.05$,  so that $p_{smeared} = k \cdot p_{default}$ and variables are recalculated using $p_{smeared}$. We find that by using $p_{smeared}$ calculated with 
+a factor of $k=\pm 1.05$, the signal and MC-based backgrounds varies by up to $11$\%. 
 
-  \item \textbf{Jet Energy Scale:} We consider the effect of a 3-5\% jet energy scale uncertainty on the signal 
+  \item \textbf{Jet Energy Scale (JES):} We consider the effect of a 3-5\% jet energy scale uncertainty on the signal 
 acceptance (depending on the $\eta$ and $p_{T}$ of the considered jet as prescribed by the $JetMET$ POG). The jet 
-4-momentum is scaled by a factor of $k=1.05$ ($p_{smeared} = k \cdot p_{default}$) and variables are recalculated 
+4-momentum is scaled by a factor of $k=1.05$, so that $p_{smeared} = k \cdot p_{default}$ and variables are recalculated 
 using $p_{smeared}$. We find that by using $p_{smeared}$ calculated with
-a factor of $k=\pm 1.05$, the signal and MC-based backgrounds fluctuates by up to $\sim 12$\%. 
+a factor of $k=\pm 1.05$, the signal and MC-based backgrounds varies by up to $12$\%. 
 %  \item \textbf{MET:} The uncertainty on MET for our signal process is driven by the tau energy scale (TES), jet energy 
 %scale (non-tau jets) (JES), light lepton energy/momentum scale (LES), and unclustered energy (UCE). 
 %The systematic effect from MET due to TES, JES and LES is included in the JES, 
@@ -73,31 +72,31 @@ a factor of $k=\pm 1.05$, the signal and MC-based backgrounds fluctuates by up t
 %TES, LES systematic uncertainties described above. We find that a 10\% uncertainty on the unclustered energy results
 %in at most a 0.5\% fluctuation on the signal acceptance.
 
-  \item \textbf{PDF Systematics Uncertainty:} We consider the effect of the PDF uncertainties on the signal acceptance. 
-Due to the lack of PDF weights in the $Z^\prime$ signal samples, we sliced up mass binned DY samples to mock up $Z^\prime$ samples in 
-the following way:
-\begin{table}[htbp!]	
-  \begin{tabular}{| l | c | c | c | c | c | c |} 
-  \hline\hline 
-  $Z^\prime$ mass point (GeV) & 500 & 1000 & 1500 & 2000 & 2500 & 3000\\
-  \hline
-  DY mass slice (GeV) & 500 - 550 & 1000 - 1050 & 1500 - 1550 & 2000 - 2050 & 2450 - 2550 & 2800 - 3000\\
-  \hline \hline
-  \end{tabular}
-\end{table}
+%%  \item \textbf{PDF Systematics Uncertainty:} We consider the effect of the PDF uncertainties on the signal acceptance. 
+%%Due to the lack of available PDF weights for the $Z^\prime$ signal samples, we slice up mass binned DY samples to mock up $Z^\prime$ samples in 
+%%the following way:
+%%\begin{table}[htbp!]	
+%%  \begin{tabular}{| l | c | c | c | c | c | c |} 
+%%  \hline\hline 
+%%  $Z^\prime$ mass point (GeV) & 500 & 1000 & 1500 & 2000 & 2500 & 3000\\
+%%  \hline
+%%  DY mass slice (GeV) & 500 -- 550 & 1000 -- 1050 & 1500 -- 1550 & 2000 -- 2050 & 2450 -- 2550 & 2800 -- 3000\\
+%%  \hline \hline
+%%  \end{tabular}
+%%\end{table}
 
-Following the ``PDF4LHC recommendations for LHC Run
-II"\cite{PDF4LHC15}, the PDF uncertainties are computed from the
-68$\%$ confidence level with the PDF4LHC15$\_$mc sets. The PDF
-uncertainties for our main backgrounds, $t\bar{t}$, W+Jets and DY, are
-much smaller than their bin-by-bin statistical uncertainties and thus are
-neglected. The PDF uncertainties on the signal acceptance range from
-0.7$\%$ for $Z^\prime$ at 500 GeV up to 12$\%$ for $Z^\prime$ at 3 TeV.
+%%Following the ``PDF4LHC recommendations for LHC Run
+%%II"\cite{PDF4LHC15}, the PDF uncertainties are computed from the
+%%68$\%$ confidence level with the PDF4LHC15$\_$mc sets. The PDF
+%%uncertainties for our main backgrounds, $t\bar{t}$, W+Jets and DY, are
+%%much smaller than their bin-by-bin statistical uncertainties and thus are
+%%neglected. The PDF uncertainties on the signal acceptance range from
+%%0.7$\%$ for $Z^\prime$ at 500 GeV up to 12$\%$ for $Z^\prime$ at 3 TeV.
 
 
   \item \textbf{Background Estimates:} The uncertainty on the data-driven background estimations are driven by the statistics in data in the various control
 samples. There is also a mostly negligible contribution from the level of contamination
-from other BGs in the control regions. In cases where MC based BGs must be subtracted off, the uncertainties in the MC BGs due to the above listed
+from other backgrounds in the control regions. In cases where MC based backgrounds must be subtracted off, the uncertainties in the MC backgrounds due to the above listed
 systematic uncertainties are propagated throughout the subtraction and used to assign a systematic uncertainty on the background prediction.
 
 \end{itemize}
@@ -112,7 +111,7 @@ systematic uncertainties are propagated throughout the subtraction and used to a
  \begin{tabular}{|l|c|c|c|c|c|c|} \hline \hline
    Source                 & QCD         & W           & DY          & \ttbar      & VV          & Signal      \\
                           & \ch         & \ch         & \ch         & \ch         & \ch         & \ch         \\
-   \hline Lumi            & --,--,--,-- & 5,--,5,5    & 5,5,5,5     & 5,5,5,5     & 5,5,5,5     & 5,5,5,5     \\
+   \hline Luminosity            & --,--,--,-- & 5,--,5,5    & 5,5,5,5     & 5,5,5,5     & 5,5,5,5     & 5,5,5,5     \\
    \hline $\mu$ Trig      & --,--,--,-- & --,--,--,-- & --,1,--,--  & --,1,--,--  & --,1,--,--  & --,1,--,--  \\
    \hline $\mu$ ID        & --,--,--,-- & --,--,--,1  & --,1,--,1   & --,1,--,1   & --,1,--,1   & --,1,--,1   \\
    \hline e Trig          & --,--,--,-- & --,--,1,1   & --,--,1,1   & --,--,1,1   & --,--,1,1   & --,--,1,1   \\
